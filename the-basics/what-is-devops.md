@@ -19,7 +19,7 @@ Under a DevOps model, development and operations teams are no longer “siloed.�
 
 **Speed** - Move at a high velocity so you can innovate for customers faster, adapt to changing markets better, and grow more efficiently at driving business results. The DevOps model enables your developers and operations teams to achieve these results. For example, micro-services continuous delivery lets teams take ownership of services and then release updates to them quicker.
 
-**Rapid Delivery** - Increase the frequency and pace of releases so you can innovate and improve your product faster. The quicker you can release new features and fix bugs, the faster you can respond to your customers’ needs and build competitive advantage. and Continuous integrations are practices that automate the software release process, from build to deploy.
+**Rapid Delivery** - Increase the frequency and pace of releases so you can innovate and improve your product faster. The quicker you can release new features and fix bugs, the faster you can respond to your customers’ needs and build a competitive advantage. and Continuous integrations are practices that automate the software release process, from build to deploy.
 
 **Reliability** - Ensure the quality of application updates and infrastructure changes so you can reliably deliver at a more rapid pace while maintaining a positive experience for end-users. Use practices like and to test that each change is continuous integration continuous delivery functional and safe. practices help you stay informed of performance in real-time.
 

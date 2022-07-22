@@ -22,4 +22,4 @@ The following are DevOps best practices:
 - Monitoring and Logging
 - Communication and Collaboration
 
-Below you can learn more about each particular practice. 
+Below you can learn more about each particular practice.

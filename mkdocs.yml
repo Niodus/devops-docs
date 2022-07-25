@@ -1,1 +1,25 @@
-site_name: My Docs
+site_name:  Devops Docs
+site_url:   ""
+theme:
+    name: material
+
+# Necessary for search to work properly
+include_search_page: false
+search_index_only: true
+
+# Default values, taken from mkdocs_theme.yml
+language: en
+font:
+    text: Roboto
+    code: Roboto Mono
+    favicon: assets/favicon.png
+icon:
+    logo: logo
+
+#### START OF NAVIGATION SECTION ###
+nav:
+    - Home: index.md 
+    - DevOps Basics: devops-basics/how-to-get-started.md
+    - About: about.md
+
+

@@ -2,6 +2,15 @@ site_name:  Devops Docs
 site_url:   ""
 theme:
     name: material
+    custom_dir: overrides
+    features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
 
 # Necessary for search to work properly
 include_search_page: false

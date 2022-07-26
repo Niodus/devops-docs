@@ -1,3 +1,0 @@
-DevOps Practices Overview
-
-PLACEHOLDER

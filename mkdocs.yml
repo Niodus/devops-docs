@@ -9,7 +9,7 @@ theme:
     - navigation.top
     - navigation.tabs
     - navigation.tabs.sticky
-#    - navigation.sections
+    - navigation.sections
     - navigation.indexes
 
 # Necessary for search to work properly
@@ -27,15 +27,15 @@ icon:
 
 #### START OF NAVIGATION SECTION ###
 nav:
-    - Home: home.md 
-    - About: about.md
+    - Home: index.md 
+
     - The Basics: 
-        - devops-basics/basics-overview.md
-        - devops-basics/how-to-get-started.md
         - devops-basics/what-is-devops.md
+        - devops-basics/how-to-get-started.md
 
     - Best Practices:
-        - devops-practices/practices-overview.md
+        - devops-practices/practice-overview.md
+        - Continuous Planning: devops-practices/continuous-planning/whatis-continuous-planning.md
 
     - Tools:
          - devops-tools/tools-overview.md
@@ -43,9 +43,7 @@ nav:
     - Learning:
         - devops-learning/learning-overview.md
 
-
-
-
+    - About: about.md
 
 #nav:
 #  - Section:
@@ -53,3 +51,5 @@ nav:
 #    - Page 1: section/page-1.md
 #    ...
 #    - Page n: section/page-n.md
+
+    #### END OF NAVIGATION SECTION ###

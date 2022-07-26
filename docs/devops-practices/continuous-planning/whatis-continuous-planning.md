@@ -1,16 +1,10 @@
----
-coverY: 0
----
-
-# What is Coninuous Planning
-
-\[\[_TOC_]]
+# What is Continuous Planning
 
 Traditional development teams used to plan all their features up front (aka Waterfall style), or in some cases for the entire year ahead. A big bang release would follow months of design, development and if you are lucky testing.
 
 The problem with such long term plans are that they tend to become obsolete very quickly. They also delay any return of investment to when the application or service will be released. Also requirements are rarely clear at the start of a project and late feedback can cause a lot of money to be wasted.
 
-![Continuous Planning](../../.attachments/Continuous-Planning.png)
+![continuous planning](/docs/img/cont-planning.png)
 
 Continuous planning advocates for more flexibility on the scope of the deliverable, trying to keep the cost of projects fixed and providing a faster return of investment by shipping high-value features in iterations first.
 

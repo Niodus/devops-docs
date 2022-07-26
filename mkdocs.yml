@@ -2,6 +2,16 @@ site_name:  Devops Docs
 site_url:   ""
 theme:
     name: material
+    custom_dir: overrides
+    features:
+#    - navigation.instant
+#    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+#    - navigation.sections
+    - navigation.indexes
+
 
 # Necessary for search to work properly
 include_search_page: false
@@ -19,7 +29,17 @@ icon:
 #### START OF NAVIGATION SECTION ###
 nav:
     - Home: index.md 
-    - DevOps Basics: devops-basics/how-to-get-started.md
     - About: about.md
+    - DevOps Basics: 
+        - devops-basics/index.md
+        - devops-basics/how-to-get-started.md
+        - devops-basics/what-is-devops.md
 
 
+
+#nav:
+#  - Section:
+#    - section/index.md
+#    - Page 1: section/page-1.md
+#    ...
+#    - Page n: section/page-n.md

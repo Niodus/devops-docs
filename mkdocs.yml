@@ -47,9 +47,10 @@ nav:
 
     - Best Practices:
         - devops-practices/practice-overview.md
-        - Continuous Planning: devops-practices/continuous-planning/whatis-continuous-planning.md
+        - Continuous Planning: 
+            - What is Continuous Planning: devops-practices/continuous-planning/whatis-continuous-planning.md
         - Agile Development: 
-            - devops-practices/continuous-planning/agile-development/agile-overview.md
+            - Agile Overview: devops-practices/continuous-planning/agile-development/agile-overview.md
             - Backlog Management: devops-practices/continuous-planning/agile-development/backlog-management.md
 
     - Tools:

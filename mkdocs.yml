@@ -1,5 +1,5 @@
 site_name:  Devops Docs
-site_url:   https://niodus.github.io/
+site_url:   https://niodus.github.io/devops-docs/
 theme:
     name: material
 #    custom_dir: overrides
@@ -27,12 +27,23 @@ icon:
 
 #### START OF NAVIGATION SECTION ###
 nav:
-    - Home: index.md 
+    - Home: home.md 
     - About: about.md
-    - DevOps Basics: 
-        - devops-basics/index.md
+    - The Basics: 
+        - devops-basics/basics-overview.md
         - devops-basics/how-to-get-started.md
         - devops-basics/what-is-devops.md
+
+    - Best Practices:
+        - devops-practices/practices-overview.md
+
+    - Tools:
+         - devops-tools/tools-overview.md
+
+    - Learning:
+        - devops-learning/learning-overview.md
+
+
 
 
 

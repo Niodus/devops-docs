@@ -1,8 +1,8 @@
 site_name:  Devops Docs
-site_url:   ""
+site_url:   https://niodus.github.io/
 theme:
     name: material
-    custom_dir: overrides
+#    custom_dir: overrides
     features:
 #    - navigation.instant
 #    - navigation.tracking

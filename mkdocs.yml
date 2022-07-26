@@ -1,8 +1,19 @@
+#### SITE BASE CONFIG ###
+
+# Default values, taken from mkdocs_theme.yml
 site_name:  Devops Docs
 site_url:   https://niodus.github.io/devops-docs/
+language: en
+font:
+    text: Roboto
+    code: Roboto Mono
+    favicon: assets/favicon.png
+icon:
+    logo: logo
 theme:
     name: material
 #    custom_dir: overrides
+
     features:
 #    - navigation.instant
 #    - navigation.tracking
@@ -16,26 +27,30 @@ theme:
 include_search_page: false
 search_index_only: true
 
-# Default values, taken from mkdocs_theme.yml
-language: en
-font:
-    text: Roboto
-    code: Roboto Mono
-    favicon: assets/favicon.png
-icon:
-    logo: logo
 
 #### START OF NAVIGATION SECTION ###
+
+#nav:
+#  - Section:
+#    - section/index.md
+#    - Page 1: section/page-1.md
+#    ...
+#    - Page n: section/page-n.md
+
 nav:
     - Home: index.md 
 
     - The Basics: 
         - devops-basics/what-is-devops.md
         - devops-basics/how-to-get-started.md
+        - devops-basics/devops-vs-sre.md
 
     - Best Practices:
         - devops-practices/practice-overview.md
         - Continuous Planning: devops-practices/continuous-planning/whatis-continuous-planning.md
+        - Agile Development: 
+            - devops-practices/continuous-planning/agile-development/agile-overview.md
+            - Backlog Management: devops-practices/continuous-planning/agile-development/backlog-management.md
 
     - Tools:
          - devops-tools/tools-overview.md
@@ -45,11 +60,6 @@ nav:
 
     - About: about.md
 
-#nav:
-#  - Section:
-#    - section/index.md
-#    - Page 1: section/page-1.md
-#    ...
-#    - Page n: section/page-n.md
+
 
     #### END OF NAVIGATION SECTION ###

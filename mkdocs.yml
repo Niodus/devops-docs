@@ -38,28 +38,28 @@ search_index_only: true
 #    - Page n: section/page-n.md
 
 nav:
-    - Home: index.md 
+    - Home:                                 index.md 
 
     - The Basics: 
-        - devops-basics/what-is-devops.md
-        - devops-basics/how-to-get-started.md
-        - devops-basics/devops-vs-sre.md
+        -                                   devops-basics/what-is-devops.md
+        -                                   devops-basics/how-to-get-started.md
+        -                                   devops-basics/devops-vs-sre.md
 
     - Best Practices:
-        - devops-practices/practice-overview.md
+        -                                   devops-practices/practice-overview.md
         - Continuous Planning: 
-            - What is Continuous Planning: devops-practices/continuous-planning/whatis-continuous-planning.md
+            - What is Continuous Planning:  devops-practices/continuous-planning/whatis-continuous-planning.md
         - Agile Development: 
-            - Agile Overview: devops-practices/continuous-planning/agile-development/agile-overview.md
-            - Backlog Management: devops-practices/continuous-planning/agile-development/backlog-management.md
+            - Whist is Agile:               devops-practices/continuous-planning/agile-development/whatis-agile.md
+            - Backlog Management:           devops-practices/continuous-planning/agile-development/backlog-management.md
 
     - Tools:
-         - devops-tools/tools-overview.md
+         -                                  devops-tools/tools-overview.md
 
     - Learning:
-        - devops-learning/learning-overview.md
+        -                                   devops-learning/learning-overview.md
 
-    - About: about.md
+    - About:                                about.md
 
 
 

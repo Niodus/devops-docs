@@ -6,11 +6,11 @@ For more info see this blog on the [Agile Manifesto](https://www.atlassian.com/a
 
 ## Sections in Agile Development
 
-- [Backlog Management](./agile-development/backlog-management.md)
-- [Collaboration](./agile-development/collaboration.md)
-- [Delivery Plan](./agile-development/delivery-plan.md)
-- [Retrospectives](./agile-development/retrospectives.md)
-- [Scrum of Scrums](./agile-development/scrum-of-scrums.md)
-- [Sprint Planning](./agile-development/sprint-planning.md)
-- [Standups](./agile-development/stand-ups.md)
-- [Team Agreements](./agile-development/team-agreements.md)
+- [Backlog Management](backlog-management.md)
+- [Collaboration](collaboration.md)
+- [Delivery Plan](delivery-plan.md)
+- [Retrospectives](retrospectives.md)
+- [Scrum of Scrums](scrum-of-scrums.md)
+- [Sprint Planning](sprint-planning.md)
+- [Standups](stand-ups.md)
+- [Team Agreements](team-agreements.md)

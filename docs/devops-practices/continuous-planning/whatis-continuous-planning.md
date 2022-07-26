@@ -23,9 +23,9 @@ Continuous Planning will enable your team to provide a constant flow of function
 
 Continuous Planning is a practice that requires planners, architects, and agile devoplement teams to integrate their plans across the enterprise on an ongoing basis. It relies on six principles:
 
-* Value simplicity
-* The manifesto for agile software development
-* Design thinking
-* Iterative and incremental development
-* Lean management
-* Estimation accuracy
+- Value simplicity
+- The manifesto for agile software development
+- Design thinking
+- Iterative and incremental development
+- Lean management
+- Estimation accuracy

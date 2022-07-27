@@ -6,10 +6,7 @@ _This article originated from a blog on [Harness's website](https://harness.io/b
 
 In a nutshell, DevOps Engineers are ops-focused engineers who solve development pipeline problems. Site Reliability Engineers are development-focused engineers who solve operational/scale/reliability problems.
 
-<figure markdown>
   ![devops overview](../img/sre-v-devops-1.png){ width="300" }
-  <figcaption>Image caption</figcaption>
-</figure>
 
 Software is certainly eating the world, and as our dependence on technology increases, disciplines have arisen to ensure that changes are rolled out efficiently and our systems are there when we need them. The rise of DevOps and Site Reliability Engineering cultures and practices has risen to the mainstream over the past years.  
 
@@ -37,7 +34,7 @@ Because we are all still fighting Conway’s Law, having a solid DevOps team doe
 
 ## Two Different Problem Sets
 
-Engineering efficiency and reliability are two separate domains, but have some overlap. There is a correlation between agility and more robust systems. A counter-argument might be made that agility brings about a fast velocity of change, and change is a detriment to reliability. Today’s challenges are faced at scale, and as we continue to push the boundaries, adjusting on-the-fly is important. The problems that both teams solve are telling to the culture and skills needed for both to thrive. 
+Engineering efficiency and reliability are two separate domains, but have some overlap. There is a correlation between agility and more robust systems. A counter-argument might be made that agility brings about a fast velocity of change, and change is a detriment to reliability. Today’s challenges are faced at scale, and as we continue to push the boundaries, adjusting on-the-fly is important. The problems that both teams solve are telling to the culture and skills needed for both to thrive.
 
 ## What Problems Do DevOps Teams Solve?
 

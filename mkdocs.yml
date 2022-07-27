@@ -1,4 +1,4 @@
-### SITE BASE CONFIG ###
+### --- SITE BASE CONFIG --- ###
 
 # Default values, taken from mkdocs_theme.yml
 site_name:  Devops Docs
@@ -27,9 +27,7 @@ theme:
 # include_search_page: false
 # search_index_only: true
 
-### START OF EXTENSIONS & PLUGIN SECTION ###
-
-
+### --- START OF EXTENSIONS & PLUGIN SECTION --- ###
 
 # Used for glossary page and adding abbrviations
 markdown_extensions:
@@ -51,10 +49,12 @@ markdown_extensions:
     - pymdownx.tasklist:
         custom_checkbox: true
 
+# Used to allow for customisation of tables
+markdown_extensions:
+  - tables
 
 
-
-#### START OF NAVIGATION SECTION ###
+### --- START OF NAVIGATION SECTION -- ###
 
 nav:
     - Home:                                 index.md 
@@ -82,5 +82,4 @@ nav:
     - About:                                about.md
 
 
-
-    #### END OF NAVIGATION SECTION ###
+### END OF FILE ###

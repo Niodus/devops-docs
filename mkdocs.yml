@@ -24,15 +24,34 @@ theme:
     - navigation.indexes
 
 # Necessary for search to work properly
-include_search_page: false
-search_index_only: true
+# include_search_page: false
+# search_index_only: true
 
-### START OF EXTENSIONS SECTION ###
+### START OF EXTENSIONS & PLUGIN SECTION ###
 
+
+
+# Used for glossary page and adding abbrviations
 markdown_extensions:
-  - pymdownx.snippets:
-      auto_append:
-        - includes/abbreviations.md
+    - pymdownx.snippets:
+        auto_append:
+            - includes/abbreviations.md
+
+# used for Images and adding inline captions
+markdown_extensions:
+    - attr_list
+    - md_in_html
+
+plugins:
+    - glightbox
+
+# Used for tasklists and adding checkboxes to pages
+markdown_extensions:
+    - def_list
+    - pymdownx.tasklist:
+        custom_checkbox: true
+
+
 
 
 #### START OF NAVIGATION SECTION ###

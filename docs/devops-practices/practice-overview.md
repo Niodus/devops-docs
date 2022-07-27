@@ -9,3 +9,10 @@ Below you can learn more about each particular Devops best practice.
 - Infrastructure as Code
 - Monitoring and Logging
 - Communication and Collaboration
+
+<!---  Exmple of Image with caption
+#<figure markdown>
+#  ![Image title](https://dummyimage.com/600x400/){ width="300" }
+#  <figcaption>Image caption</figcaption>
+</figure>
+ --->

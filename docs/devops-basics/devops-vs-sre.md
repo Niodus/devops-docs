@@ -1,14 +1,15 @@
 # DevOps Vs SRE
 
-*[SRE]: Site Reliability Engineer
-
 _This article originated from a blog on [Harness's website](https://harness.io/blog/devops/sre-vs-devops/) - dated Nov 3, 2021_
 
 ## Overview
 
 In a nutshell, DevOps Engineers are ops-focused engineers who solve development pipeline problems. Site Reliability Engineers are development-focused engineers who solve operational/scale/reliability problems.
 
-![devops overview](../img/sre-v-devops-1.png)
+<figure markdown>
+  ![devops overview](../img/sre-v-devops-1.png){ width="300" }
+  <figcaption>Image caption</figcaption>
+</figure>
 
 Software is certainly eating the world, and as our dependence on technology increases, disciplines have arisen to ensure that changes are rolled out efficiently and our systems are there when we need them. The rise of DevOps and Site Reliability Engineering cultures and practices has risen to the mainstream over the past years.  
 

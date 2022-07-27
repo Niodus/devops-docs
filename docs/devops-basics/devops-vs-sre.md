@@ -1,5 +1,7 @@
 # DevOps Vs SRE
 
+*[SRE]: Site Reliability Engineer
+
 _This article originated from a blog on [Harness's website](https://harness.io/blog/devops/sre-vs-devops/) - dated Nov 3, 2021_
 
 ## Overview

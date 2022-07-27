@@ -1,4 +1,4 @@
-#### SITE BASE CONFIG ###
+### SITE BASE CONFIG ###
 
 # Default values, taken from mkdocs_theme.yml
 site_name:  Devops Docs
@@ -12,7 +12,7 @@ icon:
     logo: logo
 theme:
     name: material
-#    custom_dir: overrides
+#    custom_dir: overrides   # Not currently used
 
     features:
 #    - navigation.instant
@@ -27,15 +27,15 @@ theme:
 include_search_page: false
 search_index_only: true
 
+### START OF EXTENSIONS SECTION ###
+
+markdown_extensions:
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
 
 #### START OF NAVIGATION SECTION ###
-
-#nav:
-#  - Section:
-#    - section/index.md
-#    - Page 1: section/page-1.md
-#    ...
-#    - Page n: section/page-n.md
 
 nav:
     - Home:                                 index.md 

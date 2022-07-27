@@ -5,9 +5,9 @@ author: the DevOps Institute - https://devopsinstitute.com
 
 ---
 
-This list of DevOps terms are as defined by the DevOps Institute:
+This list of DevOps terms are as defined by the [DevOps Institute](https://www.devopsinstitute.com/):
 
-Click on the follow bookmarks to jump - | [A](#a-terms) | [B](#b-terms) |
+Click on the following bookmarks to jump to a specific section - | [A](#a-terms) | [B](#b-terms) |
 
 ## A - Terms
 

@@ -44,13 +44,14 @@ nav:
         -                                   devops-basics/what-is-devops.md
         -                                   devops-basics/how-to-get-started.md
         -                                   devops-basics/devops-vs-sre.md
+        -                                   devops-basics/glossary.md
 
     - Best Practices:
         -                                   devops-practices/practice-overview.md
         - Continuous Planning: 
             - What is Continuous Planning:  devops-practices/continuous-planning/whatis-continuous-planning.md
         - Agile Development: 
-            - Whist is Agile:               devops-practices/continuous-planning/agile-development/whatis-agile.md
+            - What is is Agile:             devops-practices/continuous-planning/agile-development/whatis-agile.md
             - Backlog Management:           devops-practices/continuous-planning/agile-development/backlog-management.md
 
     - Tools:

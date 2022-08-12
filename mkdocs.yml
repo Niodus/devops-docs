@@ -40,7 +40,9 @@ markdown_extensions:
     - attr_list
     - md_in_html
 
+# plugin used to add search capability to site
 plugins:
+    - search
     - glightbox
 
 # Used for tasklists and adding checkboxes to pages
@@ -72,12 +74,14 @@ nav:
         - Agile Development: 
             - What is is Agile:             devops-practices/continuous-planning/agile-development/whatis-agile.md
             - Backlog Management:           devops-practices/continuous-planning/agile-development/backlog-management.md
+            - Collaboration:                devops-practices/continuous-planning/agile-development/collaboration.md
 
     - Tools:
          -                                  devops-tools/tools-overview.md
 
     - Learning:
         -                                   devops-learning/learning-overview.md
+        -                                   devops-learning/devops-sfia.md
 
     - About:                                about.md
 

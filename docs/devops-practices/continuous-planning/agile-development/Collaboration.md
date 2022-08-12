@@ -1,8 +1,6 @@
 
 # Collaboration
 
-[[_TOC_]]
-
 ## Why collaboration is important
 
 In engagements, we aim to be highly collaborative because when we code together, we perform better, have a higher sprint velocity, and have a greater degree of knowledge sharing across the team.
@@ -25,7 +23,7 @@ Below are some general guidelines for pairing:
 - Engineers leverage feature branches for the collaboration during the development of each story to have small Pull Requests (PRs) (as opposed to a single giant PR) at the end of the sprint.
 - Code is committed to the repository by both members of the assigned pair where and when it makes sense as tasks were completed.
 - The pairing assignee is the voice representing the pair during the daily standup while being supported by the story owner.
-- Having the names of both individuals (owner and pair assignee) visible on the PBI can be helpful during sprint ceremonies and lead to greater accountability by the pairing assignee. An example of this using Azure DevOps cards can be found [here](./Collaboration/Add-Pairing-Field-Azure-Devops-Cards.md).
+- Having the names of both individuals (owner and pair assignee) visible on the PBI can be helpful during sprint ceremonies and lead to greater accountability by the pairing assignee. 
 
 ## Why pair programming helps collaboration
 
@@ -75,8 +73,6 @@ Knowledge sharing and bringing customer engineers together in a ‘code-with’ 
 
 ## Resources
 
-- [How to add a pairing custom field in Azure DevOps User Stories](./Collaboration/Add-Pairing-Field-Azure-Devops-Cards.md) - adding a custom field of type _Identity_ in Azure DevOps for pairing
-
 - [On Pair Programming - Martin Fowler](https://martinfowler.com/articles/on-pair-programming.html)
 
-- [Pair Programming hands-on lessons](https://github.com/The-V8/pair-programming-sessions) - these can be used (and adapted) to support bringing pair programming into your team (MS internal or including customers)
+- [Pair Programming hands-on lessons](https://github.com/The-V8/pair-programming-sessions) - these can be used (and adapted) to support bringing pair programming into your team.

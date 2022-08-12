@@ -76,6 +76,11 @@ nav:
             - Backlog Management:           devops-practices/continuous-planning/agile-development/backlog-management.md
             - Collaboration:                devops-practices/continuous-planning/agile-development/collaboration.md
             - Delivery Plan:                devops-practices/continuous-planning/agile-development/delivery-plan.md
+            - Retrospectives:               devops-practices/continuous-planning/agile-development/retrospectives.md
+            - Scrum of Scrums:              devops-practices/continuous-planning/agile-development/scrum-of-scrums.md
+            - Sprint Planning:              devops-practices/continuous-planning/agile-development/sprint-planning.md
+            - Standups:                     devops-practices/continuous-planning/agile-development/stand-ups.md
+            - Team Agreements:              devops-practices/continuous-planning/agile-development/team-agreements.md
 
     - Tools:
          -                                  devops-tools/tools-overview.md

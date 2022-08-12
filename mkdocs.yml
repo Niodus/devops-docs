@@ -40,7 +40,9 @@ markdown_extensions:
     - attr_list
     - md_in_html
 
+# plugin used to add search capability to site
 plugins:
+    - search
     - glightbox
 
 # Used for tasklists and adding checkboxes to pages
@@ -78,6 +80,7 @@ nav:
 
     - Learning:
         -                                   devops-learning/learning-overview.md
+        -                                   devops-learning/devops-sfia.md
 
     - About:                                about.md
 

@@ -74,6 +74,7 @@ nav:
         - Agile Development: 
             - What is is Agile:             devops-practices/continuous-planning/agile-development/whatis-agile.md
             - Backlog Management:           devops-practices/continuous-planning/agile-development/backlog-management.md
+            - Collaboration:                devops-practices/continuous-planning/agile-development/collaboration.md
 
     - Tools:
          -                                  devops-tools/tools-overview.md

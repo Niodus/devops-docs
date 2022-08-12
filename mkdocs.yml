@@ -1,17 +1,19 @@
 ### --- SITE BASE CONFIG --- ###
 
 # Default values, taken from mkdocs_theme.yml
-site_name:  Devops Docs
-site_url:   https://niodus.github.io/devops-docs/
-language: en
+site_name:      Devops Docs
+site_url:       https://niodus.github.io/devops-docs/
+site_author:    Scott McCarthy
+repo_url:       https://github.com/example/repository/
+language:       en
 font:
-    text: Roboto
-    code: Roboto Mono
-    favicon: assets/favicon.png
+    text:       Roboto
+    code:       Roboto Mono
+    favicon:    img/favicon.png
 icon:
-    logo: logo
+    logo:       logo
 theme:
-    name: material
+    name:       material
 #    custom_dir: overrides   # Not currently used
 
     features:
@@ -83,7 +85,7 @@ nav:
             - Team Agreements:              devops-practices/continuous-planning/agile-development/team-agreements.md
 
     - Tools:
-         -                                  devops-tools/tools-overview.md
+         - Tools Overview:                  devops-tools/tools-overview.md               
 
     - Learning:
         -                                   devops-learning/learning-overview.md

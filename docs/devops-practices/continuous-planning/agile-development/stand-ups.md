@@ -1,11 +1,13 @@
 # Stand-ups
 
+## Overview
+
 The stand-up is a time-boxed ceremony that is held each day of the sprint. In this ceremony, each contributor in the Development Team will answer three simple project questions and an optional social question. This will repeat until each contributor has answered the following questions.
 
 1. What did you work on yesterday that contributes to meet the sprint goal?
 2. What are you working on today that will contribute to meet the sprint goal?
 3. Do you have any impediments/blockers or need any help? (defer discussion / resolution to "the parking lot", described below)
-4. An [optional social question](/Continuous-Planning/Agile-Development/Stand-Ups/Social-Question.md), e.g. "would you rather see the past or the future?"
+4. An [optional social question](/continuous-planning/agile-development/stand-ups/social-question.md), e.g. "would you rather see the past or the future?"
 
 During the stand-up, additional discussions may arise. Make sure that someone adds them to the parking lot for after meeting discussion.  
 
@@ -26,7 +28,7 @@ The participation in the parking lot discussion is optional for all members exce
 
 The entire team should attend the stand-up. Anyone that worked on a task towards the sprint work should answer the three questions. It would be up to the team to decide if they would like updates from members that are not directly working against sprint task work (i.e. Product Owners and Program Managers).
 
-- Process Lead (Required)
+- ScrumMaster (Required)
 - Product Owner (Optional)
 - Program Manager (Required)
 - Dev Lead + Contributors (Required)
@@ -65,7 +67,7 @@ How many tasks are being generated after the stand-up that didn't exist before? 
 
 ## Facilitation Guidance
 
-The Process Lead should facilitate the stand-up meeting.
+The ScrumMaster should facilitate the stand-up meeting.
 
 ### Speak to Tasks
 
@@ -88,7 +90,7 @@ Ensure discussion leaders call out necessary parties for their discussion points
 
 ### Social question
 
-Teams are frequently geographically distributed and include members who have not worked on projects together previously. Social interactions facilitate the development of trust between team members and lower the barriers to collaboration. A social question-of-the-day that has a one-sentence answer contributes to trust development over the course of many stand-ups, with a minimal additional time commitment. The answer to the social question should be brief and follow the project questions answer. The facilitator may choose the social question or take a suggestion from the room. Description of what makes a good question, and a list of starter questions are available within the [social question](/Continuous-Planning/Agile-Development/Stand-Ups/Social-Question.md) page.
+Teams are frequently geographically distributed and include members who have not worked on projects together previously. Social interactions facilitate the development of trust between team members and lower the barriers to collaboration. A social question-of-the-day that has a one-sentence answer contributes to trust development over the course of many stand-ups, with a minimal additional time commitment. The answer to the social question should be brief and follow the project questions answer. The facilitator may choose the social question or take a suggestion from the room. Description of what makes a good question, and a list of starter questions are available within the [social question](/continuous-planning/agile-development/stand-ups/social-question.md) page.
 
 ### Start On Time
 
@@ -117,3 +119,4 @@ If any team member is working remotely, plan to run stand-ups through conference
 ## Resources
 
 - [Daily Scrum - Tips & Tactics](https://www.scrum.org/resources/blog/daily-scrum-tips-tactics)
+- [Atlassian guide to Stand-ups](https://www.atlassian.com/agile/scrum/standups)

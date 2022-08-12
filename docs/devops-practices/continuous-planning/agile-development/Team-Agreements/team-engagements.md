@@ -1,4 +1,4 @@
-# Engagement Team Development
+# Team Engagements
 
 In every engagement or project, dynamics are different & so are the team requirements. Based on transfer learning among teams, we aim to build right "code-with" environments in every team.
 
@@ -11,7 +11,7 @@ However those phases can be extremely fast or sometimes mismatched in teams due 
 
 In order to minimize the risk and set the expectations on the right way for all parties, an identification phase is important to understand each other. Some potential steps in this phase may be as following (not limited):
 
-- [Working agreement](/Continuous-Planning/Agile-Development/Team-Agreements/Working-Agreements.md)
+- [Working agreement](./Continuous-Planning/Agile-Development/Team-Agreements/Working-Agreements.md)
 
 - Identification of styles/preferences in communication, sharing, learning, decision making of each team member
   

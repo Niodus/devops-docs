@@ -1,8 +1,8 @@
 # Delivery Plan
 
-## Goals
+## Overview
 
-While Scrum does not require and discourages planning more than one sprint at a time. Most of us work in enterprises where we are dependent outside teams (for example: marketing, sales, support).
+While Scrum does not require and discourages planning more than one sprint at a time. Most of us work in enterprises where we are dependent outside teams (for example: marketing, sales, support or other development teams).
 
 A rough assessment of the planned project scope is achievable within a reasonable time frame and resources. The goal is to have a rough plan and estimate as a starting point, not to implement "Agile-fall or Wagile."
 
@@ -22,7 +22,7 @@ One approach you can take to accomplish is with stickies and a spreadsheet.
 Step 1: Stack rank the features for everything in your backlog
 
 - Functional Features
-- [Non-functional Features](/Continuous-Planning/Design-Reviews/Design-Patterns/Non-Functional-Requirements-Capture-Guide.md)
+- [Non-functional Features](../continuous-planning/design-reviews/design-patterns/non-functional-requirements-capture-guide.md)
 - User Research and Design
 - Testing
 - Documentation

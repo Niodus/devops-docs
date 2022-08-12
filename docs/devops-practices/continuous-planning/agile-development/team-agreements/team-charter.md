@@ -1,36 +1,32 @@
-# Team Manifesto
+# Team Charter
 
-## Introduction
+## Overview
 
-CSE teams work with a new development team in each customer engagement which requires a phase of introduction & knowledge transfer before starting an engagement.
-
-Completion of this phase of ice-breakers and discussions about the standards takes time, but is required to start increasing the learning curve of the new team.
-
-A team manifesto is a light-weight one page agile document among team members which summarizes the basic principles and values of the team and aiming to provide a consensus about technical expectations from each team member in order to deliver high quality output at the end of each engagement.
+A team charter is a light-weight one page agile document among team members which summarizes the basic principles and values of the team and aiming to provide a consensus about technical expectations from each team member in order to deliver high quality output at the end of each engagement.
 
 It aims to reduce the time on setting the right expectations without arranging longer "team document reading" meetings and provide a consensus among team members to answer the question - "How does the new team develop the software?" - by covering all engineering fundamentals and excellence topics such as release process, clean coding, testing.
 
-Another main goal of writing the manifesto is to start a conversation during the "manifesto building session" to detect any differences of opinion around how the team should work.
+Another main goal of writing the charter is to start a conversation during the "charter building session" to detect any differences of opinion around how the team should work.
 
 It also serves in the same way when a new team member joins to the team. New joiners can quickly get up to speed on the agreed standards.
 
-## How to Build a Team Manifesto
+## How to Build a Team Charter
 
 It can be said that the best time to start building it is at the very early phase of the engagement when teams meet with each other for swarming or during the preparation phase.
 
-It is recommended to keep team manifesto as simple as possible, so preferably, one-page simple document which **doesn't include any references or links** is a nice format for it.
+It is recommended to keep team charter as simple as possible, so preferably, one-page simple document which **doesn't include any references or links** is a nice format for it.
 If there is a need for providing knowledge on certain topics, the way to do is delivering brown-bag sessions, technical katas, team practices, documentations and others later on.
 
-A few important points about the team manifesto
+A few important points about the team charter
 
-- The team manifesto is built by the development team itself
+- The team charter is built by the development team itself
 - It should cover all required technical engineering points for the excellence as well as behavioral agility mindset items that the team finds relevant
 - It aims to give a common understanding about the desired expertise, practices and/or mindset within the team
 - Based on the needs of the team and retrospective results, it can be modified during the engagement.
 
-In CSE, we aim for quality over quantity, and well-crafted software as well as to a comfortable/transparent environment where each team member can reach their highest potential.
+We aim for quality over quantity, and well-crafted software as well as to a comfortable/transparent environment where each team member can reach their highest potential.
 
-The difference between the team manifesto and other team documents is that it is used to give a short summary of expectations around the technical way of working and supported mindset in the team, before code-with sprints starts.
+The difference between the team charter and other team documents is that it is used to give a short summary of expectations around the technical way of working and supported mindset in the team, before code-with sprints starts.
 
 Below, you can find some including, but not limited, topics many teams touch during engagements,
 
@@ -62,10 +58,9 @@ Below, you can find some including, but not limited, topics many teams touch dur
 
 ## Tools
 
-Generally team sessions are enough for building a manifesto and having a consensus around it, and if there is a need for improving it in a structured way, [Building a Team Manifesto](https://www.scrum.nl/blog/building-team-manifesto/) or any retrospective tool can be used.
+Generally team sessions are enough for building a charter and having a consensus around it, and if there is a need for improving it in a structured way, [Building a Team charter](https://www.scrum.nl/blog/building-team-manifesto/) or any retrospective tool can be used.
 
 ## Resources
 
-[Building a Team Manifesto*](https://www.scrum.nl/blog/building-team-manifesto/)
-
-[Technical Agility*](https://v46.scaledagileframework.com/team-and-technical-agility/)
+- [Building a Team Charter](https://www.mindtools.com/pages/article/newTMM_95.htm)
+- [What is a Team Charter, and How Can It Keep Your Team on Track?](https://v46.scaledagileframework.com/team-and-technical-agility/)

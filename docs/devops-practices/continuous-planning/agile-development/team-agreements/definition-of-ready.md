@@ -6,9 +6,9 @@ When the development team picks a user story from the top of the backlog, the us
 
 ## What it is
 
-*Definition of Ready* is the agreement made by the scrum team around how complete a user story should be in order to be selected as candidate for estimation in the sprint planning. These can be codified as a checklist in user stories using [Github Issue Templates](https://help.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository) or [Azure DevOps Work Item Templates](https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/work-item-template?view=azure-devops&tabs=browser).
+*Definition of Ready* is the agreement made by the scrum team around how complete a user story should be in order to be selected as candidate for estimation in the sprint planning. These can be codified as a checklist in user stories.
 
-It can be understood as a checklist that helps the Product Owner to ensure that the user story they wrote contains all the necessary details for the scrum team to understand the work to be done.
+It can also be understood as a checklist that helps the Product Owner to ensure that the user story they wrote contains all the necessary details for the scrum team to understand the work to be done.
 
 ### Examples of ready checklist items
 
@@ -23,7 +23,7 @@ It can be understood as a checklist that helps the Product Owner to ensure that 
 
 ## Who writes it
 
-The ready checklist can be written by a Product Owner in agreement with the development team and the Process Lead.
+The ready checklist can be written by a Product Owner in agreement with the development team and the ScrumMaster.
 
 ## When should a Definition of Ready be updated
 

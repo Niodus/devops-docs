@@ -16,18 +16,18 @@ their own, and adjust times, communication channels, branch naming policies etc.
 - We show all team members equal respect
 - We work as a team to have common expectations for technical delivery that are documented in a [Team Manifesto](team-manifesto.md).
 - We make sure to spread our expertise and skills in the team, so no single person is relied on for one skill
-- All times below are listed in CET
+- All times below are listed in BST (*British Summer Time*)
 
 ## Communication
 
 - We communicate all information relevant to the team through the Project Teams channel
-- We add all [technical spikes](../../design/design-reviews/recipes/technical-spike.md), [trade studies](../../design/design-reviews/trade-studies/README.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design/design-reviews/recipes/async-design-reviews.md)
+- We add all [technical spikes](../../design/design-reviews/recipes/technical-spike.md), [Design Reviews](../../design/design-reviews/trade-studies/README.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design/design-reviews/recipes/async-design-reviews.md)
 
 ## Work-life Balance
 
 - Our office hours, when we can expect to collaborate via Microsoft Teams, phone or face-to-face are Monday to Friday 10AM - 5PM
 - We are not expected to answer emails past 6PM, on weekends or when we are on holidays or vacation.
-- We work in different time zones and respect this, especially when setting up recurring meetings.
+- We work in different areas of the country and respect this, especially when setting up recurring meetings.
 - We record meetings when possible, so that team members who could not attend live can listen later.
 
 ## Quality and not Quantity
@@ -39,19 +39,19 @@ their own, and adjust times, communication channels, branch naming policies etc.
 
 | Activity | When | Duration | Who | Accountable | Goal |
 |-|-|-|-|-|-|
-| [Project Standup](../stand-ups/README.md) | Tue-Fri 9AM | 15 min | Everyone | Process Lead | What has been accomplished, next steps, blockers |
+| [Project Standup](../stand-ups.md) | Tue-Fri 10AM | 15 min | Everyone | ScrumMaster | What has been accomplished, next steps, blockers |
 | Sprint Demo | Monday 9AM | 1 hour | Everyone | Dev Lead | Present work done and sign off on user story completion |
 | [Sprint Retro](../retrospectives.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
-| [Sprint Planning](../sprint-planning/README.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
+| [Sprint Planning](../sprint-planning.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
 | Task Creation | After Sprint Planning | - | Dev Team | Dev Lead | Create tasks to clarify and determine velocity |
-| [Backlog refinement](../backlog-management/backlog-refinement.md) | Wednesday 2PM | 1 hour | Dev Lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
+| [Backlog refinement](../backlog-management.md) | Wednesday 2PM | 1 hour | Dev Lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
 
 ## Process Lead
 
 The Process Lead is responsible for leading any scrum or agile practices to enable the project to move forward.
 
 - Facilitate standup meetings and hold team accountable for attendance and participation.
-- Keep the meeting moving as described in the [Project Standup](../stand-ups/README.md) page.
+- Keep the meeting moving as described in the [Project Standup](../stand-ups.md) page.
 - Make sure all action items are documented and ensure each has an owner and a due date and tracks the open issues.
 - Notes as needed after planning / stand-ups.
 - Make sure that items are moved to the parking lot and ensure follow-up afterwards.
@@ -75,9 +75,9 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 
 ## Code Management
 
-- We follow the git flow branch naming convention for branches and identify the task number e.g. `feature/123-add-working-agreement`
+- We follow the [GitOps](https://www.atlassian.com/git/tutorials/gitops) naming convention for branches and identify the task number e.g. `feature/123-add-working-agreement`
 - We merge all code into main branches through PRs
-- All PRs are reviewed by one person from [Customer/Partner Name] and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
+- All PRs are reviewed by at least two engineers
 - We always review existing PRs before starting work on a new task
 - We look through open PRs at the end of stand-up to make sure all PRs have reviewers.
 - We treat documentation as code and apply the same [standards to Markdown](../../code-reviews/recipes/markdown.md) as code

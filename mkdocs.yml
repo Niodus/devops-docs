@@ -55,7 +55,6 @@ markdown_extensions:
 markdown_extensions:
   - tables
 
-
 ### --- START OF NAVIGATION SECTION -- ###
 
 nav:
@@ -83,7 +82,8 @@ nav:
             - Team Agreements:              devops-practices/continuous-planning/agile-development/team-agreements.md
 
     - Tools:
-         -                                  devops-tools/tools-overview.md
+         - Tools Overview:                  devops-tools/tools-overview.md
+         -                  
 
     - Learning:
         -                                   devops-learning/learning-overview.md

@@ -1,10 +1,10 @@
 # Sprint Planning
 
-## Goals
+## Overview
 
 During the [sprint planning](https://www.agilealliance.org/glossary/sprint-planning), the team discusses and agrees on the scope for the upcoming sprint.
 
-Goals:
+## Goals
 
 - Select the **stories** that will be implemented in the sprint.
 - Estimate the **effort** required for the stories in the sprint.
@@ -22,30 +22,30 @@ General guidance:
 
 Specific roles:
 
-- Process Lead:
-  - Facilitate the conversation.
-  - Ensure everyone is heard.
-  - Remind scrums/agile/other principles and sprint planning goals if necessary, updating the working agreement where needed to ensure a mapping between principals and what is working/not working for the team.
-- [Product owner](https://www.agilealliance.org/glossary/product-owner/):
-  - Prior to the sprint planning: performs some [backlog refinement](/Continuous-Planning/Agile-Development/Backlog-Management/Backlog-Refinement.md) to ensure that each story that they want to propose for the new sprint (*) :
+[**The ScrumMaster**](https://www.agilealliance.org/glossary/scrum-master/):
+
+- Facilitate the conversation.
+- Ensure everyone is heard.
+- Remind scrums/agile/other principles and sprint planning goals if necessary, updating the working agreement where needed to ensure a mapping between principals and what is working/not working for the team.
+
+[**Product owner**](https://www.agilealliance.org/glossary/product-owner/):
+
+- Prior to the sprint planning: performs some [backlog refinement](/continuous-planning/agile-development/backlog-management/backlog-refinement.md) to ensure that each story that they want to propose for the new sprint (*)  
+- Is in the correct position in the backlog, by right priority order.
+- Is attending the [definition of ready](/continuous-planning/agile-development/team-agreements/definition-of-ready.md)- Do NOT pre-assign stories to the future sprint. This is the purpose of the sprint planning.
+- During the meeting:
+  - Clarify team's questions and improve the story accordingly, if necessary.
+  - Describe to the team the stories that they propose for the sprint.
   
-    - Is in the correct position in the backlog, by right priority order.
-    - Is attending the [definition of ready](/Continuous-Planning/Agile-Development/Team-Agreements/Definition-of-Ready.md)
-  - Do NOT pre-assign stories to the future sprint. This is the purpose of the sprint planning.
-  - During the meeting:
+**All team members**:
 
-    - Clarify team's questions and improve the story accordingly, if necessary.
-    - Describe to the team the stories that they propose for the sprint.
+- Listen to the product owner story description.
+- Ask questions to make sure everyone understands each story properly.
+- [Estimate](/continuous-planning/agile-development/sprint-planning/estimation.md) the effort for each backlog item, as a team.
+- Split each story into tasks.
+- (Optional) self assign first task to team members.
 
-- All team members:
-
-  - Listen to the product owner story description.
-  - Ask questions to make sure everyone understands each story properly.
-  - [Estimate](/Continuous-Planning/Agile-Development/Sprint-Planning/Estimation.md the effort for each backlog item, as a team.
-  - Split each story into tasks.
-  - (Optional) self assign first task to team members.
-
-*(\*) some teams find useful to define a **[Definition of ready](/Continuous-Planning/Agile-Development/Team-Agreements/Definition-of-Ready.md)** that describes the list of things that needs to be done in each story before the **product owner** can propose it for a **sprint**. The list proposed here is the classic minimal definition of ready.*
+*(\*) some teams find useful to define a **[Definition of ready](/continuous-planning/agile-development/team-agreements/definition-of-ready.md)** that describes the list of things that needs to be done in each story before the **product owner** can propose it for a **sprint**. The list proposed here is the classic minimal definition of ready.*
 
 ## Impact
 
@@ -68,7 +68,7 @@ Prior to the meeting:
 
 - Set sprint goal.
 - Make sure the backlog is prioritized.
-- Make sure each story that is a candidate for next sprint is [ready](/Continuous-Planning/Agile-Development/Team-Agreements/Definition-of-Ready.md).
+- Make sure each story that is a candidate for next sprint is [ready](/continuous-planning/agile-development/team-agreements/definition-of-ready.md).
 
 During the meeting:
 
@@ -81,5 +81,4 @@ During the meeting:
 Other considerations:
 
 - Take into account off days (vacations, national holidays, unavailability).
-- When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different work streams. This might require thinking about [scrum of scrums](/Continuous-Planning/Agile-Development/Scrum-of-Scrums.md) and all related ceremonies.
-- For Azure DevOps, leverage the [Sprint Goal](https://marketplace.visualstudio.com/items?itemName=keesschollaart.sprint-goal&targetId=e254bbbe-45a2-4344-9bbd-c4ba47e66719&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension to display the goal in the tab-label on every page within the sprint.
+- When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different work streams. This might require thinking about [scrum of scrums](/continuous-planning/agile-development/scrum-of-scrums.md) and all related ceremonies.

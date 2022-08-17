@@ -1,97 +1,107 @@
-### --- SITE BASE CONFIG --- ###
-
-# Default values, taken from mkdocs_theme.yml
-site_name:      Devops Docs
-site_url:       https://niodus.github.io/devops-docs/
-site_author:    Scott McCarthy
-repo_url:       https://github.com/example/repository/
-language:       en
-font:
-    text:       Roboto
-    code:       Roboto Mono
-    favicon:    img/favicon.png
-icon:
-    logo:       logo
+site_name:          Devops Docs
+site_description:   A DevOps knowledgebase created by Scott McCarthy
+site_author:        Scott McCarthy
+site_url:           https://niodus.github.io/devops-docs/
+repo_url:           https://github.com/Niodus/devops-docs
+use_directory_urls: false
 theme:
-    name:       material
-#    custom_dir: overrides   # Not currently used
+    name:           material
+    icon:
+        logo:           logo
 
+# Additional features used
     features:
+        - navigation.tabs
 #    - navigation.instant
 #    - navigation.tracking
-    - navigation.top
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.indexes
+#    - navigation.top
+#    - navigation.tabs.sticky
+#    - navigation.sections
+#    - navigation.indexes
 
 # Necessary for search to work properly
-include_search_page: false
-search_index_only: true
+# include_search_page: false
+# search_index_only: true
 
 ### --- START OF EXTENSIONS & PLUGIN SECTION --- ###
-
-# Used for glossary page and adding abbrviations
 markdown_extensions:
-    - pymdownx.snippets:
-        auto_append:
-            - includes/abbreviations.md
+    - toc:
+        permalink: true
 
-# used for Images and adding inline captions
-markdown_extensions:
-    - attr_list
-    - md_in_html
+    # Used for tasklists
+    # - def_list
 
-# plugin used to add search capability to site
+    # used for adding checkboxes to pages
+    # - pymdownx.tasklist:
+    #    custom_checkbox: true
+
+    # Used to allow for customisation of tables
+    #- tables
+
+    # used for Images and adding inline captions
+    #- attr_list
+    #- md_in_html
+
+    # Used for glossary page and adding abbrviations
+    #- pymdownx.snippets:
+    #    auto_append:
+    #        - includes/abbreviations.md
+
 plugins:
+    # plugin used to add search capability to site
     - search
     - glightbox
 
-# Used for tasklists and adding checkboxes to pages
-markdown_extensions:
-    - def_list
-    - pymdownx.tasklist:
-        custom_checkbox: true
-
-# Used to allow for customisation of tables
-markdown_extensions:
-  - tables
-
+    # allow clickable sections that lead to an index page - https://oprypin.github.io/mkdocs-section-index/
+    - section-index
+    - literate-nav
+#    - literate-nav:
+#        nav_file: nav-menu.md
 
 ### --- START OF NAVIGATION SECTION -- ###
 
 nav:
-    - Home:                                 index.md 
-
+    - Home: home.md 
     - The Basics: 
-        -                                   devops-basics/what-is-devops.md
-        -                                   devops-basics/how-to-get-started.md
-        -                                   devops-basics/devops-vs-sre.md
-        -                                   devops-basics/glossary.md
-
+        - the-basics/what-is-devops.md
+        - the-basics/how-to-get-started.md
+        - the-basics/devops-vs-sre.md
+        - the-basics/glossary.md
     - Best Practices:
-        -                                   devops-practices/practice-overview.md
+        - best-practices/practice-overview.md
         - Continuous Planning: 
-            - What is Continuous Planning:  devops-practices/continuous-planning/whatis-continuous-planning.md
-        - Agile Development: 
-            - What is is Agile:             devops-practices/continuous-planning/agile-development/whatis-agile.md
-            - Backlog Management:           devops-practices/continuous-planning/agile-development/backlog-management.md
-            - Collaboration:                devops-practices/continuous-planning/agile-development/collaboration.md
-            - Delivery Plan:                devops-practices/continuous-planning/agile-development/delivery-plan.md
-            - Retrospectives:               devops-practices/continuous-planning/agile-development/retrospectives.md
-            - Scrum of Scrums:              devops-practices/continuous-planning/agile-development/scrum-of-scrums.md
-            - Sprint Planning:              devops-practices/continuous-planning/agile-development/sprint-planning.md
-            - Standups:                     devops-practices/continuous-planning/agile-development/stand-ups.md
-            - Team Agreements:              devops-practices/continuous-planning/agile-development/team-agreements.md
+            - best-practices/continuous-planning/planning-overview.md
+            - Agile Development: 
+                - best-practices/continuous-planning/agile-development/agile-overview.md
+                - Backlog Management:   best-practices/continuous-planning/agile-development/backlog-management.md
+                - Collaboration:        best-practices/continuous-planning/agile-development/collaboration.md
+                - Delivery Plan:        best-practices/continuous-planning/agile-development/delivery-plan.md
+                - Retrospectives:       best-practices/continuous-planning/agile-development/retrospectives.md
+                - Scrum of Scrums:      best-practices/continuous-planning/agile-development/scrum-of-scrums.md
+                - Sprint Planning:      best-practices/continuous-planning/agile-development/sprint-planning.md
+                - Standups:             best-practices/continuous-planning/agile-development/stand-ups.md
+                - Team Agreements:      
+                    - best-practices/continuous-planning/agile-development/team-agreements.md
+                    - Definition of Done:   best-practices/continuous-planning/agile-development/team-agreements/definition-of-done.md
+                    - Definition of Ready:  best-practices/continuous-planning/agile-development/team-agreements/definition-of-ready.md
+                    - Team Charter:         best-practices/continuous-planning/agile-development/team-agreements/team-charter.md
+                    - Team Engagements:     best-practices/continuous-planning/agile-development/team-agreements/team-engagements.md
+                    - Working Agreements:   best-practices/continuous-planning/agile-development/team-agreements/working-agreements.md
+#        - Continuous Integration:
+#        - Continuous Delivery:
+#        - Infrastructure as Code:
+#        - Monitoring and Logging:
+#        - Communication and Collaboration:
 
     - Tools:
-         - Tools Overview:                  devops-tools/tools-overview.md               
+        - tools/tools-overview.md               
 
     - Learning:
-        -                                   devops-learning/learning-overview.md
-        -                                   devops-learning/devops-sfia.md
+        - learning/learning-overview.md
+        - learning/devops-sfia.md
 
-    - About:                                about.md
+    - About: about.md
 
 
 ### END OF FILE ###
+

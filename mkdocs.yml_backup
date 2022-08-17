@@ -1,0 +1,106 @@
+### --- SITE BASE CONFIG --- ###
+
+# Default values, taken from mkdocs_theme.yml
+site_name:          Devops Docs
+site_description:   A DevOps knowledgebase created by Scott McCarthy
+site_author:        Scott McCarthy
+site_url:           https://niodus.github.io/devops-docs/
+repo_name:          devops-docs
+repo_url:           https://github.com/Niodus/devops-docs.git
+language:           en
+font:
+    text:           Roboto
+    code:           Roboto Mono
+    favicon:        img/favicon.png
+icon:
+    logo:           logo
+theme:
+    name:           material
+
+# Additional features used
+    features:
+#    - navigation.instant
+#    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+
+# Necessary for search to work properly
+include_search_page: false
+search_index_only: true
+
+### --- START OF EXTENSIONS & PLUGIN SECTION --- ###
+
+markdown_extensions:
+    # Used for tasklists
+    - def_list
+
+    # used for adding checkboxes to pages
+    - pymdownx.tasklist:
+        custom_checkbox: true
+
+    # Used to allow for customisation of tables
+    - tables
+
+    # used for Images and adding inline captions
+    - attr_list
+    - md_in_html
+
+    # Used for glossary page and adding abbrviations
+    - pymdownx.snippets:
+        auto_append:
+            - includes/abbreviations.md
+
+plugins:
+    # plugin used to add search capability to site
+    - search
+    - glightbox
+
+    # Used nested nav and colaspable menus - https://pypi.org/project/mkdocs-literate-nav/
+    - literate-nav
+        nav_file: summary.md
+
+### --- START OF NAVIGATION SECTION -- ###
+
+nav:
+    - Home:                                 index.md 
+
+    - The Basics: 
+        -                                   devops-basics/what-is-devops.md
+        -                                   devops-basics/how-to-get-started.md
+        -                                   devops-basics/devops-vs-sre.md
+        -                                   devops-basics/glossary.md
+
+    - Best Practices:
+        -                                   devops-practices/practice-overview.md
+        - Continuous Planning: 
+            - What is Continuous Planning:  devops-practices/continuous-planning/whatis-continuous-planning.md
+        - Agile Development: 
+            - What is is Agile:             devops-practices/continuous-planning/agile-development/whatis-agile.md
+            - Backlog Management:           devops-practices/continuous-planning/agile-development/backlog-management.md
+            - Collaboration:                devops-practices/continuous-planning/agile-development/collaboration.md
+            - Delivery Plan:                devops-practices/continuous-planning/agile-development/delivery-plan.md
+            - Retrospectives:               devops-practices/continuous-planning/agile-development/retrospectives.md
+            - Scrum of Scrums:              devops-practices/continuous-planning/agile-development/scrum-of-scrums.md
+            - Sprint Planning:              devops-practices/continuous-planning/agile-development/sprint-planning.md
+            - Standups:                     devops-practices/continuous-planning/agile-development/stand-ups.md
+            - Team Agreements:              devops-practices/continuous-planning/agile-development/team-agreements.md
+#        - Continuous Integration:
+#        - Continuous Delivery:
+#        - Infrastructure as Code:
+#        - Monitoring and Logging:
+#        - Communication and Collaboration:
+
+    - Tools:
+         - Tools Overview:                  devops-tools/tools-overview.md               
+
+    - Learning:
+        -                                   devops-learning/learning-overview.md
+        -                                   devops-learning/devops-sfia.md
+
+    - About:                                about.md
+
+
+### END OF FILE ###

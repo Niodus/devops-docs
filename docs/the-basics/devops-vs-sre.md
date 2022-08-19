@@ -1,4 +1,9 @@
-# DevOps Vs SRE
+---
+title: DevOps Vs SRE
+summary: A list of DevOps best practices
+author: Scott McCarthy
+
+---
 
 _This article originated from a blog on [Harness's website](https://harness.io/blog/devops/sre-vs-devops/) - dated Nov 3, 2021_
 

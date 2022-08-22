@@ -2,18 +2,23 @@
 title: Practice Overview
 summary: A list of DevOps best practices
 author: Scott McCarthy
-
 ---
+
+From a 'Best-Practice' point of view , this section of the site is structured something similar to Microsofts FOUR pillars of DevOps:
+
+![DevOps Practice Overview](../img/devops-practices-overview.png)
 
 Below you can learn more about each particular DevOps best practice.
 
 - [Continuous Planning](continuous-planning/planning-overview.md)
-    - [Agile Development](continuous-planning/agile-development/agile-overview.md)
+  - [Agile Development](continuous-planning/agile-development/agile-overview.md)
 - Continuous Integration
 - Continuous Delivery
-- Infrastructure as Code
-- Monitoring and Logging
-- Communication and Collaboration
+- Continuous Quality
+- Continuous Security
+- Continuous Operations
+- Continuous Collaboration
+- Continuous Improvement
 
 <!---  Example of Image with caption
 #<figure markdown>

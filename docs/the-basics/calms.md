@@ -3,7 +3,6 @@ title: CALMS
 summary: The CALMS framework is used as a means of assessing whether an organization is ready to adopt DevOps processes
 author: Scott McCarthy
 date: 22/08/20221
-
 ---
 
 ## CALMS (Culture, Automation, Lean, Measurement, Sharing)
@@ -11,13 +10,13 @@ date: 22/08/20221
 The CALMS framework is used as a means of assessing whether an organization is ready to adopt DevOps processes, or how an organization is progressing in their DevOps transformation. It is based on the following five pillars:
 
 - **Culture.** Before silos can be torn down, there needs to be a culture of shared responsibility, or at least a group of people devoted to establishing that culture in a grassroots type of way, with management approval and support.
-Automation. Similar to the technical practices centered around continuous delivery mentioned above, teams undertaking a DevOps transformation should be devoted to automating as many manual tasks as possible, especially with respect to continuous integration and test automation.
+  Automation. Similar to the technical practices centered around continuous delivery mentioned above, teams undertaking a DevOps transformation should be devoted to automating as many manual tasks as possible, especially with respect to continuous integration and test automation.
 
 - **Lean.** Development teams are making use of lean principles to eliminate waste and optimize the value stream, such as minimizing WIP, making work visible, and reducing hand-off complexity and wait times.
-Measurement. The organization is devoted to collecting data on their processes, deployments, etc., in order to understand their current capabilities and where improvements could be achieved.
+  Measurement. The organization is devoted to collecting data on their processes, deployments, etc., in order to understand their current capabilities and where improvements could be achieved.
 
 - **Sharing.** A culture of openness and sharing within and between teams (and enabled with the proper tools) keeps everyone working toward the same goals and eases friction with hand-offs when issues arise.
-Three key practices that help promote a virtuous cycle—positive outcomes that continue to be reinforced and strengthened as they are iterated on—as you mature DevOps in your organization. These three high-level concepts encompass, and when they’re tackled in order, a continuous, virtuous cycle can gradually gain momentum.
+  Three key practices that help promote a virtuous cycle—positive outcomes that continue to be reinforced and strengthened as they are iterated on—as you mature DevOps in your organization. These three high-level concepts encompass, and when they’re tackled in order, a continuous, virtuous cycle can gradually gain momentum.
 
 ## They are the 3Cs: - Culture - Collaboration - Continuous Improvement
 

@@ -2,8 +2,8 @@
 title: Sprint Planning
 summary: A guide to sprint planning
 author: Scott McCarthy
-
 ---
+
 ## Overview
 
 During the [sprint planning](https://www.agilealliance.org/glossary/sprint-planning), the team discusses and agrees on the scope for the upcoming sprint.
@@ -34,13 +34,13 @@ Specific roles:
 
 [**Product owner**](https://www.agilealliance.org/glossary/product-owner/):
 
-- Prior to the sprint planning: performs some [backlog refinement](backlog-management.md#backlog-refinement) to ensure that each story that they want to propose for the new sprint (*)  
+- Prior to the sprint planning: performs some [backlog refinement](backlog-management.md#backlog-refinement) to ensure that each story that they want to propose for the new sprint (\*)
 - Is in the correct position in the backlog, by right priority order.
 - Is attending the [definition of ready](team-agreements/definition-of-ready.md)- Do NOT pre-assign stories to the future sprint. This is the purpose of the sprint planning.
 - During the meeting:
   - Clarify team's questions and improve the story accordingly, if necessary.
   - Describe to the team the stories that they propose for the sprint.
-  
+
 **All team members**:
 
 - Listen to the product owner story description.
@@ -49,7 +49,7 @@ Specific roles:
 - Split each story into tasks.
 - (Optional) self assign first task to team members.
 
-*(\*) some teams find useful to define a **[Definition of ready](team-agreements/definition-of-ready.md)** that describes the list of things that needs to be done in each story before the **product owner** can propose it for a **sprint**. The list proposed here is the classic minimal definition of ready.*
+_(\*) some teams find useful to define a **[Definition of ready](team-agreements/definition-of-ready.md)** that describes the list of things that needs to be done in each story before the **product owner** can propose it for a **sprint**. The list proposed here is the classic minimal definition of ready._
 
 ## Impact
 

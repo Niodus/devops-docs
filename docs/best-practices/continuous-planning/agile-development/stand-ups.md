@@ -9,12 +9,9 @@ The stand-up is a time-boxed ceremony that is held each day of the sprint. In th
 3. Do you have any impediments/blockers or need any help? (defer discussion / resolution to "the parking lot", described below)
 4. An optional [social question](stand-ups/social-question.md), e.g. "would you rather see the past or the future?"
 
-During the stand-up, additional discussions may arise. Make sure that someone adds them to the parking lot for after meeting discussion.  
+During the stand-up, additional discussions may arise. Make sure that someone adds them to the parking lot for after meeting discussion. After that point, the stand-up is concluded.
 
-After that point, the stand-up is concluded.
-
-As a good practice, the items in the parking lot take place right after the stand-up. However, you can opt to discuss the parking lot items at another time before the next stand-up.
-The participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
+As a good practice, the items in the parking lot take place right after the stand-up. However, you can opt to discuss the parking lot items at another time before the next stand-up. The participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
 
 > The term **parking lot** refers to a bucket of comments, concerns, or questions that will be discussed and/or addressed at a later point with potentially fewer contributors. This is part of a strategy to avoid letting the discussion in a meeting shift to a subject that is not aligned with the meeting goals and/or decisions.
 

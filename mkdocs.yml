@@ -12,12 +12,12 @@ theme:
 # Additional features used
     features:
         - navigation.tabs
-#    - navigation.instant
-#    - navigation.tracking
-#    - navigation.top
-#    - navigation.tabs.sticky
-#    - navigation.sections
-#    - navigation.indexes
+        - navigation.instant
+        - navigation.tracking
+        - navigation.top
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.indexes
 
 # Necessary for search to work properly
 # include_search_page: false
@@ -69,24 +69,29 @@ nav:
         - the-basics/glossary.md
     - Best Practices:
         - best-practices/practice-overview.md
-        - Continuous Planning: 
+        - Continuous Planning:
             - best-practices/continuous-planning/planning-overview.md
-            - Agile Development: 
+            - Agile Development:
                 - best-practices/continuous-planning/agile-development/agile-overview.md
-                - Backlog Management:   best-practices/continuous-planning/agile-development/backlog-management.md
-                - Collaboration:        best-practices/continuous-planning/agile-development/collaboration.md
-                - Delivery Plan:        best-practices/continuous-planning/agile-development/delivery-plan.md
-                - Retrospectives:       best-practices/continuous-planning/agile-development/retrospectives.md
-                - Scrum of Scrums:      best-practices/continuous-planning/agile-development/scrum-of-scrums.md
-                - Sprint Planning:      best-practices/continuous-planning/agile-development/sprint-planning.md
-                - Standups:             best-practices/continuous-planning/agile-development/stand-ups.md
-                - Team Agreements:      
+                - best-practices/continuous-planning/agile-development/backlog-management.md
+                - best-practices/continuous-planning/agile-development/collaboration.md
+                - best-practices/continuous-planning/agile-development/delivery-plan.md
+                - best-practices/continuous-planning/agile-development/retrospectives.md
+                - best-practices/continuous-planning/agile-development/scrum-of-scrums.md
+                - Sprint Planning:
+                    - best-practices/continuous-planning/agile-development/sprint-planning.md
+                    - best-practices/continuous-planning/agile-development/sprint-planning/estimation.md
+                    - best-practices/continuous-planning/agile-development/sprint-planning/sprint-structure.md
+                - Standups:
+                    - best-practices/continuous-planning/agile-development/stand-ups.md
+                    - best-practices/continuous-planning/agile-development/stand-ups/social-question.md
+                - Team Agreements:
                     - best-practices/continuous-planning/agile-development/team-agreements.md
-                    - Definition of Done:   best-practices/continuous-planning/agile-development/team-agreements/definition-of-done.md
-                    - Definition of Ready:  best-practices/continuous-planning/agile-development/team-agreements/definition-of-ready.md
-                    - Team Charter:         best-practices/continuous-planning/agile-development/team-agreements/team-charter.md
-                    - Team Engagements:     best-practices/continuous-planning/agile-development/team-agreements/team-engagements.md
-                    - Working Agreements:   best-practices/continuous-planning/agile-development/team-agreements/working-agreements.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/definition-of-done.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/definition-of-ready.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/team-charter.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/team-engagements.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/working-agreements.md
 #        - Continuous Integration:
 #        - Continuous Delivery:
 #        - Infrastructure as Code:

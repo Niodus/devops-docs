@@ -70,4 +70,47 @@ Click on the following bookmarks to jump to a specific section:
 
 |  Term                     | Definition                                                                                                                            |
 | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------ |
+| Cadence | Flow or rhythm of events |
+| CALMS Model | Considered the pillars of values of DevOps:  Culture, Automation, Lean, Measurement, Sharing (as put forth by John Willis, Damon Edwards and Jez Humble). |
+| Canary Testing | A canary (also called a canary test) is a push of code changes to a small number of end users who have not volunteered to test anything.  Similar to incremental rollout, it is where a small portion of the user base is updated to a new version first.  THis subset, the canaries, then serve as the proverbial "canary in the coal mine".  If something goes wrong then a release is rolled back and only a small subset of the users are impacted. |
+| Capacity Test | The purpose of the test is to determine if the EUT can handle expected loads such as number of users, number of sessions, aggregate bandwidth. |
+| Capture-Replay | Test cases are created by capturing live interactions with the EUT, in a format that can be replayed by a tool. e.g. Selenium |
+| Carrots | Positive incentives, for encouraging and rewarding desired behaviors. |
+| Change | Addition, modification or removal of anything that could have an effect on IT services (ITIL definition). |
+| Change Failure Rate | A measure of the time from a request for change to delivery of the change. |
+| Change Management | Process that controls all changes throughout their lifecycle (ITIL definition). |
+| Chaos Engineering | The disciple of experimenting on a software system in production in order to build confidence in the systems capability to withstand turbulent and unexpected conditions. |
+| Chapter Lead | A squad line manager in the Spotify model who is responsible for traditional people management duties, is involved in day to day work and grow individual and chapter competence.  |
+| Chapters | A small family of people having similar skills and who work within the same general competency area within the same tribe.  Chapters meet regularly to discuss challenges and areas of expertise in order to promote sharing, skill development, re-use and problem solving. ] |
+| ChatOps | An approach to managing technical and business operations (coined by GitHub) that involves a combination of group chat and integration with DevOps tools.  Example tools include Atlassian HipChat/Stride, Microsoft Teams, Slack. |
+| Check-In | Action of submitting a software change into a system version management system. |
+| CI Regression TestA subset of regression test that are run immediately after a software components is built.  Same as Smoke |  |
+| Clear-Box | Same as Glass-Box Testing and White-Box Testing |
+| Cloud Computing | The practice of using remote servers hosted on the internet to host applications rather than local servers in a private datacenter. |
+| Cloud-Native | Native cloud application (NCA) are designed for cloud computing |
+| Cluster Cost Optimization | Tools like Kubcost, Replex, Cloudability use monitoring to analyze container clusters and optimize the resource deployment model |
+| Cluster Monitoring | Tools that let you know the health of your deployment environments running in clusters such as Kubernetes |
+| Clustering | A group of computers (called notes or members) work together as a cluster connected through a fast network acting as a single system |
+| Code Coverage | A measure of white box test coverage by counting code units that are executed by a test.  The code unit may be a code statement, a code branch, or control path or data path through a code module. |
+| Code Quality | See also static code analysis, Sonar and Checkmarks are examples of tools that automatically check the seven main dimensions of code quality - comments, architecture, duplication, unit test coverage, complexity, potential defects, language rules |
+| Code Repository | A repository where developers can commit and collaborate on their code.  It also tracks historical versions and potentially identifies conflicting versions of the same code. Also referred to as repository' or 'repo'. |
+| Code Review | Software engineers inspect each others source code to detect coding or code formatting errors. |
+| Cognitive Bias | Cognitive bias is a limitation in objective thinking that is caused by the tendency for the human brain to perceive information through a filter of personal experience and  preferences: a systematic pattern of deviation from morn or rationality in judgement. |
+| Collaboration | People jointly working with others towards a common goal. |
+| Collaborative Culture | A culture that applies to everyone which incorporates an expected set of behaviors, language and accepted ways of working with each other reinforcement by leadership. |
+| Compatibility Test | Test with the purpose to determine if and EUT interoperates with another EUT such as peer-to-peer applications or protocols |
+| Configuration Management | CM is a systems engineering process for establishing and maintaining consistency of a products performance, functional, and physical attributes with its requirements, design, and operational information throughout its life. |
+| Conformance Test | The purpose of the test is to determine if an EUT complies to a standard. |
+| Constraint | Limitation or restriction; something that constrains.  See also bottleneck |
+| Container | A way of packaging software into lightweight, stand-alone, executable packages including everything needed to run it (code, runtime, system tools, system,libraries, settings). |
+| Container Network Security | Used to prove that any app that can be run on a container cluster with any other app can be confident that there is no unintended use of the other app or any unintended network traffic between them. |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+## __D - Terms__
+
+|  Term                     | Definition                                                                                                                            |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------ |
 |  |  |

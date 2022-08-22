@@ -1,5 +1,10 @@
-# Welcome
+---
+title: Home
+summary: Home page for DevOps Docs
+author: Scott McCarthy
+date: 18/08/2022
 
+---
 ## Welcome Aboard
 
 Welcome to my DevOps wiki page. My name is Scott McCarthy and I am a professional DevOps engineer.

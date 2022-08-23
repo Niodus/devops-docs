@@ -3,7 +3,6 @@ title: Estimation
 summary: A guide to estimating stories and tasks
 author: Scott McCarthy
 date: 18/08/2022
-
 ---
 
 When a team adopts agile, as the team works together, the process of estimating

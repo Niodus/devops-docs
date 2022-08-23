@@ -2,7 +2,6 @@
 title: DevOps Vs SRE
 summary: A list of DevOps best practices
 author: Scott McCarthy
-
 ---
 
 _This article originated from a blog on [Harness's website](https://harness.io/blog/devops/sre-vs-devops/) - dated Nov 3, 2021_
@@ -11,19 +10,19 @@ _This article originated from a blog on [Harness's website](https://harness.io/b
 
 In a nutshell, DevOps Engineers are ops-focused engineers who solve development pipeline problems. Site Reliability Engineers are development-focused engineers who solve operational/scale/reliability problems.
 
-  ![devops overview](../img/sre-v-devops-1.png){ width="300" }
+![DevOps overview](../img/sre-v-devops-1.png)
 
-Software is certainly eating the world, and as our dependence on technology increases, disciplines have arisen to ensure that changes are rolled out efficiently and our systems are there when we need them. The rise of DevOps and Site Reliability Engineering cultures and practices has risen to the mainstream over the past years.  
+Software is certainly eating the world, and as our dependence on technology increases, disciplines have arisen to ensure that changes are rolled out efficiently and our systems are there when we need them. The rise of DevOps and Site Reliability Engineering cultures and practices has risen to the mainstream over the past years.
 
 Being a DevOps Engineer or SRE are certainly in-demand job titles and skillsets to have. Not to fall into the eponym of “CI/CD” while saying “DevOps/SRE,” understanding the overlap and differences between the two skillsets and organizations is important. Both solve very distinct challenges with unique and innovative approaches, ushering in new paradigms in technology.
 
 ## What Are the Differences Between SREs and DevOps?
 
-Having more efficient and reliable systems are not new goals in technology. Like many other facets of technology, the learnings and science behind both goals have increased to warrant specialized organizations and engineers.  
+Having more efficient and reliable systems are not new goals in technology. Like many other facets of technology, the learnings and science behind both goals have increased to warrant specialized organizations and engineers.
 
 The DevOps movement is all about breaking down silos. The quintessential disconnect of the development team and operations team is exactly what DevOps Engineers and leaders are trying to solve. This divide makes sense, as those who write software were typically not those who run the software. Years of these practices take time to untangle in organizations and changing mindsets are hard to forecast.
 
-![devops vs sre](../img/sre-v-devops-2.png)
+![DevOps vs SRE](../img/sre-v-devops-2.png)
 
 Having reliable systems at scale is a complex problem to solve. As systems become more distributed in nature, ensuring reliability or the appearance of reliability across the vast topology of moving parts is challenging. Internal and external customers alike expect systems to be available all the time, and even a brief outage (downtime) or reduction in uptime can be detrimental to a firm’s reputation and bottom line.
 
@@ -51,7 +50,7 @@ The DevOps teams are purveyors of development tools, from providing guidance at 
 
 Site Reliability Engineering teams focus on safety, health, uptime, and the ability to remedy unforeseen problems. A romanticized idea is that SREs are only sprung into action during an incident, helping devise remedies for problems until the engineering teams can make proper remediation. Certainly, an important pillar of the job is combating incidents, and SREs spend a good deal of time making sure the firefight doesn’t occur with their vast expertise.
 
-By removing some of the complex burdens in how to scale and maintain uptime in distributed systems, SRE practices allow development teams to focus on feature development instead of the nuances of achieving and maintaining service level commitments.  
+By removing some of the complex burdens in how to scale and maintain uptime in distributed systems, SRE practices allow development teams to focus on feature development instead of the nuances of achieving and maintaining service level commitments.
 
 ## SLAs, SLOs, and SLIs
 
@@ -105,15 +104,15 @@ DevOps vs SRE Concern Table
 
 Comparing different DevOps concerns vs SRE concerns.
 
-| Concern                                          | DevOps                                                                                                                           | SRE                                                                                                                                                                                     |
-|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| When asked 'What Do You Do Around Here?" | Mange the Development pipeline                                                                                                  | Resilience, scaling, uptime, robustness                                                                                                                                                 |
-| TL;DR                                            | A System engineer, who primarily focuses on development problems.                                                                | A Software engineer, focusing on operational problems.                                                                                                                                  |
-| Does the Application Cluster?                    | Yes, the application does. We need three nodes.                                                                                  | We use a RAFT-based leader-elected clustering mechanism focused on Apache Zookeeper. We front the application with Apache Mesos to work through Dominant Resource Fairness constraints. |
-| Can We Have Monitoring?                          | Yes, we use Prometheus, ELK, and FluentD and can provide hooks into each.                                                        | Concerned about the science around how the monitoring tool works. Black box vs white box monitoring and specific metrics about each. Advising teams on pros/cons.                       |
-| Our Deployment Failed.                           | The pipelines we created allow you to re-run. If additional debugging is needed, we can connect the dots with log/trace systems. | Unless it caused an outage, we wouldn’t get involved to help with the remedy. If the deployment regularly fails, we can work to help decipher why.                                      |
-| Typical Metrics                                  | Deployment frequency, deployment failure rate.                                                                                   | Error budgets, SLOs, SLIs, Four Golden Signals                                                                                                                                          |
-| War Chant                                        | “People, Process, Technology & Automation!”                                                                                      | “There is no root cause!”                                                                                                                                                               |
+| Concern                                  | DevOps                                                                                                                           | SRE                                                                                                                                                                                     |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| When asked 'What Do You Do Around Here?" | Mange the Development pipeline                                                                                                   | Resilience, scaling, uptime, robustness                                                                                                                                                 |
+| TL;DR                                    | A System engineer, who primarily focuses on development problems.                                                                | A Software engineer, focusing on operational problems.                                                                                                                                  |
+| Does the Application Cluster?            | Yes, the application does. We need three nodes.                                                                                  | We use a RAFT-based leader-elected clustering mechanism focused on Apache Zookeeper. We front the application with Apache Mesos to work through Dominant Resource Fairness constraints. |
+| Can We Have Monitoring?                  | Yes, we use Prometheus, ELK, and FluentD and can provide hooks into each.                                                        | Concerned about the science around how the monitoring tool works. Black box vs white box monitoring and specific metrics about each. Advising teams on pros/cons.                       |
+| Our Deployment Failed.                   | The pipelines we created allow you to re-run. If additional debugging is needed, we can connect the dots with log/trace systems. | Unless it caused an outage, we wouldn’t get involved to help with the remedy. If the deployment regularly fails, we can work to help decipher why.                                      |
+| Typical Metrics                          | Deployment frequency, deployment failure rate.                                                                                   | Error budgets, SLOs, SLIs, Four Golden Signals                                                                                                                                          |
+| War Chant                                | “People, Process, Technology & Automation!”                                                                                      | “There is no root cause!”                                                                                                                                                               |
 
 The level of detail that SREs take a look at are more tool-agnostic and approach-centric vs DevOps teams providing tools and pipelines for engineering organizations to further the mission. Both skillsets and teams are certainly important in any modern organization.
 

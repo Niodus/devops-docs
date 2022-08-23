@@ -3,7 +3,6 @@ title: Social Question
 summary: Some optional questions that will help to build team trust.
 author: Scott McCarthy
 date: 18/08/2022
-
 ---
 
 The social question of the day is an optional short question to follow the [three project questions](README.md) in the daily stand-up. It develops team cohesion and interpersonal trust over the course of an engagement by facilitating the sharing of personal preferences, lifestyle, or other context.

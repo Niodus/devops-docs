@@ -1,4 +1,9 @@
-# Scrum of Scrums
+---
+title: Scrum of Scrums
+summary: What is Scrum of Scrums
+author: Scott McCarthy
+date: 18/08/2022
+---
 
 ## Overview
 

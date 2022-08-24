@@ -1,12 +1,17 @@
-# Retrospectives
+---
+title: Retrospectives
+summary: What is an Agile retrospective?
+author: Scott McCarthy
+date: 18/08/2022
+---
 
 ## What is an Agile retrospective?
 
-An Agile retrospective is a meeting that's held at the end of an iteration in Agile software development. During the retrospective, the team reflects on what happened in the iteration and identifies actions for improvement going forward.  The aim of a retrospective is to:
+An Agile retrospective is a meeting that's held at the end of an iteration in Agile software development. During the retrospective, the team reflects on what happened in the iteration and identifies actions for improvement going forward. The aim of a retrospective is to:
 
 1. Continually learn from our engagement, improving our ability to deliver value to our customers.
 1. Involve everyone in the learning and improvement.
-1. The dev team and *the larger org* learn from each engagement.
+1. The dev team and _the larger org_ learn from each engagement.
 
 ## Evidence and Measures
 
@@ -16,7 +21,7 @@ Proposed changes coming out of iteration retrospectives should be tracked as tas
 
 ## General Guidance
 
-This [*Agile playbook by Atlassian*](https://www.atlassian.com/team-playbook/plays/retrospective) provides a clear script for conducting retrospectives. Every retrospective should follow some version of the script, depending on the length of the retrospective. The basic script is:
+This [_Agile playbook by Atlassian_](https://www.atlassian.com/team-playbook/plays/retrospective) provides a clear script for conducting retrospectives. Every retrospective should follow some version of the script, depending on the length of the retrospective. The basic script is:
 
 1. Prep.
 1. Set the stage.
@@ -25,7 +30,7 @@ This [*Agile playbook by Atlassian*](https://www.atlassian.com/team-playbook/pla
 1. Actions.
 1. Close the retrospective.
 
-Within that script, the facilitator can make choices with regard to which activities to use for each element.  If it suits your team you can even run different variations of a retrospective to suit different use cases such as:
+Within that script, the facilitator can make choices with regard to which activities to use for each element. If it suits your team you can even run different variations of a retrospective to suit different use cases such as:
 
 ### Project or Milestone Retrospective
 

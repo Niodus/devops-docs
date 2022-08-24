@@ -1,4 +1,9 @@
-# Stand-ups
+---
+title: Stand-ups
+summary: What is a Stand Up in Agile
+author: Scott McCarthy
+date: 18/08/2022
+---
 
 ## Overview
 

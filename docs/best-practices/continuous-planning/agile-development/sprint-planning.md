@@ -2,6 +2,7 @@
 title: Sprint Planning
 summary: A guide to sprint planning
 author: Scott McCarthy
+date: 18/08/2022
 ---
 
 ## Overview

@@ -18,11 +18,10 @@ This covers not only technical design of software, but also architecture design 
 
 ## Sections
 
-- [Design Patterns](design-patterns/README.md)
-- [Design Reviews](design-reviews/README.md)
-- [Non-Functional Requirements Guidance](design-patterns/non-functional-requirements-capture-guide.md)
-- [Sustainable Software Engineering](sustainability/README.md)
+- [Design Patterns](design-reviews/design-patterns.md)
+- [Non-Functional Requirements Guidance](design-reviews/non-functional.md)
+- [Sustainable Software Engineering](design-reviews/sustainability.md)
 
 ## Recipes
 
-- [Design Recipes](design-reviews/recipes/README.md)
+- XXX [Design Recipes](design-reviews/recipes/README.md)

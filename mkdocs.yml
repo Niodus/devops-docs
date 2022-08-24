@@ -93,12 +93,12 @@ nav:
                   - best-practices/continuous-planning/agile-development/team-agreements/team-engagements.md
                   - best-practices/continuous-planning/agile-development/team-agreements/working-agreements.md
           - Design Reviews:
-            - best-practices/continuous-planning/design-reviews.md
+              - best-practices/continuous-planning/design-reviews.md
 
       - Continuous Integration:
           - best-practices/continuous-integration.md
-          - test:
-            - test-file.md
+#          - test:
+#              - test-file.md
       - Continuous Delivery:
           - best-practices/continuous-delivery.md
   #        - Infrastructure as Code:

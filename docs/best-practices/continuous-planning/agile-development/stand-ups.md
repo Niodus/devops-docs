@@ -2,7 +2,7 @@
 
 ## Overview
 
-The stand-up is a time-boxed ceremony that is held each day of the sprint. In this ceremony, each contributor in the Development Team will answer three simple project questions and an optional social question. This will repeat until each contributor has answered the following questions.
+The stand-up is a time-boxed ceremony that is held each day of the sprint. In this ceremony, each contributor in the Development Team will answer **three simple project questions** and an optional social question. This will repeat until each contributor has answered the following questions.
 
 1. What did you work on yesterday that contributes to meet the sprint goal?
 2. What are you working on today that will contribute to meet the sprint goal?

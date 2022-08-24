@@ -1,4 +1,11 @@
-# Sections of a Working Agreement
+---
+title: Working Agreements
+summary: Definition of a Working Agreement
+author: Scott McCarthy
+date: 24/08/2022
+---
+
+## Overview
 
 A working agreement is a document, or a set of documents that describe how we work together as a team and what our
 expectations and principles are.
@@ -14,14 +21,14 @@ their own, and adjust times, communication channels, branch naming policies etc.
 - We work as one team towards a common goal and clear scope
 - We make sure everyone's voice is heard, listened to
 - We show all team members equal respect
-- We work as a team to have common expectations for technical delivery that are documented in a [Team Manifesto](team-manifesto.md).
+- We work as a team to have common expectations for technical delivery that are documented in a [Team Charter](team-charter.md).
 - We make sure to spread our expertise and skills in the team, so no single person is relied on for one skill
-- All times below are listed in BST (*British Summer Time*)
+- All times below are listed in BST (_British Summer Time_)
 
 ## Communication
 
 - We communicate all information relevant to the team through the Project Teams channel
-- We add all [technical spikes](../../design/design-reviews/recipes/technical-spike.md), [Design Reviews](../../design/design-reviews/trade-studies/README.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design/design-reviews/recipes/async-design-reviews.md)
+- We add all [technical spikes](../../design-reviews/technical-spike.md), [design reviews](../../../continuous-planning/design-reviews.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design-reviews/async-design-reviews.md)
 
 ## Work-life Balance
 
@@ -32,19 +39,19 @@ their own, and adjust times, communication channels, branch naming policies etc.
 
 ## Quality and not Quantity
 
-- We agree on a [Definition of Done](definition-of-done.md) for our user story's and sprints and live by it.
+- We agree on a [definition of done](definition-of-done.md) for our user story's and sprints and live by it.
 - We follow engineering best practices like the [Code With Engineering Playbook](https://github.com/microsoft/code-with-engineering-playbook)
 
 ## Scrum Rhythm
 
-| Activity | When | Duration | Who | Accountable | Goal |
-|-|-|-|-|-|-|
-| [Project Standup](../stand-ups.md) | Tue-Fri 10AM | 15 min | Everyone | ScrumMaster | What has been accomplished, next steps, blockers |
-| Sprint Demo | Monday 9AM | 1 hour | Everyone | Dev Lead | Present work done and sign off on user story completion |
-| [Sprint Retro](../retrospectives.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
-| [Sprint Planning](../sprint-planning.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
-| Task Creation | After Sprint Planning | - | Dev Team | Dev Lead | Create tasks to clarify and determine velocity |
-| [Backlog refinement](../backlog-management.md) | Wednesday 2PM | 1 hour | Dev Lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
+| Activity                                       | When                  | Duration | Who          | Accountable  | Goal                                                                       |
+| ---------------------------------------------- | --------------------- | -------- | ------------ | ------------ | -------------------------------------------------------------------------- |
+| [Project Standup](../stand-ups.md)             | Tue-Fri 10AM          | 15 min   | Everyone     | ScrumMaster  | What has been accomplished, next steps, blockers                           |
+| Sprint Demo                                    | Monday 9AM            | 1 hour   | Everyone     | Dev Lead     | Present work done and sign off on user story completion                    |
+| [Sprint Retro](../retrospectives.md)           | Monday 10AM           | 1 hour   | Everyone     | Process Lead | Dev Teams shares learnings and what can be improved                        |
+| [Sprint Planning](../sprint-planning.md)       | Monday 11AM           | 1 hour   | Everyone     | PO           | Size and plan user stories for the sprint                                  |
+| Task Creation                                  | After Sprint Planning | -        | Dev Team     | Dev Lead     | Create tasks to clarify and determine velocity                             |
+| [Backlog refinement](../backlog-management.md) | Wednesday 2PM         | 1 hour   | Dev Lead, PO | PO           | Prepare for next sprint and ensure that stories are ready for next sprint. |
 
 ## Process Lead
 
@@ -69,9 +76,9 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 - We assign ourselves a task when we are ready to work on it (not before) and move it to active
 - We capture any work we do related to the project in a user story/task
 - We close our tasks/user stories only when they are done (as described in the [Definition of Done](definition-of-done.md))
-- We work with the PM if we want to add a new user story to the sprint
+- We work with the PO if we want to add a new user story to the sprint
 - If we add new tasks to the board, we make sure it matches the acceptance criteria of the user story (to avoid scope creep).
-  If it doesn't match the acceptance criteria we should discuss with the PM to see if we need a new user story for the task or if we should adjust the acceptance criteria.
+  If it doesn't match the acceptance criteria we should discuss with the PO to see if we need a new user story for the task or if we should adjust the acceptance criteria.
 
 ## Code Management
 
@@ -80,4 +87,4 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 - All PRs are reviewed by at least two engineers
 - We always review existing PRs before starting work on a new task
 - We look through open PRs at the end of stand-up to make sure all PRs have reviewers.
-- We treat documentation as code and apply the same [standards to Markdown](../../code-reviews/recipes/markdown.md) as code
+- We treat documentation as code and apply the same [standards to markdown](../../code-reviews/recipes/markdown.md) as code

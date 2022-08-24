@@ -63,16 +63,16 @@ plugins:
 nav:
   - Home: home.md
   - The Basics:
-      - the-basics/what-is-devops.md
+      - the-basics.md
       - the-basics/how-to-get-started.md
       - the-basics/devops-vs-sre.md
       - the-basics/glossary.md
   - Best Practices:
-      - best-practices/practice-overview.md
+      - best-practices.md
       - Continuous Planning:
-          - best-practices/continuous-planning/planning-overview.md
+          - best-practices/continuous-planning.md
           - Agile Development:
-              - best-practices/continuous-planning/agile-development/agile-overview.md
+              - best-practices/continuous-planning/agile-development.md
               - best-practices/continuous-planning/agile-development/backlog-management.md
               - best-practices/continuous-planning/agile-development/collaboration.md
               - best-practices/continuous-planning/agile-development/delivery-plan.md
@@ -92,19 +92,24 @@ nav:
                   - best-practices/continuous-planning/agile-development/team-agreements/team-charter.md
                   - best-practices/continuous-planning/agile-development/team-agreements/team-engagements.md
                   - best-practices/continuous-planning/agile-development/team-agreements/working-agreements.md
-  #        - Continuous Integration:
-  #        - Continuous Delivery:
+          - Design Reviews:
+            - best-practices/continuous-planning/design-reviews.md
+
+      - Continuous Integration:
+          - best-practices/continuous-integration.md
+          - test:
+            - test-file.md
+      - Continuous Delivery:
+          - best-practices/continuous-delivery.md
   #        - Infrastructure as Code:
   #        - Monitoring and Logging:
   #        - Communication and Collaboration:
-
   - Tools:
-      - tools/tools-overview.md
-
+      - tools.md
+      - Git SCM:
+          - tools/git/git-cheatsheet.md
   - Learning:
-      - learning/learning-overview.md
+      - learning.md
       - learning/devops-sfia.md
-
   - About: about.md
 ### END OF FILE ###
-

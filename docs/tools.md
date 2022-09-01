@@ -13,7 +13,7 @@ This page will contain a list of DevOps related tooling
 
 ### Git SCM
 
-- [Git Cheatsheet](git/git-cheatsheet.md)
+- [Git Cheatsheet](tools/git/git-cheatsheet.md)
 
 ## Build
 

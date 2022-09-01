@@ -5,17 +5,15 @@ author: Scott McCarthy
 date: 18/08/2022
 ---
 
-From a 'Best-Practice' point of view , this section of the site is structured something similar to Microsofts FOUR pillars of DevOps:
+From a 'Best-Practice' point of view , this section of the site is structured something similar to Microsofts FOUR pillars of DevOps, with the additional areas of interest such as Quality, Security, Collaboration & Improvement:
 
 ![DevOps Practice Overview](img/devops-practices-overview.png)
 
 Below you can learn more about each particular DevOps best practice.
 
-- [Continuous Planning](continuous-planning/planning-overview.md)
-
-  - [Agile Development](continuous-planning/agile-development/agile-overview.md)
-  - Design Reviews - TBC
-
+- [Continuous Planning](best-practices/continuous-planning.md)
+    - [Agile Development](best-practices/continuous-planning/agile-development.md)
+    - [Design Reviews](best-practices/continuous-planning/design-reviews.md)
 - Continuous Integration
 - Continuous Delivery
 - Continuous Quality

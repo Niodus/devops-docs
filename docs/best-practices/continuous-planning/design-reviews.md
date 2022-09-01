@@ -7,7 +7,7 @@ date: 22/08/2022
 
 Designing software well is hard.
 
-CSE has collected a number of practices which we find help in the design process.
+Below are number of practices which I find help in the design process.
 This covers not only technical design of software, but also architecture design and non-functional requirements gathering for new projects.
 
 ## Goals
@@ -19,9 +19,5 @@ This covers not only technical design of software, but also architecture design 
 ## Sections
 
 - [Design Patterns](design-reviews/design-patterns.md)
-- [Non-Functional Requirements Guidance](design-reviews/non-functional.md)
+- [Non-Functional Requirements Guidance](design-reviews/non-functional-requirements.md)
 - [Sustainable Software Engineering](design-reviews/sustainability.md)
-
-## Recipes
-
-- XXX [Design Recipes](design-reviews/recipes/README.md)

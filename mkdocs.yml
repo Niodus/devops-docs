@@ -61,55 +61,63 @@ plugins:
 ### --- START OF NAVIGATION SECTION -- ###
 
 nav:
-  - Home: home.md
-  - The Basics:
-      - the-basics.md
-      - the-basics/how-to-get-started.md
-      - the-basics/devops-vs-sre.md
-      - the-basics/glossary.md
-  - Best Practices:
-      - best-practices.md
-      - Continuous Planning:
-          - best-practices/continuous-planning.md
-          - Agile Development:
-              - best-practices/continuous-planning/agile-development.md
-              - best-practices/continuous-planning/agile-development/backlog-management.md
-              - best-practices/continuous-planning/agile-development/collaboration.md
-              - best-practices/continuous-planning/agile-development/delivery-plan.md
-              - best-practices/continuous-planning/agile-development/retrospectives.md
-              - best-practices/continuous-planning/agile-development/scrum-of-scrums.md
-              - Sprint Planning:
-                  - best-practices/continuous-planning/agile-development/sprint-planning.md
-                  - best-practices/continuous-planning/agile-development/sprint-planning/estimation.md
-                  - best-practices/continuous-planning/agile-development/sprint-planning/sprint-structure.md
-              - Standups:
-                  - best-practices/continuous-planning/agile-development/stand-ups.md
-                  - best-practices/continuous-planning/agile-development/stand-ups/social-question.md
-              - Team Agreements:
-                  - best-practices/continuous-planning/agile-development/team-agreements.md
-                  - best-practices/continuous-planning/agile-development/team-agreements/definition-of-done.md
-                  - best-practices/continuous-planning/agile-development/team-agreements/definition-of-ready.md
-                  - best-practices/continuous-planning/agile-development/team-agreements/team-charter.md
-                  - best-practices/continuous-planning/agile-development/team-agreements/team-engagements.md
-                  - best-practices/continuous-planning/agile-development/team-agreements/working-agreements.md
-          - Design Reviews:
-              - best-practices/continuous-planning/design-reviews.md
+    - Home: home.md
+    - The Basics:
+        - the-basics.md
+        - the-basics/how-to-get-started.md
+        - the-basics/devops-vs-sre.md
+        - the-basics/calms.md
+        - the-basics/glossary.md
+    - Best Practices:
+        - best-practices.md
+        - Continuous Planning:
+            - best-practices/continuous-planning.md
+            - Agile Development:
+                - best-practices/continuous-planning/agile-development.md
+                - best-practices/continuous-planning/agile-development/backlog-management.md
+                - best-practices/continuous-planning/agile-development/collaboration.md
+                - best-practices/continuous-planning/agile-development/delivery-plan.md
+                - best-practices/continuous-planning/agile-development/retrospectives.md
+                - best-practices/continuous-planning/agile-development/scrum-of-scrums.md
+                - Sprint Planning:
+                    - best-practices/continuous-planning/agile-development/sprint-planning.md
+                    - best-practices/continuous-planning/agile-development/sprint-planning/estimation.md
+                    - best-practices/continuous-planning/agile-development/sprint-planning/sprint-structure.md
+                - Standups:
+                    - best-practices/continuous-planning/agile-development/stand-ups.md
+                    - best-practices/continuous-planning/agile-development/stand-ups/social-question.md
+                - Team Agreements:
+                    - best-practices/continuous-planning/agile-development/team-agreements.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/definition-of-done.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/definition-of-ready.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/team-charter.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/team-engagements.md
+                    - best-practices/continuous-planning/agile-development/team-agreements/working-agreements.md
+            - Design Reviews:
+                - best-practices/continuous-planning/design-reviews.md
+                - best-practices/continuous-planning/design-reviews/non-functional-requirements.md
+                - Design Patterns:
+                    - best-practices/continuous-planning/design-reviews/design-patterns.md
+                    - best-practices/continuous-planning/design-reviews/design-patterns/data-heavy-design-guidance.md
+                    - best-practices/continuous-planning/design-reviews/design-patterns/object-oriented-design-reference.md
+                    - best-practices/continuous-planning/design-reviews/design-patterns/distributed-system-design-reference.md
+                    - best-practices/continuous-planning/design-reviews/design-patterns/rest-api-design-guidance.md
 
-      - Continuous Integration:
-          - best-practices/continuous-integration.md
-#          - test:
-#              - test-file.md
-      - Continuous Delivery:
-          - best-practices/continuous-delivery.md
-  #        - Infrastructure as Code:
-  #        - Monitoring and Logging:
-  #        - Communication and Collaboration:
-  - Tools:
-      - tools.md
-      - Git SCM:
-          - tools/git/git-cheatsheet.md
-  - Learning:
-      - learning.md
-      - learning/devops-sfia.md
-  - About: about.md
+        - Continuous Integration:
+            - best-practices/continuous-integration.md
+  #          - test:
+  #              - test-file.md
+        - Continuous Delivery:
+            - best-practices/continuous-delivery.md
+    #        - Infrastructure as Code:
+    #        - Monitoring and Logging:
+    #        - Communication and Collaboration:
+    - Tools:
+        - tools.md
+        - Git SCM:
+            - tools/git/git-cheatsheet.md
+    - Learning:
+        - learning.md
+        - learning/devops-sfia.md
+    - About: about.md
 ### END OF FILE ###

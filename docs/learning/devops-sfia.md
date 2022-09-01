@@ -1,8 +1,13 @@
-# SFIA Framework
+---
+title: SFIA Framework
+summary: What is a Delivery Plan
+author: Scott McCarthy
+date: 18/08/2022
+---
 
 ## Overview
 
-The purspose of this guide it to give DevOps engineers a quick overview to what the SFIA framework and how it characterises the DevOps skillsets.
+The purpose of this guide it to give DevOps engineers a quick overview to what the SFIA framework and how it characterises the DevOps skillsets.
 
 If you are not already familiar with what SFIA is or why large enterprise organisations are starting to adopt this then take a look at the following:
 
@@ -13,7 +18,7 @@ And for a DevOps specific skillset take a look at the following:
 - [SFIA DevOps Skills overview](https://sfia-online.org/en/sfia-8/sfia-views/devops-view)
 - [DevOps Skills at a glance](https://sfia-online.org/en/sfia-8/sfia-views/devops-view)
 
-Also it isworth considering the following roles when reading the content/skills listed below, as it is unlikely that ALL of the skills will be needed/found in a single person/role:
+Also it is worth considering the following roles when reading the content/skills listed below, as it is unlikely that ALL of the skills will be needed/found in a single person/role:
 
 - DevOps Consultant - focuses on DevOps culture and Ways of working as below
 - DevOps Engineer - focuses on DevOps automation as below
@@ -21,41 +26,41 @@ Also it isworth considering the following roles when reading the content/skills 
 
 ## SFIA 8 - Skills by category
 
-| Category | Skill | Levels |
-|---|---|---|
-| **DevOps Culture** | | |
-| SLEN | [Systems and software life cycle engineering](https://sfia-online.org/en/sfia-8/skills/systems-and-software-life-cycle-engineering)| 4 - 7 |
-| BURM | [Risk management](https://sfia-online.org/en/sfia-8/skills/risk-management) | 3 -6  |
-| ORDI | [Organisation design and implementation](https://sfia-online.org/en/sfia-8/skills/organisation-design-and-implementation) | 4 - 7 |
-| OCDV | [Organisational capability development](https://sfia-online.org/en/sfia-8/skills/organisational-capability-development) | 5 -7  |
-| RLMT | [Stakeholder relationship management](https://sfia-online.org/en/sfia-8/skills/stakeholder-relationship-management) | 4 - 7 |
-| LEDA | [Competency assessment](https://sfia-online.org/en/sfia-8/skills/competency-assessment) | 3 - 6 |
-| MEAS | [Measurement](https://sfia-online.org/en/sfia-8/skills/measurement) | 3 - 6 |
-| DLMG | [Systems development management](https://sfia-online.org/en/sfia-8/skills/systems-development-management) | 5 - 7 |
-| KNOW | [Knowledge management](https://sfia-online.org/en/sfia-8/skills/knowledge-management) | 2 - 7 |
-| PEMT | [Performance management](https://sfia-online.org/en/sfia-8/skills/performance-management) | 4 - 6 |
-| EEXP | [Employee experience](https://sfia-online.org/en/sfia-8/skills/employee-experience) | 4 - 6 |
-| **DevOps Automation** | |
-| CFMG | [Configuration management](https://sfia-online.org/en/sfia-8/skills/configuration-management) | 2 - 6 |
-| PROG | [Programming/software development](https://sfia-online.org/en/sfia-8/skills/programming-software-development) | 2 - 6 |
-| TEST | [Testing](https://sfia-online.org/en/sfia-8/skills/testing) | 1 - 6 |
-| SINT | [Systems integration and build](https://sfia-online.org/en/sfia-8/skills/systems-integration-and-build) | 2 - 6 |
-| RELM | [Release and deployment](https://sfia-online.org/en/sfia-8/skills/release-and-deployment) | 3 - 6 |
-| BPTS | [Acceptance testing](https://sfia-online.org/en/sfia-8/skills/acceptance-testing) | 2 - 6 |
-| DBAD | [Database administration](https://sfia-online.org/en/sfia-8/skills/database-administration) | 2 - 5 |
-| ITOP | [IT infrastructure](https://sfia-online.org/en/sfia-8/skills/it-infrastructure) | 1 - 5 |
-| **DevOps ways of working** | |
-| METL | [Methods and tools](https://sfia-online.org/en/sfia-8/skills/methods-and-tools) | 3 - 6 |
-| REQM | [Requirements definition and management](https://sfia-online.org/en/sfia-8/skills/requirements-definition-and-management) | 2 - 6 |
-| SWDN | [Software design](https://sfia-online.org/en/sfia-8/skills/software-design) | 2 - 6 |
-| ARCH | [Solution architecture](https://sfia-online.org/en/sfia-8/skills/solution-architecture) | 4 - 6 |
-| DESN | [Systems design](https://sfia-online.org/en/sfia-8/skills/systems-design) | 3 - 6 |
-| PBMG | [Problem management](https://sfia-online.org/en/sfia-8/skills/problem-management) | 3 - 5 |
-| USUP | [Incident management](https://sfia-online.org/en/sfia-8/skills/incident-management) | 2 - 5 |
-| VUAS | [Vulnerability assessment](https://sfia-online.org/en/sfia-8/skills/vulnerability-assessment) | 2 - 5 |
-| PENT | [Penetration testing](https://sfia-online.org/en/sfia-8/skills/penetration-testing) | 3 - 6 |
-| CHMG | [Change control](https://sfia-online.org/en/sfia-8/skills/change-control) | 2 - 6 |
-| SCTY | [Information security](https://sfia-online.org/en/sfia-8/skills/information-security) | 3 - 7 |
+| Category                   | Skill                                                                                                                               | Levels |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| **DevOps Culture**         |                                                                                                                                     |        |
+| SLEN                       | [Systems and software life cycle engineering](https://sfia-online.org/en/sfia-8/skills/systems-and-software-life-cycle-engineering) | 4 - 7  |
+| BURM                       | [Risk management](https://sfia-online.org/en/sfia-8/skills/risk-management)                                                         | 3 -6   |
+| ORDI                       | [Organisation design and implementation](https://sfia-online.org/en/sfia-8/skills/organisation-design-and-implementation)           | 4 - 7  |
+| OCDV                       | [Organisational capability development](https://sfia-online.org/en/sfia-8/skills/organisational-capability-development)             | 5 -7   |
+| RLMT                       | [Stakeholder relationship management](https://sfia-online.org/en/sfia-8/skills/stakeholder-relationship-management)                 | 4 - 7  |
+| LEDA                       | [Competency assessment](https://sfia-online.org/en/sfia-8/skills/competency-assessment)                                             | 3 - 6  |
+| MEAS                       | [Measurement](https://sfia-online.org/en/sfia-8/skills/measurement)                                                                 | 3 - 6  |
+| DLMG                       | [Systems development management](https://sfia-online.org/en/sfia-8/skills/systems-development-management)                           | 5 - 7  |
+| KNOW                       | [Knowledge management](https://sfia-online.org/en/sfia-8/skills/knowledge-management)                                               | 2 - 7  |
+| PEMT                       | [Performance management](https://sfia-online.org/en/sfia-8/skills/performance-management)                                           | 4 - 6  |
+| EEXP                       | [Employee experience](https://sfia-online.org/en/sfia-8/skills/employee-experience)                                                 | 4 - 6  |
+| **DevOps Automation**      |                                                                                                                                     |
+| CFMG                       | [Configuration management](https://sfia-online.org/en/sfia-8/skills/configuration-management)                                       | 2 - 6  |
+| PROG                       | [Programming/software development](https://sfia-online.org/en/sfia-8/skills/programming-software-development)                       | 2 - 6  |
+| TEST                       | [Testing](https://sfia-online.org/en/sfia-8/skills/testing)                                                                         | 1 - 6  |
+| SINT                       | [Systems integration and build](https://sfia-online.org/en/sfia-8/skills/systems-integration-and-build)                             | 2 - 6  |
+| RELM                       | [Release and deployment](https://sfia-online.org/en/sfia-8/skills/release-and-deployment)                                           | 3 - 6  |
+| BPTS                       | [Acceptance testing](https://sfia-online.org/en/sfia-8/skills/acceptance-testing)                                                   | 2 - 6  |
+| DBAD                       | [Database administration](https://sfia-online.org/en/sfia-8/skills/database-administration)                                         | 2 - 5  |
+| ITOP                       | [IT infrastructure](https://sfia-online.org/en/sfia-8/skills/it-infrastructure)                                                     | 1 - 5  |
+| **DevOps ways of working** |                                                                                                                                     |
+| METL                       | [Methods and tools](https://sfia-online.org/en/sfia-8/skills/methods-and-tools)                                                     | 3 - 6  |
+| REQM                       | [Requirements definition and management](https://sfia-online.org/en/sfia-8/skills/requirements-definition-and-management)           | 2 - 6  |
+| SWDN                       | [Software design](https://sfia-online.org/en/sfia-8/skills/software-design)                                                         | 2 - 6  |
+| ARCH                       | [Solution architecture](https://sfia-online.org/en/sfia-8/skills/solution-architecture)                                             | 4 - 6  |
+| DESN                       | [Systems design](https://sfia-online.org/en/sfia-8/skills/systems-design)                                                           | 3 - 6  |
+| PBMG                       | [Problem management](https://sfia-online.org/en/sfia-8/skills/problem-management)                                                   | 3 - 5  |
+| USUP                       | [Incident management](https://sfia-online.org/en/sfia-8/skills/incident-management)                                                 | 2 - 5  |
+| VUAS                       | [Vulnerability assessment](https://sfia-online.org/en/sfia-8/skills/vulnerability-assessment)                                       | 2 - 5  |
+| PENT                       | [Penetration testing](https://sfia-online.org/en/sfia-8/skills/penetration-testing)                                                 | 3 - 6  |
+| CHMG                       | [Change control](https://sfia-online.org/en/sfia-8/skills/change-control)                                                           | 2 - 6  |
+| SCTY                       | [Information security](https://sfia-online.org/en/sfia-8/skills/information-security)                                               | 3 - 7  |
 
 ## _DevOps Culture_
 
@@ -73,7 +78,7 @@ Activities include — but are not limited to:
 - adapting working practices to the needs of specific products and services
 - defining, controlling and improving software life cycle processes
 - building in risk management, quality, security, privacy and safety
-- maximising the automation of activities
+- maximizing the automation of activities
 - establishing software architecture and design principles to enable the desired life cycle processes
 - focusing on mission, value and customers
 - establishing a culture of collaboration, learning, knowledge management, adaptation and resilience
@@ -111,7 +116,7 @@ Activities may include — but are not limited to:
 - selecting, adopting and integrating appropriate industry frameworks and models to guide improvements
 - using capability maturity assessments, metrics, process definition, process management
 - building repeatable and reliable capabilities through a process of trial, feedback, learning and continual evolution
-- developing  appropriate techniques, tools and enhanced skills
+- developing appropriate techniques, tools and enhanced skills
 - designing and delivering integrated people, process and technology solutions to deliver improved organisational performance in line with strategic plans and objectives
 - identifying organisational priorities for enhancing performance, satisfying new business opportunities or responding to external drivers.
 
@@ -133,9 +138,9 @@ The focus of this skill is a systematic and planned approach. This skill is not 
 
 ### Competency assessment
 
-Assessing knowledge, skills, competency and behaviours by any means, whether formal or informal, against frameworks such as SFIA.
+Assessing knowledge, skills, competency and behaviors by any means, whether formal or informal, against frameworks such as SFIA.
 
-Assessments may be performed in many contexts such as — but not limited to —  recruitment, career progression, professional development planning or accreditation/certification.   Activities may include — but are not limited to:
+Assessments may be performed in many contexts such as — but not limited to — recruitment, career progression, professional development planning or accreditation/certification. Activities may include — but are not limited to:
 
 - evaluating and selecting assessment options
 - adopting or adapting assessment methods, tools, and techniques
@@ -174,7 +179,7 @@ Activities may include — but are not limited to:
 
 Managing vital knowledge to create value for the organisation.
 
-Knowledge management aims to improve performance, support decision-making and mitigate risks.  Activities may include — but are not limited to:
+Knowledge management aims to improve performance, support decision-making and mitigate risks. Activities may include — but are not limited to:
 
 - systematically capturing, sharing, developing and exploiting the collective knowledge of the organisation
 - tailoring knowledge management approaches
@@ -205,7 +210,7 @@ Activities may include — but are not limited to:
 
 - providing opportunities for personal growth and learning
 - providing sufficient personal freedom to decide how to achieve work objectives, with support available when needed
-- supporting different views, working styles and behaviours within the work environment
+- supporting different views, working styles and behaviors within the work environment
 - providing a safe and secure working environment with the resources needed to do the job
 - providing transparent communications and building trust in leadership
 - providing a holistic approach in support of mental and physical well being.
@@ -218,7 +223,7 @@ Note that the term employee is not limited to specific terms of employment. Depe
 
 Planning, identifying, controlling, accounting for and auditing of configuration items (CIs) and their interrelationships.
 
-Configuration items (CIs) can include a wide variety of components (objects) such as — but not limited to — source code, software, products, systems, hardware, networks, buildings, suppliers, process definitions and documents.  A coherent set of CIs forms a configuration. Activities may include — but are not limited to:
+Configuration items (CIs) can include a wide variety of components (objects) such as — but not limited to — source code, software, products, systems, hardware, networks, buildings, suppliers, process definitions and documents. A coherent set of CIs forms a configuration. Activities may include — but are not limited to:
 
 - identifying and documenting the functional and physical characteristics of CIs
 - identifying the relationships and maintain coherence between CIs for specific configurations
@@ -232,7 +237,7 @@ Tooling examples: - Git SVN, Artifactory or Backstage.io
 
 ### Programming/software development
 
-Developing software components to deliver value to stakeholders.  Activities may include — but are not limited to:
+Developing software components to deliver value to stakeholders. Activities may include — but are not limited to:
 
 - identifying, creating and applying software development and security standards and processes
 - planning and designing software components
@@ -247,7 +252,7 @@ Developing software components to deliver value to stakeholders.  Activities may
 - implementing appropriate change control to software development practices
 - resolving operational problems with software and fixing bugs
 
-Depending on requirements and the characteristics of the project or assigned work  —  software development methods and life cycles can be predictive (plan-driven) approaches or adaptive (iterative/agile) approaches.
+Depending on requirements and the characteristics of the project or assigned work — software development methods and life cycles can be predictive (plan-driven) approaches or adaptive (iterative/agile) approaches.
 
 Tooling examples:
 
@@ -257,9 +262,9 @@ Tooling examples:
 
 ### Testing
 
-Investigating products, systems and services to assess behaviour and whether this meets specified or unspecified requirements and characteristics.
+Investigating products, systems and services to assess behavior and whether this meets specified or unspecified requirements and characteristics.
 
-The scope of testing includes technology, system components, configurations, packages and their interfaces. This skill is applicable to all testing methodologies — which can be delivered using predictive (plan-driven) approaches or adaptive (iterative/agile) approaches.  Activities may include — but are not limited to:
+The scope of testing includes technology, system components, configurations, packages and their interfaces. This skill is applicable to all testing methodologies — which can be delivered using predictive (plan-driven) approaches or adaptive (iterative/agile) approaches. Activities may include — but are not limited to:
 
 - planning, designing, managing, executing and reporting of tests
 - functional testing of capabilities or features
@@ -272,7 +277,7 @@ The scope of testing includes technology, system components, configurations, pac
 - promoting productivity through test automation, tools and best practices
 - developing scalable and reliable automated tests and frameworks.
 
-Tooling examples:  SonarQube, Klockwork, Code Insight, etc.
+Tooling examples: SonarQube, Klockwork, Code Insight, etc.
 Practice examples: TDD, Linting & SCA (e.g. embedding in VSCode),
 
 ### Systems integration and build
@@ -320,7 +325,7 @@ Activities include — but are not limited to:
 - requesting and enabling formal acceptance of systems, products or services
 - creating measurable acceptance criteria related to functional and non-functional requirements, features, business processes, user stories and business rules
 - devising acceptance test cases and scenarios from acceptance criteria
-- enabling exploratory testing by stakeholders to discover unexpected behaviours
+- enabling exploratory testing by stakeholders to discover unexpected behaviors
 - deploying model office testing to simulate real-world working practices and system usage.
 
 The acceptance testing approach will be based on the context of the work and may be selected from predictive (plan-driven) or adaptive (iterative/agile) approaches.
@@ -356,7 +361,7 @@ Ensuring methods and tools are adopted and used effectively throughout the organ
 
 There is a wide range of methods and tools supporting areas such as — but not limited to — planning, development, testing, operation, management and maintenance of systems. Activities may include — but are not limited to:
 
-- assessing,  selecting and implementing methods and tools
+- assessing, selecting and implementing methods and tools
 - measuring, tailoring, improving and automating the use of methods and tools.
 
 ### Requirements definition and management
@@ -477,10 +482,10 @@ Activities include — but are not limited to:
 
 - ethical hacking — using the same tools and techniques as an adversary to safely exploit security weaknesses
 - demonstrating how an adversary can subvert security goals or achieve specific adversarial objectives
-- evaluating the effectiveness of current/planned  defences or mitigation controls
+- evaluating the effectiveness of current/planned defense or mitigation controls
 - assuring the security of networks, systems, and applications
 - identifying insights into the business risks of various vulnerabilities
-- testing network, infrastructure, web and mobile applications  for weaknesses
+- testing network, infrastructure, web and mobile applications for weaknesses
 - checking patch levels and configurations
 - social engineering.
 
@@ -488,7 +493,7 @@ Activities include — but are not limited to:
 
 Assessing risks associated with proposed changes and ensuring changes to products, services or systems are controlled and coordinated.
 
-Change control is applied to anything that impacts live products, services or systems. This typically includes — applications, infrastructure, documentation, processes, configuration items, suppliers.  Activities may include — but are not limited to:
+Change control is applied to anything that impacts live products, services or systems. This typically includes — applications, infrastructure, documentation, processes, configuration items, suppliers. Activities may include — but are not limited to:
 
 - managing the lifecycle of change requests — registering, assessing, authorising, planning, deploying
 - assessing risks and reducing risks to the availability, performance, security and compliance of the products and services impacted by the change

@@ -1,5 +1,9 @@
-
-# Collaboration
+---
+title: Collaboration
+summary: Why is collaboration important
+author: Scott McCarthy
+date: 18/08/2022
+---
 
 ## Why collaboration is important
 
@@ -13,7 +17,7 @@ There are two common patterns we use for collaboration: Pairing and swarming.
 
 ## How to pair program
 
-As mentioned, every story is intentionally assigned to a pair. The pairing assignee may be in the process of upskilling, nevertheless, they are equal partners in the development effort.
+As mentioned, every story is intentionally assigned to a pair. The pairing assignee may be in the process of up-skilling, nevertheless, they are equal partners in the development effort.
 Below are some general guidelines for pairing:
 
 - Upon assignment of the story/product backlog item (PBI), the pair needs to be deliberate about defining how to work together and have a firm definition of the work to be completed. This information should be expressed clearly in the story’s description and acceptance criteria. The expectations about this need to be communicated and agreed upon by both engineers and should be done prior to any actual working sessions.
@@ -23,7 +27,7 @@ Below are some general guidelines for pairing:
 - Engineers leverage feature branches for the collaboration during the development of each story to have small Pull Requests (PRs) (as opposed to a single giant PR) at the end of the sprint.
 - Code is committed to the repository by both members of the assigned pair where and when it makes sense as tasks were completed.
 - The pairing assignee is the voice representing the pair during the daily standup while being supported by the story owner.
-- Having the names of both individuals (owner and pair assignee) visible on the PBI can be helpful during sprint ceremonies and lead to greater accountability by the pairing assignee. 
+- Having the names of both individuals (owner and pair assignee) visible on the PBI can be helpful during sprint ceremonies and lead to greater accountability by the pairing assignee.
 
 ## Why pair programming helps collaboration
 

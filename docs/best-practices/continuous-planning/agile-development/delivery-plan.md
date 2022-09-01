@@ -1,10 +1,15 @@
-# Delivery Plan
+---
+title: Delivery Plan
+summary: What is a Delivery Plan
+author: Scott McCarthy
+date: 18/08/2022
+---
 
 ## Overview
 
 While Scrum does not require and discourages planning more than one sprint at a time. Most of us work in enterprises where we are dependent outside teams (for example: marketing, sales, support or other development teams).
 
-A rough assessment of the planned project scope is achievable within a reasonable time frame and resources. The goal is to have a rough plan and estimate as a starting point, not to implement "Agile-fall or Wagile."
+A rough assessment of the planned project scope is achievable within a reasonable time frame and resources. The goal is to have a rough plan and estimate as a starting point, not to implement "Agile-fall or [Wagile](https://www.pluralsight.com/blog/it-ops/move-away-from-wagile)."
 
 Note that this is just a starting point to enable planning discussions. We expect the actual schedule to evolve and shift over time and that you will update the scope and timeline as you progress.
 
@@ -35,7 +40,7 @@ Step 3: Calculate the capacity for the team based on the number of weeks person 
 Step 4: Based on your capacity, you now have the options
 
 - Ask for more resources. Caution: onboarding new resources take time.
-- Reduce the scope to the most MVP.  Caution: as you trim more of the scope, it might be valuable anymore to the customer. Consider a cupcake which is everything you need. You don't want to skim on the frosting.
+- Reduce the scope to the most MVP. Caution: as you trim more of the scope, it might be valuable anymore to the customer. Consider a cupcake which is everything you need. You don't want to skim on the frosting.
 - Ask for more time. Usually, this is the most flexible, but if there is a marketing date that you need to hit, this might be as flexible.
 
 Delivery Plans provide a schedule of stories or features your team plan to deliver. Delivery Plans show the scheduled work items by a sprint (iteration path) of selected teams against a calendar view.

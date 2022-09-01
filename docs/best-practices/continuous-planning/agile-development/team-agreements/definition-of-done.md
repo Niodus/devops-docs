@@ -1,4 +1,9 @@
-# Definition of Done
+---
+title: Definition of Done
+summary: A simple checklist to define definition of done
+author: Scott McCarthy
+date: 18/08/2022
+---
 
 To close a user story, a sprint, or a milestone it is important to verify that the tasks are complete.
 
@@ -6,29 +11,29 @@ The development team should decide together what their Definition of Done is and
 
 ## Feature/User Story
 
-- [  ] Acceptance criteria are met
-- [  ] Refactoring is complete
-- [  ] Code builds with no error
-- [  ] Unit tests are written and pass
-- [  ] Existing Unit Tests pass
-- [  ] Sufficient diagnostics/telemetry are logged
-- [  ] Code review is complete
-- [  ] UX review is complete (if applicable)
-- [  ] Documentation is updated
-- [  ] The feature is merged into the develop branch
-- [  ] The feature is signed off by the product owner
+- Acceptance criteria are met
+- Refactoring is complete
+- Code builds with no error
+- Unit tests are written and pass
+- Existing Unit Tests pass
+- Sufficient diagnostics/telemetry are logged
+- Code review is complete
+- UX review is complete (if applicable)
+- Documentation is updated
+- The feature is merged into the develop branch
+- The feature is signed off by the product owner
 
 ## Sprint Goal
 
-- [  ] Definition of Done for all user stories included in the sprint are met
-- [  ] Product backlog is updated
-- [  ] Functional and Integration tests pass
-- [  ] Performance tests pass
-- [  ] End 2 End tests pass
-- [  ] All bugs are fixed
-- [  ] The sprint is signed off from developers, software architects, project manager, product owner etc.
+- Definition of Done for all user stories included in the sprint are met
+- Product backlog is updated
+- Functional and Integration tests pass
+- Performance tests pass
+- End 2 End tests pass
+- All bugs are fixed
+- The sprint is signed off from developers, software architects, project manager, product owner etc.
 
 ## Release/Milestone
 
-- [  ] Code Complete (goals of sprints are met)
-- [  ] Release is marked as ready for production deployment by product owner
+- Code Complete (goals of sprints are met)
+- Release is marked as ready for production deployment by product owner

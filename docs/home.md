@@ -25,7 +25,7 @@ I will be aiming to cover the following sections/topics on this site
 
 | Topic                                                 | Description                                                                                                                  |
 | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| [Fundamentals](the-basics/what-is-devops.md)          | For those just getting starting in the DevOps space.                                                                         |
-| [Best Practices](best-practices/practice-overview.md) | A comprehensive guide on DevOps best practices                                                                               |
-| [Tools](tools/tools-overview.md)                      | As or when I come across specific information on the tooling that I typically use I will add it to this section              |
-| [Learning](learning/learning-overview.md)             | A Learning section to help with study guides that I Create, plus any useful info I find that will help people with learning. |
+| [Fundamentals](the-basics.md)          | For those just getting starting in the DevOps space.                                                                         |
+| [Best Practices](best-practices.md) | A comprehensive guide on DevOps best practices                                                                               |
+| [Tools](tools.md)                      | As or when I come across specific information on the tooling that I typically use I will add it to this section              |
+| [Learning](learning.md)             | A Learning section to help with study guides that I Create, plus any useful info I find that will help people with learning. |

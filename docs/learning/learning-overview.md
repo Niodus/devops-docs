@@ -1,3 +1,0 @@
-DevOps Learning Overview
-
-PLACEHOLDER

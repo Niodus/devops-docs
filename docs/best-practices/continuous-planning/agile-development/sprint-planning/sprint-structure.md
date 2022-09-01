@@ -15,19 +15,21 @@ The purpose of this document is to:
 
 ### Before starting the project
 
-Discuss and start writing the [Team Agreements](../team-agreements.md). Update these documents with any process decisions made throughout the project.
+Discuss and start writing a team agreement and update these documents with any process decisions made throughout the project.
 
-    - [Working Agreement](../team-agreements/working-agreements.md)
-    - [Definition of Ready](../team-agreements/definition-of-ready.md)
-    - [Definition of Done](../team-agreements/definition-of-done.md)
-    - [Estimation](estimation.md)
+- [Team Agreement](../team-agreements.md)
+
+  - [Working Agreement](../team-agreements/working-agreements.md)
+  - [Definition of Ready](../team-agreements/definition-of-ready.md)
+  - [Definition of Done](../team-agreements/definition-of-done.md)
+  - [Estimation](estimation.md)
 
 - XXX [Set up the repository/repositories](source-control/README.md#creating-a-new-repository)
   - Decide on repository structure/s
   - XXX Add the following files [README](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING](resources/templates/CONTRIBUTING.md), .gitignore, etc.
-- Build a [Product Backlog](../backlog-management.md)
+- Build a [product backlog](../backlog-management.md)
   - Set up a project in your chosen project management tool (ex. Azure DevOps or JIRA)
-  - [INVEST](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) in good User Stories and Acceptance Criteria
+  - [INVEST](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) in good user stories and acceptance criteria
   - XXX [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md)
 
 ### Day 1 Activities
@@ -51,34 +53,34 @@ Discuss and start writing the [Team Agreements](../team-agreements.md). Update t
 - XXX [Set up Source Control](source-control/README.md)
   - XXX Agree on [best practices for commits](source-control/README.md#commit-best-practices)
 - XXX [Set up basic Continuous Integration with linters and automated tests](continuous-integration/README.md)
-- Set up meetings for [Daily Stand-ups](../stand-ups.md) and decide on a Process Lead
+- Set up meetings for [daily stand-ups](../stand-ups.md) and decide on a Process Lead
   - Discuss purpose, goals, participants and facilitation guidance
   - Discuss timing, and how to run an efficient stand-up
 - If the project has sub-teams, set up a [Scrum of Scrums](../scrum-of-scrums.md)
 
 ### Day 3
 
-- [ ] [Agree on code style](code-reviews/README.md) and on [how to assign Pull Requests](code-reviews/pull-requests.md)
-- [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/team-agreements/definition-of-done.md)
-- [ ] [Agree on a Code Merging strategy](source-control/merge-strategies.md) and update the [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md)
-- [ ] [Agree on logging and observability frameworks and strategies](observability/README.md)
+- XXX [Agree on code style](code-reviews/README.md) and on [how to assign Pull Requests](code-reviews/pull-requests.md)
+- XXX [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [definition of done](../team-agreements/definition-of-done.md)
+- XXX [Agree on a Code Merging strategy](source-control/merge-strategies.md) and update the [CONTRIBUTING](resources/templates/CONTRIBUTING.md) page.
+- XXX [Agree on logging and observability frameworks and strategies](observability/README.md)
 
 ### Day 4
 
-- [ ] [Set up Continuous Deployment](continuous-delivery/README.md)
+- Set up [continuous delivery](../../../continuous-delivery.md)
   - Determine what environments are appropriate for this solution
   - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
-- [ ] [Decide on a versioning strategy](source-control/component-versioning.md)
-- [ ] Agree on how to [Design a feature and conduct a Design Review](design/design-reviews/README.md)
+- XXX Decide on a [versioning strategy](source-control/component-versioning.md)
+- Agree on how to design a feature and conduct a [design review](../../design-reviews.md)
 
 ### Day 5
 
-- [ ] Conduct a Sprint Demo
-- [ ] [Conduct a Retrospective](agile-development/retrospectives.md)
+- Conduct a sprint demo
+- Conduct a [retrospective](../../agile-development/retrospectives.md)
   - Determine required participants, how to capture input (tools) and outcome
   - Set a timeline, and discuss facilitation, meeting structure etc.
-- [ ] [Refine the Backlog](agile-development/backlog-management/backlog-refinement.md)
+- [Refine the backlog](../../agile-development/backlog-management.md#backlog-refinement)
   - Determine required participants
-  - Update the [Definition of Ready](agile-development/team-agreements/definition-of-ready.md)
-  - Update estimates, and the [Estimation](agile-development/sprint-planning/estimation.md) document
-- [ ] [Submit Engineering Feedback for issues encountered](engineering-feedback/README.md)
+  - Update the [definition of ready](../../agile-development/team-agreements/definition-of-ready.md)
+  - Update estimates, and the [Estimation](../../agile-development/sprint-planning/estimation.md) document
+- XXX Submit [Engineering Feedback](engineering-feedback/README.md) for issues encountered.

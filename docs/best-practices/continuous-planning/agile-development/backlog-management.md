@@ -1,4 +1,9 @@
-# Backlog Management
+---
+title: Backlog Management
+summary: What is Backlog Management
+author: Scott McCarthy
+date: 24/08/2022
+---
 
 ## What is Backlog Management
 
@@ -10,7 +15,7 @@ Backlog management can be broken down into the following sub-sections:
 - [Minimal Slices](#minimalism-slices)
 - [External Feedback](#external-feedback)
 
-------
+---
 
 ## Backlog Refinement
 
@@ -48,7 +53,7 @@ _How might one go about running the ceremony? Is there a general pattern that th
 
 Make sure that the team does not focus on how to implement the items. Instead, the Product Owner and Team discuss the goals and context for these high - priority items on the Product Backlog, providing the Team with insight into the Product Owner’s thinking.
 
-------
+---
 
 ## Minimalism Slices
 
@@ -85,7 +90,7 @@ E.g. you have the following tasks for the first user story above:
 - Update documentation
 - ...
 
-------
+---
 
 ## External Feedback
 
@@ -119,7 +124,7 @@ _Example:_ Feedback like “the homepage doesn’t feel good” will not help th
 - **Propose off-the-top alternatives** and see if the reviewer is inclined to accept any of all them. It will help understand what is desired.
 - **Follow up**. If there are a few suggestions that require a bit of research on your part, hit pause on that conversation and get back to that later.
 
-------
+---
 
 ### Useful Links
 

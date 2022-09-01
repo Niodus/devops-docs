@@ -1,0 +1,1016 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A DevOps knowledgebase created by Scott McCarthy" name="description"/>
+<meta content="the DevOps Institute - https://devopsinstitute.com" name="author"/>
+<link href="https://niodus.github.io/devops-docs/the-basics/glossary.html" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
+<title>DevOps Glossary - Devops Docs</title>
+<link href="../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#a-terms">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Devops Docs" class="md-header__button md-logo" data-md-component="logo" href=".." title="Devops Docs">
+<svg viewbox="0 0 89 89" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z"></path>
+<path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5"></path>
+<path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z"></path>
+<path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25"></path>
+</svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Devops Docs
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              DevOps Glossary
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Niodus/devops-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../home.html">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../the-basics.html">
+      The Basics
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../best-practices.html">
+      Best Practices
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../tools.html">
+      Tools
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../learning.html">
+      Learning
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../about.html">
+      About
+    </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Devops Docs" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Devops Docs">
+<svg viewbox="0 0 89 89" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z"></path>
+<path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5"></path>
+<path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z"></path>
+<path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25"></path>
+</svg>
+</a>
+    Devops Docs
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Niodus/devops-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../home.html">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../the-basics.html">The Basics</a>
+<label for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="The Basics" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          The Basics
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="how-to-get-started.html">
+        How to Get Started
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="devops-vs-sre.html">
+        DevOps Vs SRE
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="calms.html">
+        CALMS
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          DevOps Glossary
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="glossary.html">
+        DevOps Glossary
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#a-terms">
+    A-Terms
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#b-terms">
+    B-Terms
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c-terms">
+    C-Terms
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#d-terms">
+    D - Terms
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices.html">Best Practices</a>
+<label for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Best Practices" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Best Practices
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" id="__nav_3_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning.html">Continuous Planning</a>
+<label for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Continuous Planning" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+          Continuous Planning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1" id="__nav_3_1_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development.html">Agile Development</a>
+<label for="__nav_3_1_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Agile Development" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_1">
+<span class="md-nav__icon md-icon"></span>
+          Agile Development
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/backlog-management.html">
+        Backlog Management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/collaboration.html">
+        Collaboration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/delivery-plan.html">
+        Delivery Plan
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/retrospectives.html">
+        Retrospectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/scrum-of-scrums.html">
+        Scrum of Scrums
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1_6" id="__nav_3_1_1_6" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development/sprint-planning.html">Sprint Planning</a>
+<label for="__nav_3_1_1_6">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Sprint Planning" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_6">
+<span class="md-nav__icon md-icon"></span>
+          Sprint Planning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/sprint-planning/estimation.html">
+        Estimation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/sprint-planning/sprint-structure.html">
+        Structure of a Sprint
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1_7" id="__nav_3_1_1_7" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development/stand-ups.html">Standups</a>
+<label for="__nav_3_1_1_7">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Standups" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_7">
+<span class="md-nav__icon md-icon"></span>
+          Standups
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/stand-ups/social-question.html">
+        Social Question
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1_8" id="__nav_3_1_1_8" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development/team-agreements.html">Team Agreements</a>
+<label for="__nav_3_1_1_8">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Team Agreements" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_8">
+<span class="md-nav__icon md-icon"></span>
+          Team Agreements
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/definition-of-done.html">
+        Definition of Done
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/definition-of-ready.html">
+        Definition of Ready
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/team-charter.html">
+        Team Charter
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/team-engagements.html">
+        Team Engagements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/working-agreements.html">
+        Working Agreements
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2" id="__nav_3_1_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/design-reviews.html">Design Reviews</a>
+<label for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Design Reviews" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+          Design Reviews
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/non-functional-requirements.html">
+        Non-Functional Requirements
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2_2" id="__nav_3_1_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/design-reviews/design-patterns.html">Design Patterns</a>
+<label for="__nav_3_1_2_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Design Patterns" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Design Patterns
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/data-heavy-design-guidance.html">
+        Data and DataOps Fundamentals
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/object-oriented-design-reference.html">
+        Object-Oriented Design Reference
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/distributed-system-design-reference.html">
+        Distributed System Design Reference
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/rest-api-design-guidance.html">
+        REST API Design Guidance
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-integration.html">
+        Continuous Integration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-delivery.html">
+        Continuous Delivery
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../tools.html">Tools</a>
+<label for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Tools" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tools/git/git-cheatsheet.html">
+        Git SCM
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../learning.html">Learning</a>
+<label for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Learning" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Learning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../learning/devops-sfia.html">
+        SFIA Framework
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about.html">
+        About
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#a-terms">
+    A-Terms
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#b-terms">
+    B-Terms
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c-terms">
+    C-Terms
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#d-terms">
+    D - Terms
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/Niodus/devops-docs/edit/master/docs/the-basics/glossary.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
+</a>
+<h1>DevOps Glossary</h1>
+<p>This list of DevOps terms are as defined by the <a href="https://www.devopsinstitute.com/">DevOps Institute</a>:</p>
+<p>Click on the following bookmarks to jump to a specific section:</p>
+<p>| <a href="#a-terms">A</a> | <a href="#b-terms">B</a> | <a href="#c-terms">C</a> | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | Y | X | Z |</p>
+<p><a id="a-terms"></a></p>
+<h2 id="a-terms">A-Terms<a class="headerlink" href="#a-terms" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left">Term</th>
+<th align="left">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">A/B Testing</td>
+<td align="left">Deploy different versions of an EUT to different customers and let the customer feedback determine which is best.</td>
+</tr>
+<tr>
+<td align="left">Administration Testing</td>
+<td align="left">The purpose of the test is to determine if an End User Test (EUT) is able to process administration tasks as expected.</td>
+</tr>
+<tr>
+<td align="left">Agile</td>
+<td align="left">A project management method for complex projects that divides tasks into small "sprints" of work with frequent reassessment and adaption of plans</td>
+</tr>
+<tr>
+<td align="left">Agile Coach</td>
+<td align="left">Help teams master Agile development and DevOps practices; enables productive ways of working and collaboration.</td>
+</tr>
+<tr>
+<td align="left">Agile Manifesto</td>
+<td align="left">A formal proclamation of values and principles to guide an iterative and people-centric approach to software development.</td>
+</tr>
+<tr>
+<td align="left">Agile Portfolio Management</td>
+<td align="left">Involves evaluating in-flight project and proposed future initiatives to shape and govern the ongoing investment in projects and discretionary work.</td>
+</tr>
+<tr>
+<td align="left">Agile Principles</td>
+<td align="left">The twelve principle that underpin the Agile Manifesto</td>
+</tr>
+<tr>
+<td align="left">Agile Process Owner</td>
+<td align="left">An ITSM or other type of process own that uses Agile and Scrum principles and practices to design, manage and measure individual processes.</td>
+</tr>
+<tr>
+<td align="left">Agile Service Manager</td>
+<td align="left">The operational equivalent to Dev's ScrumMaster. A role within an IT organisation that understand how to leverage Agile and Scrum methods to improve the design speed and agility of ITSM processes.</td>
+</tr>
+<tr>
+<td align="left">Agile Software Development</td>
+<td align="left">Group of software development methods in which requirement and solutions evolve through collaboration between self-organising, cross-functional teams. Usually applied using the Scrum or Scaled Agile Framework approach.</td>
+</tr>
+<tr>
+<td align="left">Amazon Web Services (AWS)</td>
+<td align="left">AWS is a secure cloud services platform offering comupute power, database storage, content delivery and other functionality to help businesses scale and grow.</td>
+</tr>
+<tr>
+<td align="left">Analytics</td>
+<td align="left">Test results processed and presented in an organised manner in accordance with analysis methods and criterion</td>
+</tr>
+<tr>
+<td align="left">Andon (Cord)</td>
+<td align="left">A system that gives an assembly line worker the ability, and moreover the empowerment, to stop production when a defect is found and immediately call for assistance.</td>
+</tr>
+<tr>
+<td align="left">Ant-pattern</td>
+<td align="left">A commonly reinvented but poor solution to a problem.</td>
+</tr>
+<tr>
+<td align="left">Anti-fragility</td>
+<td align="left">Anti-fragility is a property of systems that increases it capability to thrive as a result of stressors, shocks, volatility, noise, mistakes, faults, attacks, or failures.</td>
+</tr>
+<tr>
+<td align="left">Application Programming Interface (API)</td>
+<td align="left">A set of protocols used to create applications for a specific OS or as an interface between modules or applications.</td>
+</tr>
+<tr>
+<td align="left">API Testing</td>
+<td align="left">The purpose of the test is to determine if na API for an EUT functions as expected.</td>
+</tr>
+<tr>
+<td align="left">Application Release</td>
+<td align="left">Controlled continuous delivery pipeline capabilities including automation (release upon code commit).</td>
+</tr>
+<tr>
+<td align="left">Application Testing</td>
+<td align="left">The purpose of the test is to determine if an application is performing according to its requirements and expected behaviors.</td>
+</tr>
+<tr>
+<td align="left">Architecture</td>
+<td align="left">The fundamental underlying design of computer hardware, software or both in combination.</td>
+</tr>
+<tr>
+<td align="left">Artifact</td>
+<td align="left">Any element in a software development project including documentation, test plans, images, data files and executable modules.</td>
+</tr>
+<tr>
+<td align="left">Artifact Repository</td>
+<td align="left">Store for binaries, reports and metadata. Example tools include: JFog Artifactory, Sonatype Nexus or Azure Artifacts.</td>
+</tr>
+<tr>
+<td align="left">Audi Management</td>
+<td align="left">The use of automated tools to ensure products and services are auditable, including keeping audit logs of build, test and deploy activities, auditing configurations and users, as well as log files from production operations.</td>
+</tr>
+<tr>
+<td align="left">Authentication</td>
+<td align="left">The process of verifying an asserted identity. Authentication can be based on what you know 9e.g. password or PIN), what you have (token or one-time code), what you are (biometrics) or contextual information.</td>
+</tr>
+<tr>
+<td align="left">Authorisation</td>
+<td align="left">The process of granting roles to users to have access to resources</td>
+</tr>
+<tr>
+<td align="left">Auto-DevOps</td>
+<td align="left">Auto DevOps brings DevOps best practices to your project by automatically configuring software development lifecycles. It automatically detects, builds, test, deploys and monitors applications.</td>
+</tr>
+<tr>
+<td align="left">Auto-scaling</td>
+<td align="left">The ability to automatically and elastically scale and de-scale infrastructure depending on traffic and capacity variations while maintaining control of costs.</td>
+</tr>
+<tr>
+<td align="left">Automated Rollback</td>
+<td align="left">If a failure is detected during a deployment, an operator (or automated process) will verify the failure and rollback the failing release to the previous known working state.</td>
+</tr>
+<tr>
+<td align="left">Availability</td>
+<td align="left">Availability is the proportion of time a system is in a functioning condition and therefore available (to users) to be used.</td>
+</tr>
+</tbody>
+</table>
+<p><a id="b-terms"></a></p>
+<h2 id="b-terms">B-Terms<a class="headerlink" href="#b-terms" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left">Term</th>
+<th align="left">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Backlog</td>
+<td align="left">Requirements for a system, expressed as a prioritized list of product backlog items usual in the form of 'User Stories'. The product backlog is prioritized by the Product Owner and should include functional, non-functional and technical team-generated requirements.</td>
+</tr>
+<tr>
+<td align="left">Basic Security Hygiene</td>
+<td align="left">A common set of minimum-security practices that must be applied to all environments without exception. Practices include basic network security hardening, vulnerability and patch management, logging and monitoring, basic polices and enforcement and identity and access management.</td>
+</tr>
+<tr>
+<td align="left">Batch Sizes</td>
+<td align="left">Refers to the volume of features involved in a single code release</td>
+</tr>
+<tr>
+<td align="left">Behavior Driven Development</td>
+<td align="left">Test cases are created by simulating an EUT's externally observable inputs, and outputs. Example tool: Cucumber.</td>
+</tr>
+<tr>
+<td align="left">Beyond Budgeting</td>
+<td align="left">A management model that looks beyond command-and-control towards a more empowered and adaptive state.</td>
+</tr>
+<tr>
+<td align="left">Black-Box</td>
+<td align="left">Test case only uses knowledge of externally observable behaviors of an EUT.</td>
+</tr>
+<tr>
+<td align="left">Blameless Postmortems</td>
+<td align="left">Used for impact analysis of service incidents. When a particular IT service fails, the users, customers, other dependent service that are affected.</td>
+</tr>
+<tr>
+<td align="left">Blast Radius</td>
+<td align="left">Used for impact analysis of service incidents. When a particular IT service fails, the users, customers, and other dependent services that are affected.</td>
+</tr>
+<tr>
+<td align="left">Blue/Green Deployments</td>
+<td align="left">Taking software from the final stage of testing to live production using two environments labelled Blue and Green. Once the software is working in the green environment, switch the route so that all incoming requests go to the green environment - the blue one is now idle or used for new feature updates.</td>
+</tr>
+<tr>
+<td align="left">Bug</td>
+<td align="left">An error or defect in software that results in an unexpected or system-degrading condition.</td>
+</tr>
+<tr>
+<td align="left">Burndown Chart</td>
+<td align="left">A chart showing the evolution of remaining effort against time.</td>
+</tr>
+<tr>
+<td align="left">Bursting</td>
+<td align="left">Public cloud resources are added as needed to temporarily increase the total computing capacity of a private cloud.</td>
+</tr>
+<tr>
+<td align="left">Business Case</td>
+<td align="left">Justification for a proposed project or undertaking on the basis of its expected commercial benefit.</td>
+</tr>
+<tr>
+<td align="left">Business Continuity</td>
+<td align="left">Business continuity is an organisation's ability to ensure operations and core business functions are not severely impacted by a disaster or unplanned incident that take critical services offline.</td>
+</tr>
+<tr>
+<td align="left">Business Transformation</td>
+<td align="left">Changing how the business functions. Making this a reality means changing culture, processes, and technologies in order to better align everyone around delivering on the organisation's mission.</td>
+</tr>
+<tr>
+<td align="left">Business Value</td>
+<td align="left">The benefit of an approach to key business KPIs</td>
+</tr>
+</tbody>
+</table>
+<p><a id="c-terms"></a></p>
+<h2 id="c-terms">C-Terms<a class="headerlink" href="#c-terms" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left">Term</th>
+<th align="left">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Cadence</td>
+<td align="left">Flow or rhythm of events</td>
+</tr>
+<tr>
+<td align="left">CALMS Model</td>
+<td align="left">Considered the pillars of values of DevOps: Culture, Automation, Lean, Measurement, Sharing (as put forth by John Willis, Damon Edwards and Jez Humble).</td>
+</tr>
+<tr>
+<td align="left">Canary Testing</td>
+<td align="left">A canary (also called a canary test) is a push of code changes to a small number of end users who have not volunteered to test anything. Similar to incremental rollout, it is where a small portion of the user base is updated to a new version first. THis subset, the canaries, then serve as the proverbial "canary in the coal mine". If something goes wrong then a release is rolled back and only a small subset of the users are impacted.</td>
+</tr>
+<tr>
+<td align="left">Capacity Test</td>
+<td align="left">The purpose of the test is to determine if the EUT can handle expected loads such as number of users, number of sessions, aggregate bandwidth.</td>
+</tr>
+<tr>
+<td align="left">Capture-Replay</td>
+<td align="left">Test cases are created by capturing live interactions with the EUT, in a format that can be replayed by a tool. e.g. Selenium</td>
+</tr>
+<tr>
+<td align="left">Carrots</td>
+<td align="left">Positive incentives, for encouraging and rewarding desired behaviors.</td>
+</tr>
+<tr>
+<td align="left">Change</td>
+<td align="left">Addition, modification or removal of anything that could have an effect on IT services (ITIL definition).</td>
+</tr>
+<tr>
+<td align="left">Change Failure Rate</td>
+<td align="left">A measure of the time from a request for change to delivery of the change.</td>
+</tr>
+<tr>
+<td align="left">Change Management</td>
+<td align="left">Process that controls all changes throughout their lifecycle (ITIL definition).</td>
+</tr>
+<tr>
+<td align="left">Chaos Engineering</td>
+<td align="left">The disciple of experimenting on a software system in production in order to build confidence in the systems capability to withstand turbulent and unexpected conditions.</td>
+</tr>
+<tr>
+<td align="left">Chapter Lead</td>
+<td align="left">A squad line manager in the Spotify model who is responsible for traditional people management duties, is involved in day to day work and grow individual and chapter competence.</td>
+</tr>
+<tr>
+<td align="left">Chapters</td>
+<td align="left">A small family of people having similar skills and who work within the same general competency area within the same tribe. Chapters meet regularly to discuss challenges and areas of expertise in order to promote sharing, skill development, re-use and problem solving. ]</td>
+</tr>
+<tr>
+<td align="left">ChatOps</td>
+<td align="left">An approach to managing technical and business operations (coined by GitHub) that involves a combination of group chat and integration with DevOps tools. Example tools include Atlassian HipChat/Stride, Microsoft Teams, Slack.</td>
+</tr>
+<tr>
+<td align="left">Check-In</td>
+<td align="left">Action of submitting a software change into a system version management system.</td>
+</tr>
+<tr>
+<td align="left">CI Regression TestA subset of regression test that are run immediately after a software components is built. Same as Smoke</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Clear-Box</td>
+<td align="left">Same as Glass-Box Testing and White-Box Testing</td>
+</tr>
+<tr>
+<td align="left">Cloud Computing</td>
+<td align="left">The practice of using remote servers hosted on the internet to host applications rather than local servers in a private datacenter.</td>
+</tr>
+<tr>
+<td align="left">Cloud-Native</td>
+<td align="left">Native cloud application (NCA) are designed for cloud computing</td>
+</tr>
+<tr>
+<td align="left">Cluster Cost Optimization</td>
+<td align="left">Tools like Kubcost, Replex, Cloudability use monitoring to analyze container clusters and optimize the resource deployment model</td>
+</tr>
+<tr>
+<td align="left">Cluster Monitoring</td>
+<td align="left">Tools that let you know the health of your deployment environments running in clusters such as Kubernetes</td>
+</tr>
+<tr>
+<td align="left">Clustering</td>
+<td align="left">A group of computers (called notes or members) work together as a cluster connected through a fast network acting as a single system</td>
+</tr>
+<tr>
+<td align="left">Code Coverage</td>
+<td align="left">A measure of white box test coverage by counting code units that are executed by a test. The code unit may be a code statement, a code branch, or control path or data path through a code module.</td>
+</tr>
+<tr>
+<td align="left">Code Quality</td>
+<td align="left">See also static code analysis, Sonar and Checkmarks are examples of tools that automatically check the seven main dimensions of code quality - comments, architecture, duplication, unit test coverage, complexity, potential defects, language rules</td>
+</tr>
+<tr>
+<td align="left">Code Repository</td>
+<td align="left">A repository where developers can commit and collaborate on their code. It also tracks historical versions and potentially identifies conflicting versions of the same code. Also referred to as repository' or 'repo'.</td>
+</tr>
+<tr>
+<td align="left">Code Review</td>
+<td align="left">Software engineers inspect each others source code to detect coding or code formatting errors.</td>
+</tr>
+<tr>
+<td align="left">Cognitive Bias</td>
+<td align="left">Cognitive bias is a limitation in objective thinking that is caused by the tendency for the human brain to perceive information through a filter of personal experience and preferences: a systematic pattern of deviation from morn or rationality in judgement.</td>
+</tr>
+<tr>
+<td align="left">Collaboration</td>
+<td align="left">People jointly working with others towards a common goal.</td>
+</tr>
+<tr>
+<td align="left">Collaborative Culture</td>
+<td align="left">A culture that applies to everyone which incorporates an expected set of behaviors, language and accepted ways of working with each other reinforcement by leadership.</td>
+</tr>
+<tr>
+<td align="left">Compatibility Test</td>
+<td align="left">Test with the purpose to determine if and EUT interoperates with another EUT such as peer-to-peer applications or protocols</td>
+</tr>
+<tr>
+<td align="left">Configuration Management</td>
+<td align="left">CM is a systems engineering process for establishing and maintaining consistency of a products performance, functional, and physical attributes with its requirements, design, and operational information throughout its life.</td>
+</tr>
+<tr>
+<td align="left">Conformance Test</td>
+<td align="left">The purpose of the test is to determine if an EUT complies to a standard.</td>
+</tr>
+<tr>
+<td align="left">Constraint</td>
+<td align="left">Limitation or restriction; something that constrains. See also bottleneck</td>
+</tr>
+<tr>
+<td align="left">Container</td>
+<td align="left">A way of packaging software into lightweight, stand-alone, executable packages including everything needed to run it (code, runtime, system tools, system,libraries, settings).</td>
+</tr>
+<tr>
+<td align="left">Container Network Security</td>
+<td align="left">Used to prove that any app that can be run on a container cluster with any other app can be confident that there is no unintended use of the other app or any unintended network traffic between them.</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="d-terms"><strong>D - Terms</strong><a class="headerlink" href="#d-terms" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left">Term</th>
+<th align="left">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: CALMS" class="md-footer__link md-footer__link--prev" href="calms.html" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              CALMS
+            </div>
+</div>
+</a>
+<a aria-label="Next: Best Practices" class="md-footer__link md-footer__link--next" href="../best-practices.html" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Best Practices
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.instant", "navigation.tracking", "navigation.top", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+</html>

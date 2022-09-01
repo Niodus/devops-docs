@@ -1,0 +1,866 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A DevOps knowledgebase created by Scott McCarthy" name="description"/>
+<meta content="Scott McCarthy" name="author"/>
+<link href="https://niodus.github.io/devops-docs/the-basics/devops-vs-sre.html" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
+<title>DevOps Vs SRE - Devops Docs</title>
+<link href="../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#overview">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Devops Docs" class="md-header__button md-logo" data-md-component="logo" href=".." title="Devops Docs">
+<svg viewbox="0 0 89 89" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z"></path>
+<path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5"></path>
+<path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z"></path>
+<path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25"></path>
+</svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Devops Docs
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              DevOps Vs SRE
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Niodus/devops-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../home.html">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../the-basics.html">
+      The Basics
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../best-practices.html">
+      Best Practices
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../tools.html">
+      Tools
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../learning.html">
+      Learning
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../about.html">
+      About
+    </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Devops Docs" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Devops Docs">
+<svg viewbox="0 0 89 89" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z"></path>
+<path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5"></path>
+<path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z"></path>
+<path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25"></path>
+</svg>
+</a>
+    Devops Docs
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Niodus/devops-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../home.html">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../the-basics.html">The Basics</a>
+<label for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="The Basics" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          The Basics
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="how-to-get-started.html">
+        How to Get Started
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          DevOps Vs SRE
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="devops-vs-sre.html">
+        DevOps Vs SRE
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+    Overview
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-the-differences-between-sres-and-devops">
+    What Are the Differences Between SREs and DevOps?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conways-law-at-play">
+    Conway’s Law At Play
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#two-different-problem-sets">
+    Two Different Problem Sets
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-problems-do-devops-teams-solve">
+    What Problems Do DevOps Teams Solve?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-problems-do-sres-solve">
+    What Problems Do SREs Solve?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slas-slos-and-slis">
+    SLAs, SLOs, and SLIs
+  </a>
+<nav aria-label="SLAs, SLOs, and SLIs" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slas">
+    SLAs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slos">
+    SLOs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slis">
+    SLIs
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#accelerate-metrics-for-devops-teams">
+    Accelerate Metrics for DevOps Teams
+  </a>
+<nav aria-label="Accelerate Metrics for DevOps Teams" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lead-time">
+    Lead Time
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deployment-frequency">
+    Deployment Frequency
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mean-time-to-restore">
+    Mean Time To Restore
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#change-failure-percentage">
+    Change Failure Percentage
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sre-and-devops-better-together">
+    SRE and DevOps, Better Together
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="calms.html">
+        CALMS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="glossary.html">
+        DevOps Glossary
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices.html">Best Practices</a>
+<label for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Best Practices" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Best Practices
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" id="__nav_3_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning.html">Continuous Planning</a>
+<label for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Continuous Planning" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+          Continuous Planning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1" id="__nav_3_1_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development.html">Agile Development</a>
+<label for="__nav_3_1_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Agile Development" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_1">
+<span class="md-nav__icon md-icon"></span>
+          Agile Development
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/backlog-management.html">
+        Backlog Management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/collaboration.html">
+        Collaboration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/delivery-plan.html">
+        Delivery Plan
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/retrospectives.html">
+        Retrospectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/scrum-of-scrums.html">
+        Scrum of Scrums
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1_6" id="__nav_3_1_1_6" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development/sprint-planning.html">Sprint Planning</a>
+<label for="__nav_3_1_1_6">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Sprint Planning" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_6">
+<span class="md-nav__icon md-icon"></span>
+          Sprint Planning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/sprint-planning/estimation.html">
+        Estimation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/sprint-planning/sprint-structure.html">
+        Structure of a Sprint
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1_7" id="__nav_3_1_1_7" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development/stand-ups.html">Standups</a>
+<label for="__nav_3_1_1_7">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Standups" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_7">
+<span class="md-nav__icon md-icon"></span>
+          Standups
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/stand-ups/social-question.html">
+        Social Question
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1_8" id="__nav_3_1_1_8" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development/team-agreements.html">Team Agreements</a>
+<label for="__nav_3_1_1_8">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Team Agreements" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_8">
+<span class="md-nav__icon md-icon"></span>
+          Team Agreements
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/definition-of-done.html">
+        Definition of Done
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/definition-of-ready.html">
+        Definition of Ready
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/team-charter.html">
+        Team Charter
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/team-engagements.html">
+        Team Engagements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/working-agreements.html">
+        Working Agreements
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2" id="__nav_3_1_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/design-reviews.html">Design Reviews</a>
+<label for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Design Reviews" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+          Design Reviews
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/non-functional-requirements.html">
+        Non-Functional Requirements
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2_2" id="__nav_3_1_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/design-reviews/design-patterns.html">Design Patterns</a>
+<label for="__nav_3_1_2_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Design Patterns" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Design Patterns
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/data-heavy-design-guidance.html">
+        Data and DataOps Fundamentals
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/object-oriented-design-reference.html">
+        Object-Oriented Design Reference
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/distributed-system-design-reference.html">
+        Distributed System Design Reference
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/rest-api-design-guidance.html">
+        REST API Design Guidance
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-integration.html">
+        Continuous Integration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-delivery.html">
+        Continuous Delivery
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../tools.html">Tools</a>
+<label for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Tools" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tools/git/git-cheatsheet.html">
+        Git SCM
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../learning.html">Learning</a>
+<label for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Learning" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Learning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../learning/devops-sfia.html">
+        SFIA Framework
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about.html">
+        About
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+    Overview
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-the-differences-between-sres-and-devops">
+    What Are the Differences Between SREs and DevOps?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conways-law-at-play">
+    Conway’s Law At Play
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#two-different-problem-sets">
+    Two Different Problem Sets
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-problems-do-devops-teams-solve">
+    What Problems Do DevOps Teams Solve?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-problems-do-sres-solve">
+    What Problems Do SREs Solve?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slas-slos-and-slis">
+    SLAs, SLOs, and SLIs
+  </a>
+<nav aria-label="SLAs, SLOs, and SLIs" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slas">
+    SLAs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slos">
+    SLOs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slis">
+    SLIs
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#accelerate-metrics-for-devops-teams">
+    Accelerate Metrics for DevOps Teams
+  </a>
+<nav aria-label="Accelerate Metrics for DevOps Teams" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lead-time">
+    Lead Time
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deployment-frequency">
+    Deployment Frequency
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mean-time-to-restore">
+    Mean Time To Restore
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#change-failure-percentage">
+    Change Failure Percentage
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sre-and-devops-better-together">
+    SRE and DevOps, Better Together
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/Niodus/devops-docs/edit/master/docs/the-basics/devops-vs-sre.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
+</a>
+<h1>DevOps Vs SRE</h1>
+<p><em>This article originated from a blog on <a href="https://harness.io/blog/devops/sre-vs-devops/">Harness's website</a> - dated Nov 3, 2021</em></p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
+<p>In a nutshell, DevOps Engineers are ops-focused engineers who solve development pipeline problems. Site Reliability Engineers are development-focused engineers who solve operational/scale/reliability problems.</p>
+<p><a class="glightbox" href="../img/sre-v-devops-1.png"><img alt="DevOps overview" src="../img/sre-v-devops-1.png"/></a></p>
+<p>Software is certainly eating the world, and as our dependence on technology increases, disciplines have arisen to ensure that changes are rolled out efficiently and our systems are there when we need them. The rise of DevOps and Site Reliability Engineering cultures and practices has risen to the mainstream over the past years.</p>
+<p>Being a DevOps Engineer or SRE are certainly in-demand job titles and skillsets to have. Not to fall into the eponym of “CI/CD” while saying “DevOps/SRE,” understanding the overlap and differences between the two skillsets and organizations is important. Both solve very distinct challenges with unique and innovative approaches, ushering in new paradigms in technology.</p>
+<h2 id="what-are-the-differences-between-sres-and-devops">What Are the Differences Between SREs and DevOps?<a class="headerlink" href="#what-are-the-differences-between-sres-and-devops" title="Permanent link">¶</a></h2>
+<p>Having more efficient and reliable systems are not new goals in technology. Like many other facets of technology, the learnings and science behind both goals have increased to warrant specialized organizations and engineers.</p>
+<p>The DevOps movement is all about breaking down silos. The quintessential disconnect of the development team and operations team is exactly what DevOps Engineers and leaders are trying to solve. This divide makes sense, as those who write software were typically not those who run the software. Years of these practices take time to untangle in organizations and changing mindsets are hard to forecast.</p>
+<p><a class="glightbox" href="../img/sre-v-devops-2.png"><img alt="DevOps vs SRE" src="../img/sre-v-devops-2.png"/></a></p>
+<p>Having reliable systems at scale is a complex problem to solve. As systems become more distributed in nature, ensuring reliability or the appearance of reliability across the vast topology of moving parts is challenging. Internal and external customers alike expect systems to be available all the time, and even a brief outage (downtime) or reduction in uptime can be detrimental to a firm’s reputation and bottom line.</p>
+<p>In a nutshell, DevOps Engineers are ops-focused engineers who solve development pipeline problems. Site Reliability Engineers are development-focused engineers who solve operational/scale/reliability problems. Both sets of engineers are crossing the chasm by bringing their expertise and opinions to the other side of the equation. Though, we are human and fallible, and subject to Conway’s Law.</p>
+<h2 id="conways-law-at-play">Conway’s Law At Play<a class="headerlink" href="#conways-law-at-play" title="Permanent link">¶</a></h2>
+<p>A popular organizational item to talk about in DevOps culture is <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway’s Law</a>. If you are unfamiliar with Conway’s Law, it is an adage stating that organizations design systems which mirror their own communication structure. We are people, and us as people, design systems. Looking at DevOps team structures, DevOps teams are focused on breaking down organizational silos that were created by Conway’s Law and creating a cultural shift toward collaboration and communication. These silos that are institutional are barriers in engineering efficiency; two or more sets of people to get features across the line and be operational with separate goals. Reading one of the quintessential DevOps pieces, <a href="https://www.amazon.co.uk/Phoenix-Project-Devops-Helping-Business/dp/1942788290/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=1658840934&amp;sr=8-1">Gene Kim’s The Phoenix Project</a>, illustrates how problems can be tossed across the proverbial wall.</p>
+<p>The adage that reliability is everyone’s responsibility is true, but the core of innovation work is that we are trying things for the first time. Where DevOps focuses more on the merging and removal of the silos, Site Reliability Engineering focuses on the craft of reliability. Reading one of the quintessential SRE pieces, <a href="https://sre.google/sre-book/table-of-contents/">Google’s SRE Book</a>, there is more of a focus on approach and respecting the complexity for operating systems at scale.</p>
+<p>Because we are all still fighting Conway’s Law, having a solid DevOps team does not mean you have site reliability down. The vice versa is true: just because you have site reliability down doesn’t mean that you have engineering efficiency that a DevOps investment brings. They are solving for two different domains.</p>
+<h2 id="two-different-problem-sets">Two Different Problem Sets<a class="headerlink" href="#two-different-problem-sets" title="Permanent link">¶</a></h2>
+<p>Engineering efficiency and reliability are two separate domains, but have some overlap. There is a correlation between agility and more robust systems. A counter-argument might be made that agility brings about a fast velocity of change, and change is a detriment to reliability. Today’s challenges are faced at scale, and as we continue to push the boundaries, adjusting on-the-fly is important. The problems that both teams solve are telling to the culture and skills needed for both to thrive.</p>
+<h2 id="what-problems-do-devops-teams-solve">What Problems Do DevOps Teams Solve?<a class="headerlink" href="#what-problems-do-devops-teams-solve" title="Permanent link">¶</a></h2>
+<p>Engineering efficiency can have a wide paintbrush. If you take a look at certain DevOps job postings, <strong>it can sound like the job poster is looking for an entire IT organization in one person</strong>. The SDLC (software delivery life cycle) can be a windy road to traverse. DevOps teams strive to remove bottlenecks across the entire SDLC by removing barriers to production and automation. With the adoption of Agile, production changes are being created and needing to be deployed at a faster velocity, as incremental changes are now the expectation.</p>
+<p>The DevOps teams are purveyors of development tools, from providing guidance at the inception of the SDLC with source code management (SCM) recommendations to enabling Continuous Integration and Continuous Delivery in an organization. With a wide gamut of responsibilities, DevOps teams can have ownership and oversight over a number of tools and platforms. SREs, on the other hand, focus on system health. Lastly, it’s important to note the <a href="https://docs.microsoft.com/en-us/learn/modules/introduce-foundation-pillars-devops/">DevOps pillars</a> as these can offer more detail into what DevOps teams solve for.</p>
+<h2 id="what-problems-do-sres-solve">What Problems Do SREs Solve?<a class="headerlink" href="#what-problems-do-sres-solve" title="Permanent link">¶</a></h2>
+<p>Site Reliability Engineering teams focus on safety, health, uptime, and the ability to remedy unforeseen problems. A romanticized idea is that SREs are only sprung into action during an incident, helping devise remedies for problems until the engineering teams can make proper remediation. Certainly, an important pillar of the job is combating incidents, and SREs spend a good deal of time making sure the firefight doesn’t occur with their vast expertise.</p>
+<p>By removing some of the complex burdens in how to scale and maintain uptime in distributed systems, SRE practices allow development teams to focus on feature development instead of the nuances of achieving and maintaining service level commitments.</p>
+<h2 id="slas-slos-and-slis">SLAs, SLOs, and SLIs<a class="headerlink" href="#slas-slos-and-slis" title="Permanent link">¶</a></h2>
+<p>Both DevOps and SRE teams value metrics, as you can’t improve on what you can’t measure. Indicators and measurements of how well a system is performing can be represented by one of the Service Level (SLx) commitments. There is a trio of metrics, SLAs, SLOs, and SLIs, that paint a picture of the agreement made vs the objectives and actuals to meet the agreement. With SLOs and SLIs, you can garner insight into the health of a system.</p>
+<p><a class="glightbox" href="../img/sre-v-devops-3.png"><img alt="devops vs sre" src="../img/sre-v-devops-3.png"/></a></p>
+<h3 id="slas">SLAs<a class="headerlink" href="#slas" title="Permanent link">¶</a></h3>
+<p>Service Level Agreements are the commitment/agreement you make with your customers. Your customers might be internal, external, or another system. SLAs are usually crafted around customer expectations or system expectations. SLAs have been around for some time, and most engineers would consider an SLA to be “we need to reply in 2000ms or less,” which in today’s nomenclature would actually be an SLO. An SLA, in that case, would be “we require 99% uptime.”</p>
+<h3 id="slos">SLOs<a class="headerlink" href="#slos" title="Permanent link">¶</a></h3>
+<p>Service Level Objectives are goals that need to be met in order to meet SLAs. Looking at Tom Wilkie’s RED method can help you come up with good metrics for SLOs: requests, errors, and duration. In the above example of “we need to reply in 2000ms or less 99% of the time,” that would fall under duration, or the amount of time it takes to complete a request in your system. Google’s Four Golden Signals are also great metrics to have as SLOs, but also includes saturation. Measuring SLOs is the purpose of SLIs.</p>
+<h3 id="slis">SLIs<a class="headerlink" href="#slis" title="Permanent link">¶</a></h3>
+<p>Service Level Indicators measure compliance/conformance with an SLO. Harping on the “we need to reply in 2000ms or less 99% of the time” SLO from above, the SLI would be the actual measurement. Maybe 98% of requests have a reply in less than 2000ms, which is not up to the goal of the SLO. If SLOs/SLIs are being broken, time should be spent to remedy/fix issues related to the slowdowns</p>
+<p>For DevOps teams, system health and availability does not mean engineering efficiency is being met. Another set of metrics to look at for DevOps teams are the Accelerate metrics.</p>
+<h2 id="accelerate-metrics-for-devops-teams">Accelerate Metrics for DevOps Teams<a class="headerlink" href="#accelerate-metrics-for-devops-teams" title="Permanent link">¶</a></h2>
+<p>You can have the most resilient and robust system in the world, but if your customers are not completing their journeys, adoption and success will be hard to attain. In <a href="https://itrevolution.com/book/accelerate/">Accelerate</a>, a book by Nicole Forsgren, Jez Humble, and Gene Kim, we dig into the organizational science of high-performing technology teams.</p>
+<p>The authors recommended measuring software delivery performance into four key metrics. Lead Time, Deployment Frequency, Mean Time to Restore (MTTR), and Change Failure Percentage.</p>
+<h3 id="lead-time">Lead Time<a class="headerlink" href="#lead-time" title="Permanent link">¶</a></h3>
+<p>In lean manufacturing, the lead time is the amount of time it takes from a customer request to the fulfillment of that request. In the technology domain, this can be the time from when code is checked in to when the code is deployed into production.</p>
+<h3 id="deployment-frequency">Deployment Frequency<a class="headerlink" href="#deployment-frequency" title="Permanent link">¶</a></h3>
+<p>The number of times that deployments to production occur in an amount of time. Are you deploying to production every day, week, month, year? The more frequently your internal customers can deploy, certainly the more efficient the software delivery process is.</p>
+<h3 id="mean-time-to-restore">Mean Time To Restore<a class="headerlink" href="#mean-time-to-restore" title="Permanent link">¶</a></h3>
+<p>Taking another page from lean manufacturing, MTTR is an incident metric that calculates an average time to restore a system. In the software sense, restoring is rolling back to the last known version of the application. Mean Time to Repair is when the repairing starts, e.g the start of the rollback. The “restore” portion of Mean Time to Restore is when the system is back to its previous functionality.</p>
+<h3 id="change-failure-percentage">Change Failure Percentage<a class="headerlink" href="#change-failure-percentage" title="Permanent link">¶</a></h3>
+<p>This represents the percentage of changes in production that fail. After navigating all of the confidence-building exercises leading up to production, with the number of unknowns in production, a change will fail. Lowering the change failure rate allows for more confidence in production. In modern delivery methods, failing more often early (in a lower environment) is key vs failing in production.</p>
+<p>Harness has the ability out of the box to visualize Accelerate metrics, allowing for this data to be shared, thus enabling collaboration across the enterprise.</p>
+<p><a class="glightbox" href="../img/harness-screenshot.png"><img alt="harness screenshot" src="../img/harness-screenshot.png"/></a></p>
+<p>When comparing concerns of DevOps teams vs SRE teams, we can see where the overlap and differences appear further.</p>
+<p>DevOps vs SRE Concern Table</p>
+<p>Comparing different DevOps concerns vs SRE concerns.</p>
+<table>
+<thead>
+<tr>
+<th>Concern</th>
+<th>DevOps</th>
+<th>SRE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>When asked 'What Do You Do Around Here?"</td>
+<td>Mange the Development pipeline</td>
+<td>Resilience, scaling, uptime, robustness</td>
+</tr>
+<tr>
+<td>TL;DR</td>
+<td>A System engineer, who primarily focuses on development problems.</td>
+<td>A Software engineer, focusing on operational problems.</td>
+</tr>
+<tr>
+<td>Does the Application Cluster?</td>
+<td>Yes, the application does. We need three nodes.</td>
+<td>We use a RAFT-based leader-elected clustering mechanism focused on Apache Zookeeper. We front the application with Apache Mesos to work through Dominant Resource Fairness constraints.</td>
+</tr>
+<tr>
+<td>Can We Have Monitoring?</td>
+<td>Yes, we use Prometheus, ELK, and FluentD and can provide hooks into each.</td>
+<td>Concerned about the science around how the monitoring tool works. Black box vs white box monitoring and specific metrics about each. Advising teams on pros/cons.</td>
+</tr>
+<tr>
+<td>Our Deployment Failed.</td>
+<td>The pipelines we created allow you to re-run. If additional debugging is needed, we can connect the dots with log/trace systems.</td>
+<td>Unless it caused an outage, we wouldn’t get involved to help with the remedy. If the deployment regularly fails, we can work to help decipher why.</td>
+</tr>
+<tr>
+<td>Typical Metrics</td>
+<td>Deployment frequency, deployment failure rate.</td>
+<td>Error budgets, SLOs, SLIs, Four Golden Signals</td>
+</tr>
+<tr>
+<td>War Chant</td>
+<td>“People, Process, Technology &amp; Automation!”</td>
+<td>“There is no root cause!”</td>
+</tr>
+</tbody>
+</table>
+<p>The level of detail that SREs take a look at are more tool-agnostic and approach-centric vs DevOps teams providing tools and pipelines for engineering organizations to further the mission. Both skillsets and teams are certainly important in any modern organization.</p>
+<h2 id="sre-and-devops-better-together">SRE and DevOps, Better Together<a class="headerlink" href="#sre-and-devops-better-together" title="Permanent link">¶</a></h2>
+<p>Both can be viewed as leveraged resources; clearly, there is not a 1:1 ratio of a Software Engineer to DevOps Engineers (though it can feel like it as organizations try to scale) or Site Reliability Engineers. O’Reilly’s Building Secure and Reliable Systems, when compared to the first rendition of Google’s SRE Book, discusses team structure poisoning SREs as advisors/experts.</p>
+<p>Building software at scale requires specialized engineers to help tackle problems and further capabilities. DevOps Engineers, SREs, and other engineers such as Application Security Engineers fall into the category of specialized advisors. Google, in its SRE Book, described all the expertise across multiple domains needed to launch and maintain a product like Gmail, which surprised even me. Harness is here to enable and partner with engineering organizations. The Harness Platform is well-positioned to help further the mission of your DevOps and SRE teams.</p>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: How to Get Started" class="md-footer__link md-footer__link--prev" href="how-to-get-started.html" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              How to Get Started
+            </div>
+</div>
+</a>
+<a aria-label="Next: CALMS" class="md-footer__link md-footer__link--next" href="calms.html" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              CALMS
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.instant", "navigation.tracking", "navigation.top", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+</html>

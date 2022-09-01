@@ -1,0 +1,1543 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A DevOps knowledgebase created by Scott McCarthy" name="description"/>
+<meta content="Scott McCarthy" name="author"/>
+<link href="https://niodus.github.io/devops-docs/learning/devops-sfia.html" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
+<title>SFIA Framework - Devops Docs</title>
+<link href="../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#overview">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Devops Docs" class="md-header__button md-logo" data-md-component="logo" href=".." title="Devops Docs">
+<svg viewbox="0 0 89 89" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z"></path>
+<path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5"></path>
+<path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z"></path>
+<path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25"></path>
+</svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Devops Docs
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              SFIA Framework
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Niodus/devops-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../home.html">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../the-basics.html">
+      The Basics
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../best-practices.html">
+      Best Practices
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../tools.html">
+      Tools
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../learning.html">
+      Learning
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../about.html">
+      About
+    </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Devops Docs" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Devops Docs">
+<svg viewbox="0 0 89 89" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z"></path>
+<path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5"></path>
+<path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z"></path>
+<path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25"></path>
+</svg>
+</a>
+    Devops Docs
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Niodus/devops-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../home.html">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../the-basics.html">The Basics</a>
+<label for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="The Basics" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          The Basics
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../the-basics/how-to-get-started.html">
+        How to Get Started
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../the-basics/devops-vs-sre.html">
+        DevOps Vs SRE
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../the-basics/calms.html">
+        CALMS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../the-basics/glossary.html">
+        DevOps Glossary
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices.html">Best Practices</a>
+<label for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Best Practices" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Best Practices
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" id="__nav_3_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning.html">Continuous Planning</a>
+<label for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Continuous Planning" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+          Continuous Planning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1" id="__nav_3_1_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development.html">Agile Development</a>
+<label for="__nav_3_1_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Agile Development" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_1">
+<span class="md-nav__icon md-icon"></span>
+          Agile Development
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/backlog-management.html">
+        Backlog Management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/collaboration.html">
+        Collaboration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/delivery-plan.html">
+        Delivery Plan
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/retrospectives.html">
+        Retrospectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/scrum-of-scrums.html">
+        Scrum of Scrums
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1_6" id="__nav_3_1_1_6" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development/sprint-planning.html">Sprint Planning</a>
+<label for="__nav_3_1_1_6">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Sprint Planning" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_6">
+<span class="md-nav__icon md-icon"></span>
+          Sprint Planning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/sprint-planning/estimation.html">
+        Estimation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/sprint-planning/sprint-structure.html">
+        Structure of a Sprint
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1_7" id="__nav_3_1_1_7" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development/stand-ups.html">Standups</a>
+<label for="__nav_3_1_1_7">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Standups" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_7">
+<span class="md-nav__icon md-icon"></span>
+          Standups
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/stand-ups/social-question.html">
+        Social Question
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1_8" id="__nav_3_1_1_8" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/agile-development/team-agreements.html">Team Agreements</a>
+<label for="__nav_3_1_1_8">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Team Agreements" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_8">
+<span class="md-nav__icon md-icon"></span>
+          Team Agreements
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/definition-of-done.html">
+        Definition of Done
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/definition-of-ready.html">
+        Definition of Ready
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/team-charter.html">
+        Team Charter
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/team-engagements.html">
+        Team Engagements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/agile-development/team-agreements/working-agreements.html">
+        Working Agreements
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2" id="__nav_3_1_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/design-reviews.html">Design Reviews</a>
+<label for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Design Reviews" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+          Design Reviews
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/non-functional-requirements.html">
+        Non-Functional Requirements
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2_2" id="__nav_3_1_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../best-practices/continuous-planning/design-reviews/design-patterns.html">Design Patterns</a>
+<label for="__nav_3_1_2_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Design Patterns" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Design Patterns
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/data-heavy-design-guidance.html">
+        Data and DataOps Fundamentals
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/object-oriented-design-reference.html">
+        Object-Oriented Design Reference
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/distributed-system-design-reference.html">
+        Distributed System Design Reference
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-planning/design-reviews/design-patterns/rest-api-design-guidance.html">
+        REST API Design Guidance
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-integration.html">
+        Continuous Integration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../best-practices/continuous-delivery.html">
+        Continuous Delivery
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../tools.html">Tools</a>
+<label for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Tools" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tools/git/git-cheatsheet.html">
+        Git SCM
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../learning.html">Learning</a>
+<label for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Learning" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Learning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          SFIA Framework
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="devops-sfia.html">
+        SFIA Framework
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+    Overview
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sfia-8-skills-by-category">
+    SFIA 8 - Skills by category
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#devops-culture">
+    DevOps Culture
+  </a>
+<nav aria-label="DevOps Culture" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#systems-and-software-life-cycle-engineering">
+    Systems and software life cycle engineering
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#risk-management">
+    Risk management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#organisation-design-and-implementation">
+    Organisation design and implementation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#organisational-capability-development">
+    Organisational capability development
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stakeholder-relationship-management">
+    Stakeholder relationship management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#competency-assessment">
+    Competency assessment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#measurement">
+    Measurement
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#systems-development-management">
+    Systems development management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#knowledge-management">
+    Knowledge management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#performance-managemen">
+    Performance managemen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#employee-experience">
+    Employee experience
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#devops-automation">
+    DevOps Automation
+  </a>
+<nav aria-label="DevOps Automation" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuration-management">
+    Configuration management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#programmingsoftware-development">
+    Programming/software development
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing">
+    Testing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#systems-integration-and-build">
+    Systems integration and build
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#release-and-deployment">
+    Release and deployment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acceptance-testing">
+    Acceptance testing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#database-administration">
+    Database administration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#it-infrastructure">
+    IT infrastructure
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#devops-ways-of-working">
+    DevOps ways of working
+  </a>
+<nav aria-label="DevOps ways of working" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#methods-and-tools">
+    Methods and tools
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#requirements-definition-and-management">
+    Requirements definition and management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#software-design">
+    Software design
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#solution-architecture">
+    Solution architecture
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#systems-design">
+    Systems design
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#problem-management">
+    Problem management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#incident-management">
+    Incident management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vulnerability-assessment">
+    Vulnerability assessment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penetration-testing">
+    Penetration testing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#change-control">
+    Change control
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#information-security">
+    Information security
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about.html">
+        About
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+    Overview
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sfia-8-skills-by-category">
+    SFIA 8 - Skills by category
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#devops-culture">
+    DevOps Culture
+  </a>
+<nav aria-label="DevOps Culture" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#systems-and-software-life-cycle-engineering">
+    Systems and software life cycle engineering
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#risk-management">
+    Risk management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#organisation-design-and-implementation">
+    Organisation design and implementation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#organisational-capability-development">
+    Organisational capability development
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stakeholder-relationship-management">
+    Stakeholder relationship management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#competency-assessment">
+    Competency assessment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#measurement">
+    Measurement
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#systems-development-management">
+    Systems development management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#knowledge-management">
+    Knowledge management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#performance-managemen">
+    Performance managemen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#employee-experience">
+    Employee experience
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#devops-automation">
+    DevOps Automation
+  </a>
+<nav aria-label="DevOps Automation" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuration-management">
+    Configuration management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#programmingsoftware-development">
+    Programming/software development
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing">
+    Testing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#systems-integration-and-build">
+    Systems integration and build
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#release-and-deployment">
+    Release and deployment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acceptance-testing">
+    Acceptance testing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#database-administration">
+    Database administration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#it-infrastructure">
+    IT infrastructure
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#devops-ways-of-working">
+    DevOps ways of working
+  </a>
+<nav aria-label="DevOps ways of working" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#methods-and-tools">
+    Methods and tools
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#requirements-definition-and-management">
+    Requirements definition and management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#software-design">
+    Software design
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#solution-architecture">
+    Solution architecture
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#systems-design">
+    Systems design
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#problem-management">
+    Problem management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#incident-management">
+    Incident management
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vulnerability-assessment">
+    Vulnerability assessment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penetration-testing">
+    Penetration testing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#change-control">
+    Change control
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#information-security">
+    Information security
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/Niodus/devops-docs/edit/master/docs/learning/devops-sfia.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
+</a>
+<h1>SFIA Framework</h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
+<p>The purpose of this guide it to give DevOps engineers a quick overview to what the SFIA framework and how it characterises the DevOps skillsets.</p>
+<p>If you are not already familiar with what SFIA is or why large enterprise organisations are starting to adopt this then take a look at the following:</p>
+<ul>
+<li><a href="https://sfia-online.org/en/sfia-8">SFIA skills overview</a></li>
+</ul>
+<p>And for a DevOps specific skillset take a look at the following:</p>
+<ul>
+<li><a href="https://sfia-online.org/en/sfia-8/sfia-views/devops-view">SFIA DevOps Skills overview</a></li>
+<li><a href="https://sfia-online.org/en/sfia-8/sfia-views/devops-view">DevOps Skills at a glance</a></li>
+</ul>
+<p>Also it is worth considering the following roles when reading the content/skills listed below, as it is unlikely that ALL of the skills will be needed/found in a single person/role:</p>
+<ul>
+<li>DevOps Consultant - focuses on DevOps culture and Ways of working as below</li>
+<li>DevOps Engineer - focuses on DevOps automation as below</li>
+<li>Site Reliability Engineer - focus on SRE practices</li>
+</ul>
+<h2 id="sfia-8-skills-by-category">SFIA 8 - Skills by category<a class="headerlink" href="#sfia-8-skills-by-category" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skill</th>
+<th>Levels</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DevOps Culture</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SLEN</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/systems-and-software-life-cycle-engineering">Systems and software life cycle engineering</a></td>
+<td>4 - 7</td>
+</tr>
+<tr>
+<td>BURM</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/risk-management">Risk management</a></td>
+<td>3 -6</td>
+</tr>
+<tr>
+<td>ORDI</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/organisation-design-and-implementation">Organisation design and implementation</a></td>
+<td>4 - 7</td>
+</tr>
+<tr>
+<td>OCDV</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/organisational-capability-development">Organisational capability development</a></td>
+<td>5 -7</td>
+</tr>
+<tr>
+<td>RLMT</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/stakeholder-relationship-management">Stakeholder relationship management</a></td>
+<td>4 - 7</td>
+</tr>
+<tr>
+<td>LEDA</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/competency-assessment">Competency assessment</a></td>
+<td>3 - 6</td>
+</tr>
+<tr>
+<td>MEAS</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/measurement">Measurement</a></td>
+<td>3 - 6</td>
+</tr>
+<tr>
+<td>DLMG</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/systems-development-management">Systems development management</a></td>
+<td>5 - 7</td>
+</tr>
+<tr>
+<td>KNOW</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/knowledge-management">Knowledge management</a></td>
+<td>2 - 7</td>
+</tr>
+<tr>
+<td>PEMT</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/performance-management">Performance management</a></td>
+<td>4 - 6</td>
+</tr>
+<tr>
+<td>EEXP</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/employee-experience">Employee experience</a></td>
+<td>4 - 6</td>
+</tr>
+<tr>
+<td><strong>DevOps Automation</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CFMG</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/configuration-management">Configuration management</a></td>
+<td>2 - 6</td>
+</tr>
+<tr>
+<td>PROG</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/programming-software-development">Programming/software development</a></td>
+<td>2 - 6</td>
+</tr>
+<tr>
+<td>TEST</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/testing">Testing</a></td>
+<td>1 - 6</td>
+</tr>
+<tr>
+<td>SINT</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/systems-integration-and-build">Systems integration and build</a></td>
+<td>2 - 6</td>
+</tr>
+<tr>
+<td>RELM</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/release-and-deployment">Release and deployment</a></td>
+<td>3 - 6</td>
+</tr>
+<tr>
+<td>BPTS</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/acceptance-testing">Acceptance testing</a></td>
+<td>2 - 6</td>
+</tr>
+<tr>
+<td>DBAD</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/database-administration">Database administration</a></td>
+<td>2 - 5</td>
+</tr>
+<tr>
+<td>ITOP</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/it-infrastructure">IT infrastructure</a></td>
+<td>1 - 5</td>
+</tr>
+<tr>
+<td><strong>DevOps ways of working</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>METL</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/methods-and-tools">Methods and tools</a></td>
+<td>3 - 6</td>
+</tr>
+<tr>
+<td>REQM</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/requirements-definition-and-management">Requirements definition and management</a></td>
+<td>2 - 6</td>
+</tr>
+<tr>
+<td>SWDN</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/software-design">Software design</a></td>
+<td>2 - 6</td>
+</tr>
+<tr>
+<td>ARCH</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/solution-architecture">Solution architecture</a></td>
+<td>4 - 6</td>
+</tr>
+<tr>
+<td>DESN</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/systems-design">Systems design</a></td>
+<td>3 - 6</td>
+</tr>
+<tr>
+<td>PBMG</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/problem-management">Problem management</a></td>
+<td>3 - 5</td>
+</tr>
+<tr>
+<td>USUP</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/incident-management">Incident management</a></td>
+<td>2 - 5</td>
+</tr>
+<tr>
+<td>VUAS</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/vulnerability-assessment">Vulnerability assessment</a></td>
+<td>2 - 5</td>
+</tr>
+<tr>
+<td>PENT</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/penetration-testing">Penetration testing</a></td>
+<td>3 - 6</td>
+</tr>
+<tr>
+<td>CHMG</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/change-control">Change control</a></td>
+<td>2 - 6</td>
+</tr>
+<tr>
+<td>SCTY</td>
+<td><a href="https://sfia-online.org/en/sfia-8/skills/information-security">Information security</a></td>
+<td>3 - 7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="devops-culture"><em>DevOps Culture</em><a class="headerlink" href="#devops-culture" title="Permanent link">¶</a></h2>
+<h3 id="systems-and-software-life-cycle-engineering">Systems and software life cycle engineering<a class="headerlink" href="#systems-and-software-life-cycle-engineering" title="Permanent link">¶</a></h3>
+<p>Establishing and deploying an environment for developing, continually improving, and securely operating software and systems products and services.</p>
+<p>This skill is associated with interdisciplinary approaches to developing and operating software and systems products and services across the full life cycle. Typically (but not exclusively) labelled with terms such as DevOps, DevSecOps, site reliability engineering, developer productivity engineering.
+Activities include — but are not limited to:</p>
+<ul>
+<li>establishing secure and reliable software lifecycle principles and practices</li>
+<li>developing a supporting framework of methods, procedures, techniques, tools, and people with required skills, knowledge and competencies</li>
+<li>deploying and using this environment with the people and teams that are responsible for all systems and software life cycle engineering</li>
+<li>building repeatable and reliable capabilities through a process of trial, feedback, learning and continual evolution</li>
+<li>adapting working practices to the needs of specific products and services</li>
+<li>defining, controlling and improving software life cycle processes</li>
+<li>building in risk management, quality, security, privacy and safety</li>
+<li>maximizing the automation of activities</li>
+<li>establishing software architecture and design principles to enable the desired life cycle processes</li>
+<li>focusing on mission, value and customers</li>
+<li>establishing a culture of collaboration, learning, knowledge management, adaptation and resilience</li>
+<li>adopting and integrating appropriate industry frameworks to guide improvements:</li>
+</ul>
+<h3 id="risk-management">Risk management<a class="headerlink" href="#risk-management" title="Permanent link">¶</a></h3>
+<p>Planning and implementing organisation-wide processes and procedures for the management of risk to the success or integrity of the enterprise.</p>
+<p>Risk management can be applied to many enterprise functions as well as technical and engineering specialisms — such as, but not limited to, information and technology systems, operations, environmental, information and cyber-security, safety, energy supply. Risk is also explicitly referenced in many SFIA skills.
+Activities may include — but are not limited to:</p>
+<ul>
+<li>identifying risks</li>
+<li>classifying and prioritising risks — their impact and probability, and mitigation actions</li>
+<li>planning, developing, and implementing organisational approaches to risk management to ensure the integrity of the business, its products and services, and the end-users</li>
+<li>communicating and reporting on risks and mitigation actions to key stakeholders.</li>
+</ul>
+<h3 id="organisation-design-and-implementation">Organisation design and implementation<a class="headerlink" href="#organisation-design-and-implementation" title="Permanent link">¶</a></h3>
+<p>Planning, designing and implementing an integrated organisation structure and culture</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>facilitating changes needed to adapt to changes in technologies, society, new operating models and business processes</li>
+<li>identifying key attributes of the required culture and how these can be implemented and reinforced to bring about improved organisational performance.</li>
+</ul>
+<p>The scope of organisation design can be wide — including the workplace environment, location strategy and number of locations required, role profiles, performance measurements, competencies and skills.</p>
+<h3 id="organisational-capability-development">Organisational capability development<a class="headerlink" href="#organisational-capability-development" title="Permanent link">¶</a></h3>
+<p>Providing leadership, advice and implementation support to assess organisational capabilities and to identify, prioritise and implement improvements.</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>selecting, adopting and integrating appropriate industry frameworks and models to guide improvements</li>
+<li>using capability maturity assessments, metrics, process definition, process management</li>
+<li>building repeatable and reliable capabilities through a process of trial, feedback, learning and continual evolution</li>
+<li>developing appropriate techniques, tools and enhanced skills</li>
+<li>designing and delivering integrated people, process and technology solutions to deliver improved organisational performance in line with strategic plans and objectives</li>
+<li>identifying organisational priorities for enhancing performance, satisfying new business opportunities or responding to external drivers.</li>
+</ul>
+<p>The scope of improvement is typically organisation-wide but may also be highly focused on areas such as — but not limited to — business agility, software development, systems development, project delivery, service integration and management, service delivery, information and cyber-security.</p>
+<h3 id="stakeholder-relationship-management">Stakeholder relationship management<a class="headerlink" href="#stakeholder-relationship-management" title="Permanent link">¶</a></h3>
+<p>Influencing stakeholder attitudes, decisions, and actions for mutual benefit. Activities may include — but are not limited to:</p>
+<ul>
+<li>identifying stakeholders and analysing the relationships</li>
+<li>agreeing on mutually beneficial outcomes</li>
+<li>managing, monitoring and improving stakeholder relationships</li>
+<li>determining the relationship management approach to take — including roles and responsibilities, governance, policies, processes, tools and support mechanisms</li>
+<li>getting commitment to action through consultation and consideration of impacts.</li>
+<li>combining formal and informal communication channels to achieve the desired result</li>
+<li>operational management of stakeholder relationships and communications.</li>
+</ul>
+<p>The focus of this skill is a systematic and planned approach. This skill is not intended for general communication and developing productive working relationships. Those factors are described in SFIA's generic attributes and levels of responsibility.</p>
+<h3 id="competency-assessment">Competency assessment<a class="headerlink" href="#competency-assessment" title="Permanent link">¶</a></h3>
+<p>Assessing knowledge, skills, competency and behaviors by any means, whether formal or informal, against frameworks such as SFIA.</p>
+<p>Assessments may be performed in many contexts such as — but not limited to — recruitment, career progression, professional development planning or accreditation/certification. Activities may include — but are not limited to:</p>
+<ul>
+<li>evaluating and selecting assessment options</li>
+<li>adopting or adapting assessment methods, tools, and techniques</li>
+<li>taking into account the context of the assessment and how the results of the assessment will be used</li>
+<li>aligning assessments with ethical, legal and regulatory requirements.</li>
+</ul>
+<p>Ethical, legal and regulatory requirements are necessary to ensure the integrity of assessments and when handling personal data.</p>
+<h3 id="measurement">Measurement<a class="headerlink" href="#measurement" title="Permanent link">¶</a></h3>
+<p>Developing and operating a measurement capability to support agreed organisational information needs.</p>
+<p>Measurement can be applied to organisations, projects, processes, and work products. Activities may include — but are not limited to:</p>
+<ul>
+<li>planning, implementation, and control of activities to measure attributes of processes, products, and services</li>
+<li>using measures to assess performance, progress, and provide indications and insights to actual or potential problems, issues, and risks</li>
+<li>identifying requirements for measurement</li>
+<li>implementing measurement to support iterative/agile working practices</li>
+<li>selecting measures and measurement scales, setting target values and thresholds</li>
+<li>establishing data collection and analysis methods — including automation.</li>
+</ul>
+<h3 id="systems-development-management">Systems development management<a class="headerlink" href="#systems-development-management" title="Permanent link">¶</a></h3>
+<p>Planning, estimating and executing systems development work to time, budget and quality targets.</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>adopting and adapting systems development life cycle models based on the context of the work and selecting appropriately from predictive (plan-driven) approaches or adaptive (iterative/agile) approaches</li>
+<li>collaboration and open communication with stakeholders with a focus on delivering value from systems development</li>
+<li>managing risks and allowing for timely adjustment of plans and deliverables to continue to meet customer requirements and deliver value</li>
+<li>aligning systems development activity and deliverables with architectures and standards and ensuring quality, security and privacy are built in</li>
+<li>developing roadmaps to communicate systems development plans</li>
+<li>identifying the resources needed for all stages (planning, estimation, execution) of systems development projects and how demand will be met with a supply capacity.</li>
+</ul>
+<h3 id="knowledge-management">Knowledge management<a class="headerlink" href="#knowledge-management" title="Permanent link">¶</a></h3>
+<p>Managing vital knowledge to create value for the organisation.</p>
+<p>Knowledge management aims to improve performance, support decision-making and mitigate risks. Activities may include — but are not limited to:</p>
+<ul>
+<li>systematically capturing, sharing, developing and exploiting the collective knowledge of the organisation</li>
+<li>tailoring knowledge management approaches</li>
+<li>developing a supportive and collaborative knowledge sharing culture to drive the successful adoption of technology solutions for knowledge management</li>
+<li>providing access to informal, tacit knowledge as well as formal, documented, explicit knowledge</li>
+<li>facilitating internal and external collaboration and communications</li>
+<li>establishing and supporting communities of practice</li>
+<li>capturing, organising and developing information, knowledge and stories from employees, customers and external partners</li>
+<li>external benchmarking.</li>
+</ul>
+<h3 id="performance-managemen">Performance managemen<a class="headerlink" href="#performance-managemen" title="Permanent link">¶</a></h3>
+<p>Improving organisational performance by developing the performance of individuals and workgroups to meet agreed objectives with measurable results.</p>
+<p>The term workgroup is used to be inclusive of different organisational structures. A workgroup is a collection of people working together on interdependent tasks to achieve shared objectives. This includes — but is not limited to — permanent/business-as-usual teams, cross-functional teams, squads or workgroups formed to deliver a specific outcome. Activities may include — but are not limited to:</p>
+<ul>
+<li>setting workgroup objectives aligned to organisational drivers</li>
+<li>supporting individual growth to achieve objectives</li>
+<li>forming effective teams</li>
+<li>developing effective working relations within the workgroup</li>
+<li>developing effective working relations with other workgroups, partners and individuals who they collaborate with to achieve workgroup objectives.</li>
+</ul>
+<h3 id="employee-experience">Employee experience<a class="headerlink" href="#employee-experience" title="Permanent link">¶</a></h3>
+<p>Enhancing employee engagement and ways of working, empowering employees and supporting their health and wellbeing.</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>providing opportunities for personal growth and learning</li>
+<li>providing sufficient personal freedom to decide how to achieve work objectives, with support available when needed</li>
+<li>supporting different views, working styles and behaviors within the work environment</li>
+<li>providing a safe and secure working environment with the resources needed to do the job</li>
+<li>providing transparent communications and building trust in leadership</li>
+<li>providing a holistic approach in support of mental and physical well being.</li>
+</ul>
+<p>Note that the term employee is not limited to specific terms of employment. Depending on the employer it may include temporary and contract staff as well as salaried employees.</p>
+<h2 id="devops-automation"><em>DevOps Automation</em><a class="headerlink" href="#devops-automation" title="Permanent link">¶</a></h2>
+<h3 id="configuration-management">Configuration management<a class="headerlink" href="#configuration-management" title="Permanent link">¶</a></h3>
+<p>Planning, identifying, controlling, accounting for and auditing of configuration items (CIs) and their interrelationships.</p>
+<p>Configuration items (CIs) can include a wide variety of components (objects) such as — but not limited to — source code, software, products, systems, hardware, networks, buildings, suppliers, process definitions and documents. A coherent set of CIs forms a configuration. Activities may include — but are not limited to:</p>
+<ul>
+<li>identifying and documenting the functional and physical characteristics of CIs</li>
+<li>identifying the relationships and maintain coherence between CIs for specific configurations</li>
+<li>identifying the associated configuration(s), status, version and other characteristics of CIs at distinct points in time</li>
+<li>controlling changes to CI characteristics, recording and reporting change processing and implementation status</li>
+<li>systematically controlling changes to a configuration and maintaining the integrity, coherence, and traceability of that configuration throughout the project, system and/or service life cycle</li>
+<li>adhering to established safety, security and quality standards</li>
+<li>verifying and auditing CI records for data quality and compliance with specified internal and external requirements.</li>
+</ul>
+<p>Tooling examples: - Git SVN, Artifactory or Backstage.io</p>
+<h3 id="programmingsoftware-development">Programming/software development<a class="headerlink" href="#programmingsoftware-development" title="Permanent link">¶</a></h3>
+<p>Developing software components to deliver value to stakeholders. Activities may include — but are not limited to:</p>
+<ul>
+<li>identifying, creating and applying software development and security standards and processes</li>
+<li>planning and designing software components</li>
+<li>estimating time and effort required for software development</li>
+<li>constructing, amending and verifying software components</li>
+<li>applying test-driven development and ensuring appropriate test coverage</li>
+<li>using peer review techniques — such as pair programming</li>
+<li>documenting software components</li>
+<li>understanding and obtaining agreement to the value of the software components to be developed</li>
+<li>selecting appropriate development methods and life cycles</li>
+<li>applying recovery techniques to ensure the software being developed is not lost</li>
+<li>implementing appropriate change control to software development practices</li>
+<li>resolving operational problems with software and fixing bugs</li>
+</ul>
+<p>Depending on requirements and the characteristics of the project or assigned work — software development methods and life cycles can be predictive (plan-driven) approaches or adaptive (iterative/agile) approaches.</p>
+<p>Tooling examples:</p>
+<ul>
+<li>Learn at least one programming language such as Python, Go, Java or Scala, etc.</li>
+<li>Learn at least one scripting language such as Bash, PowerShell or Python, Ruby, Groovy, etc.</li>
+<li>Be comfortable working with an IDE or from CLI/Terminal</li>
+</ul>
+<h3 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">¶</a></h3>
+<p>Investigating products, systems and services to assess behavior and whether this meets specified or unspecified requirements and characteristics.</p>
+<p>The scope of testing includes technology, system components, configurations, packages and their interfaces. This skill is applicable to all testing methodologies — which can be delivered using predictive (plan-driven) approaches or adaptive (iterative/agile) approaches. Activities may include — but are not limited to:</p>
+<ul>
+<li>planning, designing, managing, executing and reporting of tests</li>
+<li>functional testing of capabilities or features</li>
+<li>non-functional testing of qualities such as — but not limited to — performance, security, access, backup and recovery, archiving and retention, robustness, availability, capacity, scalability, reliability, performance, stress, volume, maintainability and portability</li>
+<li>static testing and static analysis</li>
+<li>managing risks associated with testing and taking preventative action when needed</li>
+<li>adopting and adapting testing methods including waterfall, incremental or agile approaches</li>
+<li>conforming to agreed process standards, industry-specific regulations and data protection legislation</li>
+<li>engineering, using and maintaining testware to measure and improve the quality of the software being tested</li>
+<li>promoting productivity through test automation, tools and best practices</li>
+<li>developing scalable and reliable automated tests and frameworks.</li>
+</ul>
+<p>Tooling examples: SonarQube, Klockwork, Code Insight, etc.
+Practice examples: TDD, Linting &amp; SCA (e.g. embedding in VSCode),</p>
+<h3 id="systems-integration-and-build">Systems integration and build<a class="headerlink" href="#systems-integration-and-build" title="Permanent link">¶</a></h3>
+<p>Planning, implementing and controlling activities to synthesise system components to create operational systems, products or services.</p>
+<p>The scope of integration includes system elements, subsystems and interfaces including computing, storage, networking and cloud services.
+Systems integration is used to create systems for testing purposes as well as for operational use by customers and users. Activities may include — but are not limited to:</p>
+<ul>
+<li>developing organisational capabilities, processes and procedures for automation and continuous integration of build, packaging, testing, security and deployment</li>
+<li>building and operating a continuous integration (CI) capability when required employing version control of source code and related artefacts</li>
+<li>ensuring security and privacy requirements are an essential part of systems integration and build</li>
+<li>testing, validation and sign off of integration to satisfy requirements, architectures and design</li>
+<li>monitoring and controlling integration activities and recording and reporting on the results of integration</li>
+<li>keeping stakeholders informed and providing feedback into risk management processes</li>
+<li>developing and testing disaster recovery plans and applying incident management processes for major systems integrations.</li>
+</ul>
+<p>Tooling examples: Jenkins, Argo, GitHub, GitLab, Azure DevOps, etc.</p>
+<h3 id="release-and-deployment">Release and deployment<a class="headerlink" href="#release-and-deployment" title="Permanent link">¶</a></h3>
+<p>Applying the processes, systems and functions required to make new and changed services and features available for use.</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>packaging and deploying software changes and updates for release into a live environment</li>
+<li>managing continuous delivery/deployment using automation tools for containerisation and orchestration</li>
+<li>using package management tools or application lifecycle management tools for software dependency, version and library control</li>
+<li>combining changes to form a release that delivers a new service or updates an existing service</li>
+<li>adhering to established safety, security and quality standards</li>
+<li>enabling the controlled and effective handover to operational management and the user community.</li>
+</ul>
+<p>Tooling examples: Docker Compose, Terraform, Nexus, Jenkins, GitHub, GitLab, etc.
+Practice examples: GitOps, GitFlow, SRE release management, etc.</p>
+<h3 id="acceptance-testing">Acceptance testing<a class="headerlink" href="#acceptance-testing" title="Permanent link">¶</a></h3>
+<p>Validating systems, products, business processes or services to determine whether the acceptance criteria have been satisfied.</p>
+<p>Activities include — but are not limited to:</p>
+<ul>
+<li>setting and applying standards for acceptance testing</li>
+<li>planning, identifying, designing, managing, executing and reporting on the outcomes of acceptance tests</li>
+<li>encouraging effective and efficient collaboration with a range of relevant stakeholders</li>
+<li>requesting and enabling formal acceptance of systems, products or services</li>
+<li>creating measurable acceptance criteria related to functional and non-functional requirements, features, business processes, user stories and business rules</li>
+<li>devising acceptance test cases and scenarios from acceptance criteria</li>
+<li>enabling exploratory testing by stakeholders to discover unexpected behaviors</li>
+<li>deploying model office testing to simulate real-world working practices and system usage.</li>
+</ul>
+<p>The acceptance testing approach will be based on the context of the work and may be selected from predictive (plan-driven) or adaptive (iterative/agile) approaches.</p>
+<h3 id="database-administration">Database administration<a class="headerlink" href="#database-administration" title="Permanent link">¶</a></h3>
+<p>Installing, configuring, monitoring, maintaining and improving the performance of databases and data stores.</p>
+<p>Database administration may support live operational databases in production use or internal/interim databases used for iterative developments and testing.
+Activities may include — but are not limited to:</p>
+<ul>
+<li>identifying and acting on automation opportunities to improve performance and value from databases, data stores and data pipelines</li>
+<li>using database management system software and tools</li>
+<li>applying knowledge of the logical database schema.</li>
+</ul>
+<h3 id="it-infrastructure">IT infrastructure<a class="headerlink" href="#it-infrastructure" title="Permanent link">¶</a></h3>
+<p>Deploying, configuring and operating IT Infrastructure.</p>
+<p>IT infrastructure components include, but are not limited to, physical devices, virtual resources, infrastructure-related software, middleware, network services and data storage. Infrastructure components may be on-premises, outsourced, or provisioned as cloud services. Activities may include — but are not limited to:</p>
+<ul>
+<li>preparing for new or changed services to meet defined needs of organisational users or providers</li>
+<li>maintaining and enhancing the IT infrastructure and infrastructure components, including task automation via tools and coding</li>
+<li>managing and applying software updates</li>
+<li>building and managing systems and components in virtualised and cloud computing environments</li>
+<li>monitoring the performance of systems and services related to their contribution to organisation performance, security and sustainability.</li>
+</ul>
+<h2 id="devops-ways-of-working"><em>DevOps ways of working</em><a class="headerlink" href="#devops-ways-of-working" title="Permanent link">¶</a></h2>
+<h3 id="methods-and-tools">Methods and tools<a class="headerlink" href="#methods-and-tools" title="Permanent link">¶</a></h3>
+<p>Ensuring methods and tools are adopted and used effectively throughout the organisation.</p>
+<p>There is a wide range of methods and tools supporting areas such as — but not limited to — planning, development, testing, operation, management and maintenance of systems. Activities may include — but are not limited to:</p>
+<ul>
+<li>assessing, selecting and implementing methods and tools</li>
+<li>measuring, tailoring, improving and automating the use of methods and tools.</li>
+</ul>
+<h3 id="requirements-definition-and-management">Requirements definition and management<a class="headerlink" href="#requirements-definition-and-management" title="Permanent link">¶</a></h3>
+<p>Managing requirements through the entire delivery and operational life cycle.</p>
+<p>Requirements may be related to software, systems, data, processes, products or services. Activities may include — but are not limited to:</p>
+<ul>
+<li>eliciting and analysing requirements — both functional and non-functional</li>
+<li>ensuring that customer requirements and priorities are accurately reflected</li>
+<li>organising and prioritising requirements using techniques such as — but not limited to — product roadmaps, epics, user stories and backlogs</li>
+<li>specifying and validating requirements and constraints to a level that enables effective development and operations of new or changed software, systems, processes, products or services</li>
+<li>negotiating trade-offs that are acceptable to key stakeholders and within budgetary, technical, regulatory, and other constraints</li>
+<li>adopting and adapting requirements management life cycle models.</li>
+</ul>
+<p>The requirements life cycle approach will be based on the context of the work and may be selected from predictive (plan-driven) or adaptive (iterative/agile) approaches.</p>
+<h3 id="software-design">Software design<a class="headerlink" href="#software-design" title="Permanent link">¶</a></h3>
+<p>Specifying and designing software to meet defined requirements by following agreed design standards and principles.</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>designing software applications, components, interfaces and related characteristics (including security)</li>
+<li>using design concepts and patterns to develop software design and provide the basis for software construction and verification</li>
+<li>evaluating alternative solutions and trade-offs to facilitate design decisions</li>
+<li>taking into account functional and non-functional requirements such as the target environment, performance, security and existing systems</li>
+<li>developing prototypes/simulations to enable informed decision-making</li>
+<li>adopting and adapting software design models, tools and techniques based on the context of the work.</li>
+</ul>
+<p>Depending on requirements and project or work assigned characteristics, software design techniques can be predictive (plan-driven) or adaptive (iterative/agile) approaches.</p>
+<h3 id="solution-architecture">Solution architecture<a class="headerlink" href="#solution-architecture" title="Permanent link">¶</a></h3>
+<p>Developing and communicating a multi-dimensional solution architecture to deliver agreed business outcomes.</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>defining the planned operation and maintenance of the solution within a production environment — include changes to services, process, organisation, and operating models as well as technology</li>
+<li>ensuring that existing and planned solution components are compatible with relevant architectures, strategies, policies, standards and practices</li>
+<li>considering requirements for security, privacy and testing of solutions</li>
+<li>taking account of relevant architectures, strategies, policies, standards and practices</li>
+<li>identifying appropriate cloud services</li>
+<li>developing roadmaps to migrate components to cloud services</li>
+<li>developing and communicating an implementation roadmap</li>
+<li>providing guidance and risk-based governance to support solution implementation including managing requests for changes and deviations from specifications.</li>
+</ul>
+<h3 id="systems-design">Systems design<a class="headerlink" href="#systems-design" title="Permanent link">¶</a></h3>
+<p>Designing systems to meet specified requirements and agreed systems architectures.</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>using design concepts to develop system design and provide the basis for systems construction and verification</li>
+<li>designing or selecting system components</li>
+<li>designing systems compatible with cloud computing architectures and selection of components such as infrastructure as a service, platform as a service and software as a service</li>
+<li>developing a complete set of detailed models, properties, and/or characteristics described in a form suitable for implementation</li>
+<li>adopting and adapting of system design life cycle models based on the context of the work using predictive (plan-driven) approaches or adaptive (iterative/agile) approaches for system design</li>
+<li>adhering to regulatory requirements and organisational standards including security.</li>
+</ul>
+<h3 id="problem-management">Problem management<a class="headerlink" href="#problem-management" title="Permanent link">¶</a></h3>
+<p>Managing the life cycle of all problems that have occurred or could occur in delivering a service.</p>
+<p>The primary objectives of problem management are to:</p>
+<ul>
+<li>proactively prevent problems and resulting incidents from happening</li>
+<li>reactively resolve problems that have already happened</li>
+<li>eliminate recurring incidents</li>
+<li>minimise the impact of incidents that cannot be prevented.</li>
+</ul>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>detecting and logging problems</li>
+<li>classifying and prioritising problems</li>
+<li>initiating actions to resolve problems</li>
+<li>investigating and diagnosing problems</li>
+<li>implementing remedies to prevent future incidents</li>
+<li>reporting on problems.</li>
+</ul>
+<h3 id="incident-management">Incident management<a class="headerlink" href="#incident-management" title="Permanent link">¶</a></h3>
+<p>Coordinating responses to incident reports, minimising negative impacts and restoring service as quickly as possible.</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>designing and implementing different processes and procedures for different categories of incidents including — but not limited to — major incidents, information or cybersecurity incidents, complex incidents, low impact incidents</li>
+<li>establishing incident response teams or security incident response teams</li>
+<li>routing requests for help to appropriate functions for resolution</li>
+<li>monitoring resolution activity</li>
+<li>informing users, customers and key stakeholders of progress towards service restoration.</li>
+</ul>
+<p>Incidents can impact many areas — such as but not limited to — business operations, information security, IT systems, services, employees, customers, or other vital business functions.</p>
+<p>Different roles/groups may be needed to diagnose and resolve incidents — such as — users, subject matter experts, service desk, support teams, suppliers, partners. Although they play a part in the incident management process, they do not necessarily need incident management skills.</p>
+<h3 id="vulnerability-assessment">Vulnerability assessment<a class="headerlink" href="#vulnerability-assessment" title="Permanent link">¶</a></h3>
+<p>Identifying and classifying security vulnerabilities in networks, systems and applications and mitigating or eliminating their impact.</p>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>cataloguing and classifying information and technology resources (assets and capabilities) to support vulnerability assessment</li>
+<li>assigning quantifiable value, rank order and importance to information and technology resources</li>
+<li>identifying and analysing the vulnerabilities of each resource — manually or using automated tools and information sources</li>
+<li>prioritising, scoring and ranking the risk associated with vulnerabilities</li>
+<li>business impact assessment</li>
+<li>mitigating or eliminating the vulnerabilities.</li>
+</ul>
+<p>Vulnerability assessment tools include web application scanners, protocol scanners and network scanners.</p>
+<h3 id="penetration-testing">Penetration testing<a class="headerlink" href="#penetration-testing" title="Permanent link">¶</a></h3>
+<p>Testing the effectiveness of security controls by emulating the tools and techniques of likely attackers.</p>
+<p>Penetration testing may be a stand-alone activity or an aspect of acceptance testing prior to an approval to operate.
+Activities include — but are not limited to:</p>
+<ul>
+<li>ethical hacking — using the same tools and techniques as an adversary to safely exploit security weaknesses</li>
+<li>demonstrating how an adversary can subvert security goals or achieve specific adversarial objectives</li>
+<li>evaluating the effectiveness of current/planned defense or mitigation controls</li>
+<li>assuring the security of networks, systems, and applications</li>
+<li>identifying insights into the business risks of various vulnerabilities</li>
+<li>testing network, infrastructure, web and mobile applications for weaknesses</li>
+<li>checking patch levels and configurations</li>
+<li>social engineering.</li>
+</ul>
+<h3 id="change-control">Change control<a class="headerlink" href="#change-control" title="Permanent link">¶</a></h3>
+<p>Assessing risks associated with proposed changes and ensuring changes to products, services or systems are controlled and coordinated.</p>
+<p>Change control is applied to anything that impacts live products, services or systems. This typically includes — applications, infrastructure, documentation, processes, configuration items, suppliers. Activities may include — but are not limited to:</p>
+<ul>
+<li>managing the lifecycle of change requests — registering, assessing, authorising, planning, deploying</li>
+<li>assessing risks and reducing risks to the availability, performance, security and compliance of the products and services impacted by the change</li>
+<li>developing processes for standard, normal or emergency changes</li>
+<li>developing methods and tools to automate change control processes to enable continuous integration.</li>
+</ul>
+<h3 id="information-security">Information security<a class="headerlink" href="#information-security" title="Permanent link">¶</a></h3>
+<p>Defining and operating a framework of security controls and security management strategies.</p>
+<p>The purpose of security controls and management strategies is to:</p>
+<ul>
+<li>maintain the security, confidentiality, integrity, availability, accountability of information systems</li>
+<li>ensure information systems comply with legislation, regulation and relevant standards.</li>
+</ul>
+<p>Activities may include — but are not limited to:</p>
+<ul>
+<li>selecting, adopting and adapting security control frameworks</li>
+<li>designing, justifying and implementing security management strategies</li>
+<li>identifying risks with technical solution architectures</li>
+<li>ensuring security principles are applied during design and development to reduce risk.</li>
+</ul>
+<p>Examples of types of security controls include — but are not limited to:</p>
+<ul>
+<li>physical controls</li>
+<li>procedural or administrative controls</li>
+<li>technical or logical controls</li>
+<li>legal and regulatory or compliance controls.</li>
+</ul>
+<p>These activities are typically performed in collaboration with specialists in other areas including — but not limited to — legal, technical infrastructure, audit, architecture, software engineering.</p>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Learning" class="md-footer__link md-footer__link--prev" href="../learning.html" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Learning
+            </div>
+</div>
+</a>
+<a aria-label="Next: About" class="md-footer__link md-footer__link--next" href="../about.html" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              About
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.instant", "navigation.tracking", "navigation.top", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+</html>

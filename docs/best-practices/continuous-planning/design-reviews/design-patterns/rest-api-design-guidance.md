@@ -1,4 +1,9 @@
-# REST API Design Guidance
+---
+title: REST API Design Guidance
+summary: A REST API Design Guidance
+author: Scott McCarthy
+date: 02/09/2022
+---
 
 ## Goals
 

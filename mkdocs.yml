@@ -61,7 +61,7 @@ plugins:
 ### --- START OF NAVIGATION SECTION -- ###
 
 nav:
-    - Home: home.md
+    - Home: index.md
     - The Basics:
         - the-basics.md
         - the-basics/how-to-get-started.md

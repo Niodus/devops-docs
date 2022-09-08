@@ -1,4 +1,9 @@
-# Data and DataOps Fundamentals
+---
+title: Data and DataOps Fundamentals
+summary: A guide to data storage
+author: Scott McCarthy
+date: 24/08/2022
+---
 
 Most projects involve some type of data storage, data processing and data ops. For these projects, as with all projects, we follow the general guidelines laid out in other sections around security, testing, observability, CI/CD etc.
 

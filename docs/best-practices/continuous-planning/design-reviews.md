@@ -20,4 +20,3 @@ This covers not only technical design of software, but also architecture design 
 
 - [Design Patterns](design-reviews/design-patterns.md)
 - [Non-Functional Requirements Guidance](design-reviews/non-functional-requirements.md)
-- [Sustainable Software Engineering](design-reviews/sustainability.md)
